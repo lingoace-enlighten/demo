@@ -1,0 +1,55 @@
+
+day1_1_pao.png
+size: 229,104
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+day1_1_pao-1
+  rotate: true
+  xy: 205, 57
+  size: 45, 18
+  orig: 45, 18
+  offset: 0, 0
+  index: -1
+day1_1_pao-2
+  rotate: false
+  xy: 177, 4
+  size: 34, 32
+  orig: 34, 32
+  offset: 0, 0
+  index: -1
+day1_1_pao-3
+  rotate: true
+  xy: 213, 10
+  size: 45, 14
+  orig: 45, 14
+  offset: 0, 0
+  index: -1
+day1_1_pao-4
+  rotate: true
+  xy: 105, 47
+  size: 55, 59
+  orig: 55, 59
+  offset: 0, 0
+  index: -1
+day1_1_pao-5
+  rotate: true
+  xy: 166, 38
+  size: 64, 37
+  orig: 64, 37
+  offset: 0, 0
+  index: -1
+day1_1_pao-6
+  rotate: true
+  xy: 105, 3
+  size: 33, 70
+  orig: 33, 70
+  offset: 0, 0
+  index: -1
+day1_1_pao-7
+  rotate: true
+  xy: 2, 2
+  size: 100, 101
+  orig: 100, 101
+  offset: 0, 0
+  index: -1

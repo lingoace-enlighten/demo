@@ -1,0 +1,48 @@
+
+l1w6l5.png
+size: 1976,1008
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0000
+  rotate: false
+  xy: 2, 2
+  size: 1784, 1004
+  orig: 1784, 1004
+  offset: 0, 0
+  index: -1
+kuang
+  rotate: false
+  xy: 1788, 820
+  size: 186, 186
+  orig: 197, 197
+  offset: 6, 5
+  index: -1
+m
+  rotate: true
+  xy: 1788, 612
+  size: 105, 80
+  orig: 115, 90
+  offset: 5, 5
+  index: -1
+mm
+  rotate: false
+  xy: 1788, 719
+  size: 94, 99
+  orig: 104, 109
+  offset: 5, 5
+  index: -1
+n
+  rotate: false
+  xy: 1788, 529
+  size: 71, 81
+  orig: 81, 91
+  offset: 5, 5
+  index: -1
+nn
+  rotate: false
+  xy: 1884, 719
+  size: 83, 99
+  orig: 93, 109
+  offset: 5, 5
+  index: -1

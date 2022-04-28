@@ -1,0 +1,20 @@
+
+xingxing.png
+size: 384,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/daxingxing
+  rotate: true
+  xy: 256, 127
+  size: 127, 126
+  orig: 129, 128
+  offset: 1, 1
+  index: -1
+images/guang
+  rotate: false
+  xy: 2, 2
+  size: 252, 252
+  orig: 256, 256
+  offset: 2, 4
+  index: -1
