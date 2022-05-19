@@ -1,0 +1,266 @@
+[
+  1,
+  [
+    "fefMTknSVHM7K6KkUi04CZ"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "goldcoin",
+      "\ngoldcoin.png\nsize: 1955,1915\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\ngold0001\n  rotate: false\n  xy: 2, 1115\n  size: 798, 798\n  orig: 798, 800\n  offset: 0, 0\n  index: -1\ngold0002\n  rotate: true\n  xy: 802, 1190\n  size: 723, 800\n  orig: 798, 800\n  offset: 75, 0\n  index: -1\ngold0003\n  rotate: true\n  xy: 802, 590\n  size: 598, 800\n  orig: 798, 800\n  offset: 156, 0\n  index: -1\ngold0004\n  rotate: false\n  xy: 1604, 1113\n  size: 349, 800\n  orig: 798, 800\n  offset: 286, 0\n  index: -1\ngold0005\n  rotate: false\n  xy: 1606, 311\n  size: 189, 800\n  orig: 798, 800\n  offset: 302, 0\n  index: -1\ngold0006\n  rotate: true\n  xy: 2, 2\n  size: 309, 800\n  orig: 798, 800\n  offset: 239, 0\n  index: -1\ngold0007\n  rotate: true\n  xy: 804, 35\n  size: 553, 800\n  orig: 798, 800\n  offset: 64, 0\n  index: -1\ngold0008\n  rotate: false\n  xy: 2, 313\n  size: 748, 800\n  orig: 798, 800\n  offset: 2, 0\n  index: -1\n",
+      [
+        "goldcoin.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "kNzmvPTsSxsupmad5NhKyh5cC7A",
+          "spine": "3.8.99",
+          "x": -398,
+          "y": -315,
+          "width": 798,
+          "height": 800,
+          "images": "./gold/",
+          "audio": ""
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "gold0001",
+            "parent": "root",
+            "x": 0.83,
+            "y": 74.05,
+            "color": "9b9b9b00"
+          }
+        ],
+        "slots": [
+          {
+            "name": "gold0001",
+            "bone": "gold0001",
+            "attachment": "gold0008"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "gold0001": {
+                "gold0001": {
+                  "x": 0.17,
+                  "y": 10.95,
+                  "width": 798,
+                  "height": 800
+                },
+                "gold0002": {
+                  "x": 0.17,
+                  "y": 10.95,
+                  "width": 798,
+                  "height": 800
+                },
+                "gold0003": {
+                  "x": 0.17,
+                  "y": 10.95,
+                  "width": 798,
+                  "height": 800
+                },
+                "gold0004": {
+                  "x": 0.17,
+                  "y": 10.95,
+                  "width": 798,
+                  "height": 800
+                },
+                "gold0005": {
+                  "x": 0.17,
+                  "y": 10.95,
+                  "width": 798,
+                  "height": 800
+                },
+                "gold0006": {
+                  "x": 0.17,
+                  "y": 10.95,
+                  "width": 798,
+                  "height": 800
+                },
+                "gold0007": {
+                  "x": 0.17,
+                  "y": 10.95,
+                  "width": 798,
+                  "height": 800
+                },
+                "gold0008": {
+                  "x": 0.17,
+                  "y": 10.95,
+                  "width": 798,
+                  "height": 800
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "animation": {
+            "slots": {
+              "gold0001": {
+                "color": [
+                  {
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 0.1,
+                    "color": "ffffffd4"
+                  },
+                  {
+                    "time": 0.1333,
+                    "color": "ffffffff",
+                    "curve": "stepped"
+                  },
+                  {
+                    "time": 0.4333,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.5333,
+                    "color": "ffffff00"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "gold0001"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "gold0002"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "gold0003"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "gold0004"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "gold0005"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "gold0006"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "gold0007"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "gold0008"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "gold0004"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "gold0005"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "gold0006"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "gold0007"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "gold0008"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "gold0004"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "gold0005"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "gold0006"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "gold0007"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "gold0001": {
+                "translate": [
+                  {},
+                  {
+                    "time": 0.1667,
+                    "y": 765.36
+                  },
+                  {
+                    "time": 0.2667,
+                    "y": 935.28
+                  },
+                  {
+                    "time": 0.3667,
+                    "y": 824.64
+                  },
+                  {
+                    "time": 0.5333,
+                    "y": 10.08
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

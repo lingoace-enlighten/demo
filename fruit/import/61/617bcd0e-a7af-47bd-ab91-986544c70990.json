@@ -1,0 +1,44 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "&asset&type&",
+      {
+        "recordNode.prefab": "prefab",
+        "circle.mtl": "material",
+        "record_1.png": "texture",
+        "record_3.png": "texture",
+        "record_2.png": "texture",
+        "circle_word.anim": "animation-clip",
+        "new_record.anim": "animation-clip",
+        "circle.effect": "effect"
+      }
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

@@ -1,0 +1,125 @@
+
+L2_W0_day1_1_niao.png
+size: 1908,1042
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cibang_L
+  rotate: true
+  xy: 1093, 482
+  size: 558, 386
+  orig: 597, 386
+  offset: 39, 0
+  index: -1
+cibang_L_2
+  rotate: true
+  xy: 716, 478
+  size: 562, 375
+  orig: 580, 376
+  offset: 18, 1
+  index: -1
+cibang_L_5
+  rotate: true
+  xy: 1563, 46
+  size: 499, 343
+  orig: 511, 348
+  offset: 0, 0
+  index: -1
+cibang_L_6
+  rotate: true
+  xy: 738, 9
+  size: 467, 416
+  orig: 467, 421
+  offset: 0, 0
+  index: -1
+cibang_R
+  rotate: false
+  xy: 279, 50
+  size: 143, 282
+  orig: 143, 282
+  offset: 0, 0
+  index: -1
+cibang_R_5
+  rotate: true
+  xy: 1156, 23
+  size: 457, 405
+  orig: 457, 405
+  offset: 0, 0
+  index: -1
+datui
+  rotate: true
+  xy: 424, 122
+  size: 210, 121
+  orig: 210, 121
+  offset: 0, 0
+  index: -1
+datui2
+  rotate: true
+  xy: 135, 56
+  size: 212, 142
+  orig: 212, 142
+  offset: 0, 0
+  index: -1
+shengti
+  rotate: true
+  xy: 2, 270
+  size: 770, 259
+  orig: 770, 259
+  offset: 0, 0
+  index: -1
+shengti2
+  rotate: true
+  xy: 263, 334
+  size: 706, 451
+  orig: 706, 485
+  offset: 0, 34
+  index: -1
+tou
+  rotate: true
+  xy: 1481, 547
+  size: 493, 419
+  orig: 526, 419
+  offset: 0, 0
+  index: -1
+yanbai
+  rotate: false
+  xy: 547, 203
+  size: 84, 129
+  orig: 84, 129
+  offset: 0, 0
+  index: -1
+yangpi
+  rotate: false
+  xy: 424, 2
+  size: 82, 118
+  orig: 82, 118
+  offset: 0, 0
+  index: -1
+yanpi2
+  rotate: true
+  xy: 632, 74
+  size: 127, 104
+  orig: 159, 142
+  offset: 17, 23
+  index: -1
+yanzhu
+  rotate: true
+  xy: 135, 9
+  size: 45, 70
+  orig: 45, 70
+  offset: 0, 0
+  index: -1
+yumao
+  rotate: true
+  xy: 508, 7
+  size: 113, 122
+  orig: 113, 122
+  offset: 0, 0
+  index: -1
+zuiba
+  rotate: false
+  xy: 2, 31
+  size: 131, 237
+  orig: 458, 332
+  offset: 4, 59
+  index: -1

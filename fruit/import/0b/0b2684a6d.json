@@ -1,0 +1,342 @@
+[
+  1,
+  [
+    "81ZKo0gOxMDL9Iu6Tu914U",
+    "42QAVrCfxNjIJLfTURBx04",
+    "07uN9/QodFhIJQtaWsqF5G",
+    "f3Zq13eP5KjrxUmKyoZBys",
+    "b1FXnVAHxEsJfvJhJ9t+Be",
+    "c0buo5Nn5Dors5J1qLSO64",
+    "80XNNUpQ1AnZc1EsENP+Ap",
+    "e2Q8D6gG9FqbeqsEeE+DLq"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "item",
+          "rect": [
+            0,
+            0,
+            46,
+            48
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            46,
+            48
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "组 10 拷贝",
+          "rect": [
+            0,
+            0,
+            236,
+            34
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            236,
+            34
+          ],
+          "capInsets": [
+            25,
+            10,
+            30,
+            18
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    [
+      [
+        {
+          "name": "item",
+          "rect": [
+            0,
+            0,
+            52,
+            56
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            52,
+            56
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    [
+      [
+        {
+          "name": "bananaItemBg",
+          "rect": [
+            0,
+            0,
+            77,
+            78
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            77,
+            78
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ]
+    ],
+    [
+      [
+        {
+          "name": "mangoItemBg",
+          "rect": [
+            0,
+            0,
+            83,
+            84
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            83,
+            84
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        {
+          "name": "组 9 拷贝",
+          "rect": [
+            0,
+            0,
+            218,
+            17
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            218,
+            17
+          ],
+          "capInsets": [
+            14,
+            0,
+            12,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        5
+      ]
+    ],
+    [
+      [
+        {
+          "name": "bananaItem",
+          "rect": [
+            0,
+            0,
+            43,
+            41
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            43,
+            41
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        6
+      ]
+    ],
+    [
+      [
+        {
+          "name": "cocosItemBg",
+          "rect": [
+            0,
+            0,
+            77,
+            78
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "originalSize": [
+            77,
+            78
+          ],
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        7
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,62 @@
+
+goldcoin.png
+size: 1955,1915
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gold0001
+  rotate: false
+  xy: 2, 1115
+  size: 798, 798
+  orig: 798, 800
+  offset: 0, 0
+  index: -1
+gold0002
+  rotate: true
+  xy: 802, 1190
+  size: 723, 800
+  orig: 798, 800
+  offset: 75, 0
+  index: -1
+gold0003
+  rotate: true
+  xy: 802, 590
+  size: 598, 800
+  orig: 798, 800
+  offset: 156, 0
+  index: -1
+gold0004
+  rotate: false
+  xy: 1604, 1113
+  size: 349, 800
+  orig: 798, 800
+  offset: 286, 0
+  index: -1
+gold0005
+  rotate: false
+  xy: 1606, 311
+  size: 189, 800
+  orig: 798, 800
+  offset: 302, 0
+  index: -1
+gold0006
+  rotate: true
+  xy: 2, 2
+  size: 309, 800
+  orig: 798, 800
+  offset: 239, 0
+  index: -1
+gold0007
+  rotate: true
+  xy: 804, 35
+  size: 553, 800
+  orig: 798, 800
+  offset: 64, 0
+  index: -1
+gold0008
+  rotate: false
+  xy: 2, 313
+  size: 748, 800
+  orig: 798, 800
+  offset: 2, 0
+  index: -1

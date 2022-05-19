@@ -1,0 +1,188 @@
+
+tag.png
+size: 1835,1165
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5
+  rotate: false
+  xy: 2, 402
+  size: 1294, 761
+  orig: 1296, 763
+  offset: 1, 1
+  index: -1
+blue
+  rotate: false
+  xy: 1756, 168
+  size: 69, 68
+  orig: 71, 70
+  offset: 1, 1
+  index: -1
+cloud1
+  rotate: true
+  xy: 1535, 603
+  size: 560, 298
+  orig: 564, 302
+  offset: 1, 2
+  index: -1
+cloud2
+  rotate: false
+  xy: 773, 102
+  size: 602, 298
+  orig: 782, 302
+  offset: 179, 1
+  index: -1
+eyes2
+  rotate: false
+  xy: 2, 2
+  size: 120, 41
+  orig: 122, 43
+  offset: 1, 1
+  index: -1
+gold
+  rotate: false
+  xy: 1616, 454
+  size: 144, 147
+  orig: 146, 149
+  offset: 1, 1
+  index: -1
+green
+  rotate: false
+  xy: 1756, 98
+  size: 69, 68
+  orig: 71, 70
+  offset: 1, 1
+  index: -1
+green1
+  rotate: true
+  xy: 1074, 21
+  size: 79, 74
+  orig: 81, 76
+  offset: 1, 1
+  index: -1
+orange
+  rotate: false
+  xy: 1150, 23
+  size: 77, 77
+  orig: 79, 79
+  offset: 1, 1
+  index: -1
+per
+  rotate: false
+  xy: 1756, 28
+  size: 69, 68
+  orig: 71, 70
+  offset: 1, 1
+  index: -1
+pink
+  rotate: false
+  xy: 1229, 23
+  size: 77, 77
+  orig: 79, 79
+  offset: 1, 1
+  index: -1
+qugan
+  rotate: true
+  xy: 2, 45
+  size: 355, 490
+  orig: 383, 504
+  offset: 27, 13
+  index: -1
+red1
+  rotate: true
+  xy: 1298, 545
+  size: 618, 235
+  orig: 620, 237
+  offset: 1, 1
+  index: -1
+red2
+  rotate: false
+  xy: 1554, 238
+  size: 275, 174
+  orig: 277, 176
+  offset: 1, 1
+  index: -1
+red3
+  rotate: true
+  xy: 1377, 137
+  size: 275, 175
+  orig: 277, 177
+  offset: 1, 1
+  index: -1
+star1
+  rotate: true
+  xy: 1554, 30
+  size: 206, 200
+  orig: 208, 202
+  offset: 1, 1
+  index: -1
+tigo
+  rotate: true
+  xy: 1387, 22
+  size: 113, 62
+  orig: 115, 64
+  offset: 1, 1
+  index: -1
+tigoh
+  rotate: true
+  xy: 494, 50
+  size: 350, 277
+  orig: 352, 279
+  offset: 1, 1
+  index: -1
+weiba
+  rotate: true
+  xy: 858, 9
+  size: 91, 61
+  orig: 93, 63
+  offset: 1, 1
+  index: -1
+yellow
+  rotate: false
+  xy: 1308, 23
+  size: 77, 77
+  orig: 79, 79
+  offset: 1, 1
+  index: -1
+youbi
+  rotate: true
+  xy: 921, 13
+  size: 87, 68
+  orig: 89, 70
+  offset: 1, 1
+  index: -1
+youjiao
+  rotate: true
+  xy: 1298, 414
+  size: 129, 157
+  orig: 131, 159
+  offset: 1, 1
+  index: -1
+youshou
+  rotate: false
+  xy: 991, 17
+  size: 81, 83
+  orig: 83, 85
+  offset: 1, 1
+  index: -1
+zuobi
+  rotate: false
+  xy: 1451, 72
+  size: 68, 63
+  orig: 70, 65
+  offset: 1, 1
+  index: -1
+zuojiao
+  rotate: true
+  xy: 1457, 414
+  size: 129, 157
+  orig: 131, 159
+  offset: 1, 1
+  index: -1
+zuoshou
+  rotate: false
+  xy: 773, 7
+  size: 83, 93
+  orig: 85, 95
+  offset: 1, 1
+  index: -1

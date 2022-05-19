@@ -1,0 +1,167 @@
+
+L2_W0_day1_1_hopper_b.png
+size: 189,142
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+erduo_L
+  rotate: true
+  xy: 79, 61
+  size: 30, 51
+  orig: 30, 51
+  offset: 0, 0
+  index: -1
+erduo_R
+  rotate: false
+  xy: 144, 98
+  size: 43, 42
+  orig: 43, 42
+  offset: 0, 0
+  index: -1
+gebo_1_L
+  rotate: false
+  xy: 111, 35
+  size: 20, 24
+  orig: 20, 24
+  offset: 0, 0
+  index: -1
+gebo_2_L
+  rotate: false
+  xy: 61, 2
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+gebo_3_L
+  rotate: false
+  xy: 151, 73
+  size: 21, 23
+  orig: 21, 23
+  offset: 0, 0
+  index: -1
+gebo_3_R
+  rotate: false
+  xy: 79, 2
+  size: 15, 26
+  orig: 15, 26
+  offset: 0, 0
+  index: -1
+gebo_xiuz_R
+  rotate: false
+  xy: 132, 66
+  size: 17, 25
+  orig: 17, 25
+  offset: 0, 0
+  index: -1
+gebo_xiuzi_L
+  rotate: false
+  xy: 96, 3
+  size: 18, 25
+  orig: 18, 25
+  offset: 0, 0
+  index: -1
+mao_L
+  rotate: true
+  xy: 156, 35
+  size: 15, 18
+  orig: 16, 18
+  offset: 1, 0
+  index: -1
+mao_R
+  rotate: false
+  xy: 174, 80
+  size: 13, 16
+  orig: 13, 16
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: false
+  xy: 79, 93
+  size: 63, 47
+  orig: 63, 47
+  offset: 0, 0
+  index: -1
+shenti_1
+  rotate: false
+  xy: 2, 6
+  size: 57, 63
+  orig: 57, 63
+  offset: 0, 0
+  index: -1
+shenti_2
+  rotate: false
+  xy: 61, 30
+  size: 48, 29
+  orig: 48, 29
+  offset: 0, 0
+  index: -1
+shou
+  rotate: false
+  xy: 156, 52
+  size: 18, 19
+  orig: 18, 19
+  offset: 0, 0
+  index: -1
+shou2
+  rotate: false
+  xy: 139, 14
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 71
+  size: 75, 69
+  orig: 75, 69
+  offset: 0, 0
+  index: -1
+tui_L_1
+  rotate: false
+  xy: 133, 43
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+tui_L_2
+  rotate: false
+  xy: 176, 63
+  size: 11, 15
+  orig: 11, 15
+  offset: 0, 0
+  index: -1
+tui_R_1
+  rotate: false
+  xy: 176, 46
+  size: 11, 15
+  orig: 11, 15
+  offset: 0, 0
+  index: -1
+tui_R_2
+  rotate: false
+  xy: 116, 12
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+tui_jiao_L
+  rotate: true
+  xy: 160, 16
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+tui_jiao_R
+  rotate: false
+  xy: 165, 2
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+weijin
+  rotate: false
+  xy: 116, 2
+  size: 47, 8
+  orig: 47, 8
+  offset: 0, 0
+  index: -1
