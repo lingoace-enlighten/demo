@@ -1,0 +1,48 @@
+
+qizhi.png
+size: 693,885
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huomiao
+  rotate: true
+  xy: 474, 207
+  size: 240, 200
+  orig: 264, 227
+  offset: 11, 4
+  index: -1
+huomiao_1
+  rotate: true
+  xy: 474, 2
+  size: 203, 146
+  orig: 209, 166
+  offset: 6, 0
+  index: -1
+huomiao_2
+  rotate: true
+  xy: 622, 111
+  size: 94, 69
+  orig: 99, 73
+  offset: 2, 1
+  index: -1
+huoxing
+  rotate: true
+  xy: 396, 449
+  size: 434, 241
+  orig: 439, 244
+  offset: 5, 3
+  index: -1
+qizhi
+  rotate: false
+  xy: 2, 412
+  size: 392, 471
+  orig: 392, 471
+  offset: 0, 0
+  index: -1
+qizhi2
+  rotate: true
+  xy: 2, 19
+  size: 391, 470
+  orig: 391, 470
+  offset: 0, 0
+  index: -1

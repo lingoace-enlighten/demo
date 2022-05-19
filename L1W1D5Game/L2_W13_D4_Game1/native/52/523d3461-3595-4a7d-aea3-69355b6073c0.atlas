@@ -1,0 +1,34 @@
+
+guangbo.png
+size: 120,60
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 4
+  size: 66, 24
+  orig: 66, 24
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 70, 4
+  size: 24, 16
+  orig: 24, 16
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 96, 2
+  size: 55, 20
+  orig: 59, 21
+  offset: 4, 1
+  index: -1
+4
+  rotate: false
+  xy: 2, 30
+  size: 92, 27
+  orig: 92, 27
+  offset: 0, 0
+  index: -1

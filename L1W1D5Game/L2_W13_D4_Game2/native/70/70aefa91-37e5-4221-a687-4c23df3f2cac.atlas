@@ -1,0 +1,146 @@
+
+ef_water_flow_02.png
+size: 1542,26
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+em_water_flow_00
+  rotate: false
+  xy: 1022, 2
+  size: 50, 22
+  orig: 50, 22
+  offset: 0, 0
+  index: -1
+em_water_flow_01
+  rotate: false
+  xy: 1074, 2
+  size: 50, 22
+  orig: 50, 22
+  offset: 0, 0
+  index: -1
+em_water_flow_02
+  rotate: false
+  xy: 1126, 2
+  size: 50, 22
+  orig: 50, 22
+  offset: 0, 0
+  index: -1
+em_water_flow_03
+  rotate: false
+  xy: 1178, 2
+  size: 50, 22
+  orig: 50, 22
+  offset: 0, 0
+  index: -1
+em_water_flow_04
+  rotate: false
+  xy: 1230, 2
+  size: 50, 22
+  orig: 50, 22
+  offset: 0, 0
+  index: -1
+em_water_flow_05
+  rotate: false
+  xy: 1282, 2
+  size: 50, 22
+  orig: 50, 22
+  offset: 0, 0
+  index: -1
+em_water_flow_06
+  rotate: false
+  xy: 1334, 2
+  size: 50, 22
+  orig: 50, 22
+  offset: 0, 0
+  index: -1
+em_water_flow_07
+  rotate: false
+  xy: 1386, 2
+  size: 50, 22
+  orig: 50, 22
+  offset: 0, 0
+  index: -1
+em_water_flow_08
+  rotate: false
+  xy: 1438, 2
+  size: 50, 22
+  orig: 50, 22
+  offset: 0, 0
+  index: -1
+em_water_flow_09
+  rotate: false
+  xy: 1490, 2
+  size: 50, 22
+  orig: 50, 22
+  offset: 0, 0
+  index: -1
+em_water_flowa_00
+  rotate: false
+  xy: 2, 2
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+em_water_flowa_01
+  rotate: false
+  xy: 104, 2
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+em_water_flowa_02
+  rotate: false
+  xy: 206, 2
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+em_water_flowa_03
+  rotate: false
+  xy: 308, 2
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+em_water_flowa_04
+  rotate: false
+  xy: 410, 2
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+em_water_flowa_05
+  rotate: false
+  xy: 512, 2
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+em_water_flowa_06
+  rotate: false
+  xy: 614, 2
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+em_water_flowa_07
+  rotate: false
+  xy: 716, 2
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+em_water_flowa_08
+  rotate: false
+  xy: 818, 2
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1
+em_water_flowa_09
+  rotate: false
+  xy: 920, 2
+  size: 100, 22
+  orig: 100, 22
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,83 @@
+
+taikongfeichuan.png
+size: 1160,376
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cangmenshang_neibu
+  rotate: true
+  xy: 1063, 4
+  size: 100, 94
+  orig: 100, 94
+  offset: 0, 0
+  index: -1
+cangmenshnag
+  rotate: true
+  xy: 1063, 106
+  size: 108, 95
+  orig: 108, 95
+  offset: 0, 0
+  index: -1
+cangmenxia
+  rotate: false
+  xy: 737, 6
+  size: 111, 121
+  orig: 111, 121
+  offset: 0, 0
+  index: -1
+cangmenxia_neibu
+  rotate: false
+  xy: 850, 24
+  size: 100, 121
+  orig: 100, 121
+  offset: 0, 0
+  index: -1
+menkuang
+  rotate: true
+  xy: 537, 14
+  size: 113, 198
+  orig: 113, 198
+  offset: 0, 0
+  index: -1
+weibupaiqikou
+  rotate: true
+  xy: 952, 35
+  size: 110, 109
+  orig: 110, 109
+  offset: 0, 0
+  index: -1
+weibuyan
+  rotate: true
+  xy: 349, 60
+  size: 312, 186
+  orig: 329, 200
+  offset: 8, 7
+  index: -1
+xiabuyan
+  rotate: true
+  xy: 977, 216
+  size: 156, 166
+  orig: 168, 180
+  offset: 6, 6
+  index: -1
+xiabuyan_2
+  rotate: false
+  xy: 770, 147
+  size: 205, 225
+  orig: 215, 237
+  offset: 5, 5
+  index: -1
+xiabuyan_3
+  rotate: true
+  xy: 537, 129
+  size: 243, 231
+  orig: 272, 260
+  offset: 15, 14
+  index: -1
+xiaofeichuan
+  rotate: true
+  xy: 2, 2
+  size: 370, 345
+  orig: 370, 345
+  offset: 0, 0
+  index: -1

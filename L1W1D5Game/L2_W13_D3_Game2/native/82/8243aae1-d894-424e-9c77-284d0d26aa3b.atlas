@@ -1,0 +1,90 @@
+
+xinglixiang.png
+size: 204,222
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xiangzi_0
+  rotate: true
+  xy: 193, 32
+  size: 7, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+xiangzi_1
+  rotate: false
+  xy: 193, 41
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+xiangzi_10
+  rotate: true
+  xy: 83, 54
+  size: 41, 14
+  orig: 41, 14
+  offset: 0, 0
+  index: -1
+xiangzi_11
+  rotate: false
+  xy: 2, 97
+  size: 134, 123
+  orig: 134, 123
+  offset: 0, 0
+  index: -1
+xiangzi_2
+  rotate: false
+  xy: 99, 79
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
+xiangzi_3
+  rotate: true
+  xy: 138, 51
+  size: 53, 63
+  orig: 53, 63
+  offset: 0, 0
+  index: -1
+xiangzi_4
+  rotate: false
+  xy: 99, 51
+  size: 14, 26
+  orig: 14, 26
+  offset: 0, 0
+  index: -1
+xiangzi_5
+  rotate: false
+  xy: 2, 5
+  size: 158, 44
+  orig: 158, 44
+  offset: 0, 0
+  index: -1
+xiangzi_6
+  rotate: true
+  xy: 138, 106
+  size: 114, 64
+  orig: 114, 64
+  offset: 0, 0
+  index: -1
+xiangzi_7
+  rotate: false
+  xy: 162, 2
+  size: 29, 47
+  orig: 29, 47
+  offset: 0, 0
+  index: -1
+xiangzi_8
+  rotate: false
+  xy: 2, 53
+  size: 79, 42
+  orig: 79, 42
+  offset: 0, 0
+  index: -1
+xiangzi_9
+  rotate: false
+  xy: 115, 65
+  size: 21, 12
+  orig: 21, 12
+  offset: 0, 0
+  index: -1

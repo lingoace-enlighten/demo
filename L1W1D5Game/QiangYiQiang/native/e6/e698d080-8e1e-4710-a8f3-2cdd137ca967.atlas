@@ -1,0 +1,13 @@
+
+changjing_huaping.png
+size: 724,410
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huaping
+  rotate: false
+  xy: 2, 2
+  size: 720, 406
+  orig: 720, 406
+  offset: 0, 0
+  index: -1

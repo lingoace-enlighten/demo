@@ -1,0 +1,62 @@
+
+huaban.png
+size: 2004,580
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+235
+  rotate: true
+  xy: 1788, 19
+  size: 556, 108
+  orig: 558, 110
+  offset: 1, 1
+  index: -1
+huo
+  rotate: false
+  xy: 2, 2
+  size: 628, 257
+  orig: 630, 268
+  offset: 0, 2
+  index: -1
+huo4
+  rotate: false
+  xy: 632, 20
+  size: 486, 239
+  orig: 486, 243
+  offset: 0, 2
+  index: -1
+jiantou
+  rotate: false
+  xy: 1581, 172
+  size: 200, 87
+  orig: 217, 99
+  offset: 9, 6
+  index: -1
+kongqidun
+  rotate: true
+  xy: 1120, 108
+  size: 151, 459
+  orig: 184, 484
+  offset: 32, 10
+  index: -1
+paodao
+  rotate: false
+  xy: 2, 261
+  size: 1784, 314
+  orig: 1786, 316
+  offset: 1, 1
+  index: -1
+ui_xuetiao
+  rotate: false
+  xy: 1120, 36
+  size: 488, 70
+  orig: 528, 114
+  offset: 20, 30
+  index: -1
+ui_xuetiao1
+  rotate: true
+  xy: 1898, 61
+  size: 514, 102
+  orig: 528, 112
+  offset: 7, 6
+  index: -1

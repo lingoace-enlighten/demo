@@ -1,0 +1,27 @@
+
+3.png
+size: 458,206
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+qiaoliang_3
+  rotate: true
+  xy: 2, 2
+  size: 202, 222
+  orig: 202, 222
+  offset: 0, 0
+  index: -1
+shui_1
+  rotate: true
+  xy: 226, 2
+  size: 202, 170
+  orig: 202, 175
+  offset: 0, 5
+  index: -1
+shuipao
+  rotate: false
+  xy: 398, 115
+  size: 58, 89
+  orig: 140, 89
+  offset: 82, 0
+  index: -1

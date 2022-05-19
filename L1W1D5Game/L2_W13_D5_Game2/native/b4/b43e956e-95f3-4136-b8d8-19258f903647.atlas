@@ -1,0 +1,55 @@
+
+xqdgx.png
+size: 495,366
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xqgx0
+  rotate: true
+  xy: 268, 110
+  size: 254, 225
+  orig: 269, 240
+  offset: 1, 2
+  index: -1
+xqgx1
+  rotate: true
+  xy: 268, 110
+  size: 254, 225
+  orig: 269, 240
+  offset: 1, 2
+  index: -1
+xqgx2
+  rotate: true
+  xy: 268, 110
+  size: 254, 225
+  orig: 269, 240
+  offset: 1, 2
+  index: -1
+xqgx3
+  rotate: false
+  xy: 2, 2
+  size: 264, 362
+  orig: 299, 394
+  offset: 21, 17
+  index: -1
+xqgx5
+  rotate: true
+  xy: 268, 2
+  size: 106, 199
+  orig: 115, 219
+  offset: 2, 2
+  index: -1
+xqgx6
+  rotate: true
+  xy: 268, 2
+  size: 106, 199
+  orig: 115, 219
+  offset: 2, 2
+  index: -1
+xqgx7
+  rotate: true
+  xy: 268, 2
+  size: 106, 199
+  orig: 115, 219
+  offset: 2, 2
+  index: -1

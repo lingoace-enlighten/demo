@@ -1,0 +1,55 @@
+
+jiushengfeiting.png
+size: 1510,356
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dafeiji_0
+  rotate: false
+  xy: 893, 38
+  size: 273, 69
+  orig: 295, 89
+  offset: 1, 19
+  index: -1
+dafeiji_1
+  rotate: false
+  xy: 2, 2
+  size: 889, 82
+  orig: 989, 88
+  offset: 36, 3
+  index: -1
+dafeiji_2
+  rotate: false
+  xy: 494, 217
+  size: 953, 137
+  orig: 953, 228
+  offset: 0, 86
+  index: -1
+dafeiji_3
+  rotate: true
+  xy: 1229, 18
+  size: 197, 182
+  orig: 197, 182
+  offset: 0, 0
+  index: -1
+dafeiji_4
+  rotate: true
+  xy: 1413, 20
+  size: 195, 95
+  orig: 195, 95
+  offset: 0, 0
+  index: -1
+dafeiji_5
+  rotate: false
+  xy: 2, 86
+  size: 490, 268
+  orig: 490, 268
+  offset: 0, 0
+  index: -1
+dafeiji_6
+  rotate: false
+  xy: 494, 109
+  size: 733, 106
+  orig: 733, 106
+  offset: 0, 0
+  index: -1

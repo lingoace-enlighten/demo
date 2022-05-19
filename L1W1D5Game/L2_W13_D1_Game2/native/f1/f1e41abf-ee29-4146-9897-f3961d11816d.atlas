@@ -1,0 +1,41 @@
+
+zhiwu.png
+size: 676,564
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tenman1-1
+  rotate: true
+  xy: 2, 9
+  size: 75, 354
+  orig: 75, 355
+  offset: 0, 1
+  index: -1
+tenman2-1
+  rotate: true
+  xy: 2, 398
+  size: 162, 458
+  orig: 162, 458
+  offset: 0, 0
+  index: -1
+tenman3
+  rotate: true
+  xy: 462, 519
+  size: 41, 138
+  orig: 42, 138
+  offset: 0, 0
+  index: -1
+yezipiaochon1
+  rotate: true
+  xy: 2, 86
+  size: 310, 371
+  orig: 321, 375
+  offset: 11, 4
+  index: -1
+yezipiaochon2
+  rotate: false
+  xy: 375, 2
+  size: 299, 394
+  orig: 302, 399
+  offset: 0, 5
+  index: -1

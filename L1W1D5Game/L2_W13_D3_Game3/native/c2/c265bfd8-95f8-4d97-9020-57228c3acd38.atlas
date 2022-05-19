@@ -1,0 +1,20 @@
+
+vs.png
+size: 260,168
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+s
+  rotate: false
+  xy: 147, 2
+  size: 110, 161
+  orig: 110, 161
+  offset: 0, 0
+  index: -1
+v
+  rotate: false
+  xy: 2, 6
+  size: 143, 157
+  orig: 143, 158
+  offset: 0, 1
+  index: -1

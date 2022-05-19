@@ -1,0 +1,27 @@
+
+xiangqiandeguangxiao.png
+size: 620,324
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+diceng
+  rotate: true
+  xy: 387, 5
+  size: 108, 205
+  orig: 108, 205
+  offset: 0, 0
+  index: -1
+guangxiao
+  rotate: true
+  xy: 2, 2
+  size: 317, 383
+  orig: 317, 383
+  offset: 0, 0
+  index: -1
+lianjiecang
+  rotate: false
+  xy: 387, 115
+  size: 229, 204
+  orig: 229, 204
+  offset: 0, 0
+  index: -1

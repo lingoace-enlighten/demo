@@ -1,0 +1,76 @@
+
+xiaoshouji.png
+size: 456,1067
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xdi
+  rotate: false
+  xy: 181, 148
+  size: 185, 171
+  orig: 233, 197
+  offset: 22, 12
+  index: -1
+xguangkou1
+  rotate: false
+  xy: 2, 628
+  size: 450, 189
+  orig: 489, 205
+  offset: 20, 14
+  index: -1
+xguangkou2
+  rotate: false
+  xy: 2, 819
+  size: 450, 246
+  orig: 489, 279
+  offset: 20, 2
+  index: -1
+xiq0
+  rotate: false
+  xy: 368, 163
+  size: 77, 156
+  orig: 86, 164
+  offset: 3, 4
+  index: -1
+xiq1
+  rotate: true
+  xy: 161, 5
+  size: 141, 180
+  orig: 179, 235
+  offset: 18, 31
+  index: -1
+xiq2
+  rotate: false
+  xy: 2, 26
+  size: 157, 259
+  orig: 274, 259
+  offset: 55, 0
+  index: -1
+xiq3
+  rotate: false
+  xy: 343, 2
+  size: 111, 144
+  orig: 161, 200
+  offset: 27, 29
+  index: -1
+xiq4
+  rotate: false
+  xy: 2, 287
+  size: 177, 339
+  orig: 204, 356
+  offset: 13, 0
+  index: -1
+xkou1
+  rotate: false
+  xy: 181, 321
+  size: 232, 93
+  orig: 303, 102
+  offset: 45, 7
+  index: -1
+xkou2
+  rotate: false
+  xy: 181, 416
+  size: 269, 210
+  orig: 315, 258
+  offset: 36, 44
+  index: -1

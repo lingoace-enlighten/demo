@@ -1,0 +1,41 @@
+
+zhuangjitexiao.png
+size: 1773,1253
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 783, 7
+  size: 485, 525
+  orig: 485, 525
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 835, 586
+  size: 635, 665
+  orig: 635, 665
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 2, 534
+  size: 831, 717
+  orig: 831, 717
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 2, 2
+  size: 530, 779
+  orig: 530, 779
+  offset: 0, 0
+  index: -1
+5
+  rotate: true
+  xy: 1270, 67
+  size: 517, 501
+  orig: 517, 501
+  offset: 0, 0
+  index: -1

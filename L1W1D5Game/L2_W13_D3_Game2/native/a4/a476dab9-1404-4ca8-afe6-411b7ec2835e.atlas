@@ -1,0 +1,132 @@
+
+dafeiji.png
+size: 1895,1017
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+feiting_0
+  rotate: false
+  xy: 903, 7
+  size: 357, 83
+  orig: 364, 91
+  offset: 4, 4
+  index: -1
+feiting_10
+  rotate: true
+  xy: 1838, 79
+  size: 50, 37
+  orig: 50, 38
+  offset: 0, 1
+  index: -1
+feiting_11
+  rotate: true
+  xy: 1694, 194
+  size: 59, 61
+  orig: 59, 63
+  offset: 0, 1
+  index: -1
+feiting_12
+  rotate: false
+  xy: 1866, 35
+  size: 27, 42
+  orig: 27, 43
+  offset: 0, 0
+  index: -1
+feiting_13
+  rotate: true
+  xy: 1838, 30
+  size: 47, 26
+  orig: 48, 27
+  offset: 1, 1
+  index: -1
+feiting_14
+  rotate: true
+  xy: 1694, 441
+  size: 309, 153
+  orig: 309, 153
+  offset: 0, 0
+  index: -1
+feiting_15
+  rotate: true
+  xy: 1694, 752
+  size: 263, 189
+  orig: 263, 189
+  offset: 0, 0
+  index: -1
+feiting_16
+  rotate: false
+  xy: 2, 92
+  size: 1552, 923
+  orig: 1552, 927
+  offset: 0, 2
+  index: -1
+feiting_2
+  rotate: false
+  xy: 602, 4
+  size: 299, 86
+  orig: 316, 95
+  offset: 17, 9
+  index: -1
+feiting_3
+  rotate: false
+  xy: 300, 3
+  size: 300, 87
+  orig: 316, 95
+  offset: 16, 8
+  index: -1
+feiting_4
+  rotate: false
+  xy: 2, 2
+  size: 296, 88
+  orig: 316, 95
+  offset: 20, 7
+  index: -1
+feiting_5
+  rotate: true
+  xy: 1556, 24
+  size: 991, 136
+  orig: 991, 210
+  offset: 0, 70
+  index: -1
+feiting_6
+  rotate: true
+  xy: 1839, 131
+  size: 308, 52
+  orig: 308, 52
+  offset: 0, 0
+  index: -1
+feiting_7
+  rotate: false
+  xy: 1760, 150
+  size: 52, 42
+  orig: 55, 44
+  offset: 1, 0
+  index: -1
+feiting_8
+  rotate: false
+  xy: 1757, 194
+  size: 57, 59
+  orig: 58, 61
+  offset: 1, 1
+  index: -1
+feiting_9
+  rotate: true
+  xy: 1694, 137
+  size: 55, 64
+  orig: 57, 66
+  offset: 1, 1
+  index: -1
+men
+  rotate: true
+  xy: 1694, 33
+  size: 96, 142
+  orig: 104, 150
+  offset: 4, 4
+  index: -1
+men1
+  rotate: false
+  xy: 1694, 255
+  size: 143, 184
+  orig: 151, 192
+  offset: 4, 4
+  index: -1

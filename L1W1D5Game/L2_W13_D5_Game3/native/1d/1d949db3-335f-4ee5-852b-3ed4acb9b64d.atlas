@@ -1,0 +1,27 @@
+
+L2_W4_Day5_huangguan.png
+size: 179,140
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 159, 2
+  size: 136, 18
+  orig: 138, 20
+  offset: 1, 1
+  index: -1
+2
+  rotate: true
+  xy: 127, 2
+  size: 136, 30
+  orig: 138, 32
+  offset: 1, 1
+  index: -1
+3
+  rotate: true
+  xy: 2, 2
+  size: 136, 123
+  orig: 138, 125
+  offset: 1, 1
+  index: -1

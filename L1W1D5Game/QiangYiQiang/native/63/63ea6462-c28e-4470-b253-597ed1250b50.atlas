@@ -1,0 +1,20 @@
+
+changjing_nengliangtiao.png
+size: 475,186
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+faguang
+  rotate: false
+  xy: 2, 61
+  size: 471, 123
+  orig: 487, 135
+  offset: 8, 6
+  index: -1
+nengliangtiao
+  rotate: false
+  xy: 2, 2
+  size: 409, 57
+  orig: 409, 57
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,13 @@
+
+shuihua.png
+size: 80,37
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shuihua
+  rotate: false
+  xy: 2, 2
+  size: 76, 33
+  orig: 86, 33
+  offset: 0, 0
+  index: -1

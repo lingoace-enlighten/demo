@@ -1,0 +1,13 @@
+
+huacon2.png
+size: 696,292
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cao2
+  rotate: false
+  xy: 2, 2
+  size: 690, 285
+  orig: 691, 285
+  offset: 1, 0
+  index: -1

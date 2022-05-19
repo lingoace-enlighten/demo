@@ -1,0 +1,202 @@
+
+jinbiduiB.png
+size: 1314,184
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 864, 2
+  size: 52, 29
+  orig: 54, 31
+  offset: 1, 1
+  index: -1
+10
+  rotate: false
+  xy: 1025, 3
+  size: 51, 29
+  orig: 53, 31
+  offset: 1, 1
+  index: -1
+12
+  rotate: false
+  xy: 1179, 5
+  size: 49, 28
+  orig: 51, 30
+  offset: 1, 1
+  index: -1
+13
+  rotate: false
+  xy: 1129, 2
+  size: 48, 31
+  orig: 50, 33
+  offset: 1, 1
+  index: -1
+14
+  rotate: true
+  xy: 1073, 35
+  size: 50, 36
+  orig: 52, 38
+  offset: 1, 1
+  index: -1
+15
+  rotate: true
+  xy: 998, 34
+  size: 51, 30
+  orig: 53, 32
+  offset: 1, 1
+  index: -1
+16
+  rotate: true
+  xy: 929, 34
+  size: 51, 34
+  orig: 53, 36
+  offset: 1, 1
+  index: -1
+17
+  rotate: false
+  xy: 918, 2
+  size: 52, 29
+  orig: 54, 31
+  offset: 1, 1
+  index: -1
+18
+  rotate: true
+  xy: 1230, 2
+  size: 32, 39
+  orig: 34, 41
+  offset: 1, 1
+  index: -1
+19
+  rotate: true
+  xy: 1249, 133
+  size: 49, 28
+  orig: 51, 30
+  offset: 1, 1
+  index: -1
+2
+  rotate: false
+  xy: 972, 2
+  size: 51, 30
+  orig: 53, 32
+  offset: 1, 1
+  index: -1
+20
+  rotate: false
+  xy: 1078, 2
+  size: 49, 31
+  orig: 51, 33
+  offset: 1, 1
+  index: -1
+21
+  rotate: false
+  xy: 1030, 35
+  size: 41, 50
+  orig: 41, 50
+  offset: 0, 0
+  index: -1
+22
+  rotate: true
+  xy: 1111, 35
+  size: 50, 34
+  orig: 50, 34
+  offset: 0, 0
+  index: -1
+23
+  rotate: false
+  xy: 1258, 40
+  size: 39, 47
+  orig: 41, 49
+  offset: 1, 1
+  index: -1
+24
+  rotate: true
+  xy: 864, 33
+  size: 52, 32
+  orig: 54, 34
+  offset: 1, 1
+  index: -1
+3
+  rotate: true
+  xy: 1279, 134
+  size: 48, 33
+  orig: 50, 35
+  offset: 1, 1
+  index: -1
+4
+  rotate: true
+  xy: 965, 34
+  size: 51, 31
+  orig: 53, 33
+  offset: 1, 1
+  index: -1
+5
+  rotate: true
+  xy: 898, 33
+  size: 52, 29
+  orig: 54, 31
+  offset: 1, 1
+  index: -1
+6
+  rotate: false
+  xy: 1249, 89
+  size: 48, 42
+  orig: 50, 44
+  offset: 1, 1
+  index: -1
+7
+  rotate: true
+  xy: 1147, 35
+  size: 50, 33
+  orig: 50, 33
+  offset: 0, 0
+  index: -1
+8
+  rotate: true
+  xy: 1182, 35
+  size: 50, 33
+  orig: 52, 35
+  offset: 1, 1
+  index: -1
+9
+  rotate: true
+  xy: 1217, 36
+  size: 49, 39
+  orig: 51, 41
+  offset: 1, 1
+  index: -1
+baoxiangguan
+  rotate: true
+  xy: 169, 5
+  size: 177, 211
+  orig: 179, 213
+  offset: 1, 1
+  index: -1
+di
+  rotate: false
+  xy: 519, 28
+  size: 343, 154
+  orig: 346, 156
+  offset: 1, 1
+  index: -1
+touying
+  rotate: false
+  xy: 864, 87
+  size: 383, 95
+  orig: 417, 129
+  offset: 17, 17
+  index: -1
+zajindan_29
+  rotate: true
+  xy: 2, 3
+  size: 179, 165
+  orig: 181, 167
+  offset: 1, 1
+  index: -1
+zajindan_33
+  rotate: true
+  xy: 382, 5
+  size: 177, 135
+  orig: 179, 137
+  offset: 1, 1
+  index: -1

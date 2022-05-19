@@ -1,0 +1,41 @@
+
+changjing_bofangzhuangtai.png
+size: 557,271
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+laba
+  rotate: false
+  xy: 144, 92
+  size: 202, 177
+  orig: 202, 177
+  offset: 0, 0
+  index: -1
+shengbo_1
+  rotate: true
+  xy: 144, 2
+  size: 88, 157
+  orig: 91, 162
+  offset: 2, 3
+  index: -1
+shengbo_2
+  rotate: true
+  xy: 348, 47
+  size: 104, 187
+  orig: 108, 193
+  offset: 2, 3
+  index: -1
+shengbo_3
+  rotate: true
+  xy: 348, 153
+  size: 116, 207
+  orig: 120, 215
+  offset: 2, 4
+  index: -1
+shengbo_4
+  rotate: false
+  xy: 2, 21
+  size: 140, 248
+  orig: 144, 256
+  offset: 2, 4
+  index: -1

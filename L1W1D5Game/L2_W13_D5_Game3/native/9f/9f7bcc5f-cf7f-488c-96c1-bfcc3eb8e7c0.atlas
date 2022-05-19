@@ -1,0 +1,55 @@
+
+zajindan.png
+size: 129,387
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zajindan_17
+  rotate: false
+  xy: 2, 2
+  size: 125, 152
+  orig: 125, 152
+  offset: 0, 0
+  index: -1
+zajindan_21
+  rotate: false
+  xy: 2, 370
+  size: 20, 15
+  orig: 20, 15
+  offset: 0, 0
+  index: -1
+zajindan_22
+  rotate: false
+  xy: 47, 363
+  size: 36, 22
+  orig: 36, 22
+  offset: 0, 0
+  index: -1
+zajindan_23
+  rotate: false
+  xy: 24, 370
+  size: 21, 15
+  orig: 21, 15
+  offset: 0, 0
+  index: -1
+zajindan_25
+  rotate: false
+  xy: 85, 361
+  size: 41, 24
+  orig: 41, 24
+  offset: 0, 0
+  index: -1
+zajindan_26
+  rotate: false
+  xy: 2, 156
+  size: 118, 105
+  orig: 118, 105
+  offset: 0, 0
+  index: -1
+zajindan_27
+  rotate: true
+  xy: 2, 263
+  size: 96, 111
+  orig: 96, 111
+  offset: 0, 0
+  index: -1

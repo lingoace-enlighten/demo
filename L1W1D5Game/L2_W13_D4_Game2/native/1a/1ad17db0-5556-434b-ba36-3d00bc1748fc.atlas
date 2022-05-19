@@ -1,0 +1,83 @@
+
+jieshuiguan.png
+size: 311,836
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiewei
+  rotate: true
+  xy: 2, 385
+  size: 133, 157
+  orig: 135, 159
+  offset: 1, 1
+  index: -1
+k3
+  rotate: true
+  xy: 2, 9
+  size: 374, 107
+  orig: 374, 107
+  offset: 0, 0
+  index: -1
+k4_shui
+  rotate: true
+  xy: 111, 9
+  size: 374, 53
+  orig: 374, 56
+  offset: 0, 0
+  index: -1
+shui_6
+  rotate: true
+  xy: 111, 9
+  size: 374, 53
+  orig: 374, 56
+  offset: 0, 0
+  index: -1
+lu
+  rotate: true
+  xy: 2, 754
+  size: 80, 307
+  orig: 80, 307
+  offset: 0, 0
+  index: -1
+shui5
+  rotate: true
+  xy: 2, 520
+  size: 69, 272
+  orig: 69, 281
+  offset: 0, 9
+  index: -1
+shui_4
+  rotate: false
+  xy: 2, 591
+  size: 288, 53
+  orig: 288, 56
+  offset: 0, 0
+  index: -1
+shui_7
+  rotate: false
+  xy: 161, 398
+  size: 120, 120
+  orig: 120, 124
+  offset: 0, 4
+  index: -1
+shuipao
+  rotate: true
+  xy: 166, 2
+  size: 58, 89
+  orig: 140, 89
+  offset: 82, 0
+  index: -1
+xianjiechu
+  rotate: false
+  xy: 2, 646
+  size: 290, 106
+  orig: 290, 106
+  offset: 0, 0
+  index: -1
+xianjiechu_2
+  rotate: true
+  xy: 166, 62
+  size: 334, 107
+  orig: 336, 109
+  offset: 1, 1
+  index: -1
