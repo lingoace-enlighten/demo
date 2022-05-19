@@ -1,0 +1,811 @@
+[
+  1,
+  [
+    "c3Xu4GgbdD66HMBw863ePq"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "tuteng",
+      "\ntuteng.png\nsize: 2036,1648\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\ntuteng_01\n  rotate: true\n  xy: 1454, 540\n  size: 323, 554\n  orig: 325, 557\n  offset: 1, 1\n  index: -1\ntuteng_02\n  rotate: true\n  xy: 1494, 1246\n  size: 399, 540\n  orig: 401, 542\n  offset: 1, 1\n  index: -1\ntuteng_03\n  rotate: false\n  xy: 1494, 865\n  size: 485, 379\n  orig: 487, 381\n  offset: 1, 1\n  index: -1\ntuteng_faguang01\n  rotate: true\n  xy: 840, 578\n  size: 390, 612\n  orig: 410, 632\n  offset: 10, 10\n  index: -1\ntuteng_faguang02\n  rotate: true\n  xy: 1396, 84\n  size: 454, 592\n  orig: 473, 611\n  offset: 10, 10\n  index: -1\ntuteng_faguang03\n  rotate: false\n  xy: 812, 109\n  size: 582, 467\n  orig: 601, 487\n  offset: 10, 10\n  index: -1\ntuteng_faguang04\n  rotate: false\n  xy: 2, 809\n  size: 836, 836\n  orig: 866, 872\n  offset: 11, 14\n  index: -1\ntuteng_shipan\n  rotate: false\n  xy: 2, 2\n  size: 808, 805\n  orig: 810, 807\n  offset: 1, 1\n  index: -1\ntuteng_yinying\n  rotate: false\n  xy: 840, 970\n  size: 652, 675\n  orig: 658, 681\n  offset: 3, 3\n  index: -1\n",
+      [
+        "tuteng.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "0lrQ7e4kX+75zMemcs1VNUt9WXo",
+          "spine": "3.8.84",
+          "x": -1333.06,
+          "y": -1377.96,
+          "width": 2699,
+          "height": 2689
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "tuteng_faguang01",
+            "parent": "root",
+            "x": -473.87,
+            "y": 207.9
+          },
+          {
+            "name": "tuteng_03",
+            "parent": "root",
+            "x": 2.78,
+            "y": -444.57
+          },
+          {
+            "name": "tuteng_faguang02",
+            "parent": "root",
+            "x": 502.88,
+            "y": 309.48
+          },
+          {
+            "name": "bone",
+            "parent": "root",
+            "x": -646.56,
+            "y": 872.01
+          },
+          {
+            "name": "tuteng_faguang04",
+            "parent": "bone",
+            "x": 646.56,
+            "y": -872.01
+          },
+          {
+            "name": "tuteng_yinying",
+            "parent": "bone",
+            "x": 1466.67,
+            "y": -313.77
+          },
+          {
+            "name": "tuteng_faguang4",
+            "parent": "bone",
+            "x": 646.56,
+            "y": -872.01
+          }
+        ],
+        "slots": [
+          {
+            "name": "tuteng_shipan",
+            "bone": "bone",
+            "attachment": "tuteng_shipan"
+          },
+          {
+            "name": "tuteng_yinying",
+            "bone": "tuteng_yinying",
+            "attachment": "tuteng_yinying"
+          },
+          {
+            "name": "tuteng_faguang4",
+            "bone": "tuteng_faguang4"
+          },
+          {
+            "name": "tuteng_02",
+            "bone": "tuteng_faguang02",
+            "attachment": "tuteng_02"
+          },
+          {
+            "name": "tuteng_01",
+            "bone": "tuteng_faguang01",
+            "attachment": "tuteng_01"
+          },
+          {
+            "name": "tuteng_faguang01",
+            "bone": "tuteng_faguang01",
+            "attachment": "tuteng_faguang01"
+          },
+          {
+            "name": "tuteng_faguang02",
+            "bone": "tuteng_faguang02",
+            "attachment": "tuteng_faguang02"
+          },
+          {
+            "name": "tuteng_03",
+            "bone": "tuteng_03",
+            "attachment": "tuteng_03"
+          },
+          {
+            "name": "tuteng_faguang03",
+            "bone": "tuteng_03",
+            "attachment": "tuteng_faguang03"
+          },
+          {
+            "name": "root",
+            "bone": "root",
+            "attachment": "tuteng_faguang4"
+          },
+          {
+            "name": "tuteng_faguang04",
+            "bone": "tuteng_faguang04"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "root": {
+                "tuteng_faguang4": {
+                  "type": "clipping",
+                  "end": "tuteng_faguang04",
+                  "vertexCount": 20,
+                  "vertices": [
+                    -1168.08,
+                    1209.01,
+                    -888.81,
+                    1292.47,
+                    -564.6,
+                    1430.5,
+                    -153.72,
+                    1481.86,
+                    394.06,
+                    1483.9,
+                    722.24,
+                    1298.06,
+                    1282.14,
+                    817.24,
+                    1548.35,
+                    447.26,
+                    1384.08,
+                    -217.84,
+                    1178.37,
+                    -1050.73,
+                    937.55,
+                    -1174.53,
+                    537.66,
+                    -1380.1,
+                    194.75,
+                    -1456.81,
+                    -247.42,
+                    -1465.83,
+                    -820.45,
+                    -1416.2,
+                    -1086.66,
+                    -1208.65,
+                    -1339.33,
+                    -825.13,
+                    -1546.88,
+                    104.35,
+                    -1443.1,
+                    587.13,
+                    -1267.14,
+                    961.63
+                  ]
+                }
+              },
+              "tuteng_01": {
+                "tuteng_01": {
+                  "x": -60.19,
+                  "y": -45.86,
+                  "width": 1082,
+                  "height": 1858
+                }
+              },
+              "tuteng_02": {
+                "tuteng_02": {
+                  "x": -102.93,
+                  "y": -91.44,
+                  "width": 1336,
+                  "height": 1808
+                }
+              },
+              "tuteng_03": {
+                "tuteng_03": {
+                  "x": 15.16,
+                  "y": -14.39,
+                  "width": 1622,
+                  "height": 1270
+                }
+              },
+              "tuteng_faguang01": {
+                "tuteng_faguang01": {
+                  "x": -76.69,
+                  "y": -27.86,
+                  "width": 1367,
+                  "height": 2108
+                }
+              },
+              "tuteng_faguang02": {
+                "tuteng_faguang02": {
+                  "x": -76.43,
+                  "y": -74.44,
+                  "width": 1575,
+                  "height": 2036
+                }
+              },
+              "tuteng_faguang03": {
+                "tuteng_faguang03": {
+                  "x": 19.66,
+                  "y": -24.39,
+                  "width": 2003,
+                  "height": 1624
+                }
+              },
+              "tuteng_faguang04": {
+                "tuteng_faguang04": {
+                  "x": 7.94,
+                  "y": 20.54,
+                  "width": 2888,
+                  "height": 2905
+                }
+              },
+              "tuteng_faguang4": {
+                "tuteng_faguang04": {
+                  "x": 7.94,
+                  "y": 20.54,
+                  "width": 2888,
+                  "height": 2905
+                }
+              },
+              "tuteng_shipan": {
+                "tuteng_shipan": {
+                  "x": 663.01,
+                  "y": -905.47,
+                  "width": 2699,
+                  "height": 2689
+                }
+              },
+              "tuteng_yinying": {
+                "tuteng_yinying": {
+                  "x": -820.16,
+                  "y": -558.2,
+                  "width": 2192,
+                  "height": 2270
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "tuteng_liang01": {
+            "slots": {
+              "tuteng_faguang01": {
+                "color": [
+                  {
+                    "color": "ffffff00",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.1,
+                    "color": "ffffffff",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.1667,
+                    "color": "ffffff80",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3667,
+                    "color": "ffffffff",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.5,
+                    "color": "ffffff80",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1,
+                    "color": "ffffffff"
+                  }
+                ]
+              },
+              "tuteng_faguang02": {
+                "attachment": [
+                  {
+                    "name": null
+                  }
+                ]
+              },
+              "tuteng_faguang03": {
+                "attachment": [
+                  {
+                    "name": null
+                  }
+                ]
+              },
+              "tuteng_faguang04": {
+                "color": [
+                  {
+                    "color": "ffffff00",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.5,
+                    "color": "ffffffc7",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1,
+                    "color": "ffffff00"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 0.0667,
+                    "name": "tuteng_faguang04"
+                  }
+                ]
+              },
+              "tuteng_faguang4": {
+                "color": [
+                  {
+                    "color": "ffffff00"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "tuteng_faguang04"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "tuteng_faguang04": {
+                "scale": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.5,
+                    "x": 1.3,
+                    "y": 1.3,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1
+                  }
+                ]
+              }
+            },
+            "deform": {
+              "default": {
+                "root": {
+                  "tuteng_faguang4": [
+                    {
+                      "vertices": [
+                        1115.2595,
+                        -885.6582,
+                        876.0277,
+                        -705.7103,
+                        519.03754,
+                        -732.2781,
+                        -2.22388,
+                        -570.68915,
+                        -655.87213,
+                        -410.28418,
+                        -887.0459,
+                        -43.53577,
+                        -1926.0597,
+                        2716.3562,
+                        -5100.7725,
+                        2335.0967,
+                        -5963.0522,
+                        226.15247,
+                        -4220.371,
+                        -1360.5641,
+                        -1723.916,
+                        467.99316,
+                        -1204.4874,
+                        874.12805,
+                        -675.8563,
+                        1061.0082,
+                        -153.3197,
+                        1110.1543,
+                        532.5176,
+                        1091.2549,
+                        881.4971,
+                        957.7258,
+                        1225.6782,
+                        670.3281,
+                        1475.1101,
+                        -189.37604,
+                        1379.6617,
+                        -580.09125,
+                        1213.9943,
+                        -783.0122
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "tuteng_liang02": {
+            "slots": {
+              "tuteng_faguang02": {
+                "color": [
+                  {
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 0.1,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.1667,
+                    "color": "ffffff80"
+                  },
+                  {
+                    "time": 0.3667,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.5,
+                    "color": "ffffff80"
+                  },
+                  {
+                    "time": 1,
+                    "color": "ffffffff"
+                  }
+                ]
+              },
+              "tuteng_faguang03": {
+                "attachment": [
+                  {
+                    "name": null
+                  }
+                ]
+              },
+              "tuteng_faguang04": {
+                "color": [
+                  {
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 0.5,
+                    "color": "ffffffc7"
+                  },
+                  {
+                    "time": 1,
+                    "color": "ffffff00"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "tuteng_faguang04"
+                  }
+                ]
+              },
+              "tuteng_faguang4": {
+                "color": [
+                  {
+                    "color": "ffffff00"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "tuteng_faguang04"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "tuteng_faguang04": {
+                "scale": [
+                  {},
+                  {
+                    "time": 0.5,
+                    "x": 1.3,
+                    "y": 1.3
+                  },
+                  {
+                    "time": 1
+                  }
+                ]
+              }
+            },
+            "deform": {
+              "default": {
+                "root": {
+                  "tuteng_faguang4": [
+                    {
+                      "vertices": [
+                        1123.1846,
+                        -823.8431,
+                        876.0277,
+                        -705.7103,
+                        519.03754,
+                        -732.2781,
+                        -2.22388,
+                        -570.68915,
+                        -655.87213,
+                        -410.28418,
+                        -1657.6377,
+                        1017.37256,
+                        18.77954,
+                        2102.4055,
+                        1861.4185,
+                        1099.0364,
+                        1909.2693,
+                        -2027.1273,
+                        -342.92725,
+                        341.21326,
+                        -124.20938,
+                        591.5221,
+                        71.57431,
+                        905.81506,
+                        368.43875,
+                        1078.1505,
+                        735.93756,
+                        1220.2,
+                        1237.9373,
+                        1293.5441,
+                        1446.0515,
+                        1173.9042,
+                        1634.7041,
+                        853.294,
+                        1737.9465,
+                        -23.03008,
+                        1534.9176,
+                        -467.40137,
+                        1210.0602,
+                        -776.8302
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "tuteng_liang03": {
+            "slots": {
+              "tuteng_faguang03": {
+                "color": [
+                  {
+                    "color": "ffffff00",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.1667,
+                    "color": "ffffffff",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3333,
+                    "color": "ffffff80",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.5,
+                    "color": "ffffffff",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.6667,
+                    "color": "ffffff80",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1,
+                    "color": "ffffffff"
+                  }
+                ]
+              },
+              "tuteng_faguang04": {
+                "color": [
+                  {
+                    "color": "ffffff00",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.5,
+                    "color": "ffffffc7",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1,
+                    "color": "ffffff00"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "tuteng_faguang04"
+                  }
+                ]
+              },
+              "tuteng_faguang4": {
+                "color": [
+                  {
+                    "color": "ffffff00",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.1667,
+                    "color": "ffffffff",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.3333,
+                    "color": "ffffff80",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.5,
+                    "color": "ffffffff",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.6667,
+                    "color": "ffffffb7",
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.8333,
+                    "color": "ffffffff"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "name": "tuteng_faguang04"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "tuteng_faguang04": {
+                "scale": [
+                  {
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 0.5,
+                    "x": 1.3,
+                    "y": 1.3,
+                    "curve": 0.25,
+                    "c3": 0.75
+                  },
+                  {
+                    "time": 1
+                  }
+                ]
+              }
+            },
+            "deform": {
+              "default": {
+                "root": {
+                  "tuteng_faguang4": [
+                    {
+                      "vertices": [
+                        1219.1844,
+                        2665.952,
+                        -386.4245,
+                        2604.2747,
+                        -2825.1023,
+                        2456.4604,
+                        -3734.282,
+                        1641.5942,
+                        -5623.8965,
+                        1028.7102,
+                        -6763.809,
+                        298.82605,
+                        -7285.3545,
+                        -270.54425,
+                        -7596.4893,
+                        -4527.7666,
+                        2929.2688,
+                        -2789.1272,
+                        4145.0728,
+                        -1428.7869,
+                        4159.791,
+                        -824.4781,
+                        4499.574,
+                        -318.18488,
+                        4982.437,
+                        2368.1504,
+                        5493.939,
+                        2690.2002,
+                        5491.9375,
+                        2715.544,
+                        4992.051,
+                        2877.9043,
+                        4712.704,
+                        3061.294,
+                        4377.9463,
+                        3036.9705,
+                        3712.9182,
+                        2604.5996,
+                        2086.0605,
+                        2928.116
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "tuteng_quanhui": {
+            "slots": {
+              "tuteng_faguang01": {
+                "attachment": [
+                  {
+                    "name": null
+                  }
+                ]
+              },
+              "tuteng_faguang02": {
+                "attachment": [
+                  {
+                    "name": null
+                  }
+                ]
+              },
+              "tuteng_faguang03": {
+                "attachment": [
+                  {
+                    "name": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

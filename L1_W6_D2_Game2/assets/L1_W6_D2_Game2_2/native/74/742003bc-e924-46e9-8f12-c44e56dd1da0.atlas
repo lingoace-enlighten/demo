@@ -1,0 +1,139 @@
+
+day2_3_faguangchuang.png
+size: 1710,1550
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chuangfg_14
+  rotate: true
+  xy: 646, 123
+  size: 469, 470
+  orig: 469, 470
+  offset: 0, 0
+  index: -1
+chuangfg_25
+  rotate: true
+  xy: 2, 2
+  size: 641, 642
+  orig: 641, 642
+  offset: 0, 0
+  index: -1
+cuhang1
+  rotate: true
+  xy: 1004, 594
+  size: 954, 704
+  orig: 954, 704
+  offset: 0, 0
+  index: -1
+cuhang10
+  rotate: true
+  xy: 1279, 483
+  size: 109, 108
+  orig: 109, 108
+  offset: 0, 0
+  index: -1
+cuhang11
+  rotate: false
+  xy: 1209, 308
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+cuhang12
+  rotate: false
+  xy: 1204, 215
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+cuhang13
+  rotate: true
+  xy: 1118, 375
+  size: 105, 94
+  orig: 105, 94
+  offset: 0, 0
+  index: -1
+cuhang14
+  rotate: false
+  xy: 1279, 333
+  size: 104, 148
+  orig: 104, 148
+  offset: 0, 0
+  index: -1
+cuhang15
+  rotate: true
+  xy: 646, 595
+  size: 48, 161
+  orig: 48, 161
+  offset: 0, 0
+  index: -1
+cuhang16
+  rotate: true
+  xy: 1118, 276
+  size: 97, 89
+  orig: 97, 89
+  offset: 0, 0
+  index: -1
+cuhang17
+  rotate: true
+  xy: 1118, 482
+  size: 110, 159
+  orig: 110, 159
+  offset: 0, 0
+  index: -1
+cuhang2
+  rotate: false
+  xy: 2, 645
+  size: 1000, 903
+  orig: 1000, 903
+  offset: 0, 0
+  index: -1
+cuhang3
+  rotate: false
+  xy: 1214, 417
+  size: 63, 63
+  orig: 63, 63
+  offset: 0, 0
+  index: -1
+cuhang4
+  rotate: false
+  xy: 1367, 249
+  size: 83, 82
+  orig: 83, 82
+  offset: 0, 0
+  index: -1
+cuhang5
+  rotate: false
+  xy: 1389, 516
+  size: 77, 76
+  orig: 77, 76
+  offset: 0, 0
+  index: -1
+cuhang6
+  rotate: false
+  xy: 1385, 367
+  size: 71, 71
+  orig: 71, 71
+  offset: 0, 0
+  index: -1
+cuhang7
+  rotate: true
+  xy: 1118, 189
+  size: 85, 84
+  orig: 85, 84
+  offset: 0, 0
+  index: -1
+cuhang8
+  rotate: false
+  xy: 1276, 243
+  size: 89, 88
+  orig: 89, 88
+  offset: 0, 0
+  index: -1
+cuhang9
+  rotate: false
+  xy: 1389, 440
+  size: 74, 74
+  orig: 74, 74
+  offset: 0, 0
+  index: -1

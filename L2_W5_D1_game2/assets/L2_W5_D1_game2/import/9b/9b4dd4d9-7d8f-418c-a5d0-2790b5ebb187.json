@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "6cZPCPz9ZDvqTppTKu88Zt"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "toe",
+      "rect": [
+        0,
+        0,
+        595,
+        594
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        595,
+        594
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

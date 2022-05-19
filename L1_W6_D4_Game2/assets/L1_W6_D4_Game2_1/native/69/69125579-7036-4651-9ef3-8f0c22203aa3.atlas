@@ -1,0 +1,27 @@
+
+day4_2_mofaqiuB_huang.png
+size: 119,48
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1huang
+  rotate: false
+  xy: 51, 8
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+2huang
+  rotate: false
+  xy: 91, 19
+  size: 26, 27
+  orig: 26, 27
+  offset: 0, 0
+  index: -1
+3huang111
+  rotate: false
+  xy: 2, 2
+  size: 47, 44
+  orig: 47, 44
+  offset: 0, 0
+  index: -1

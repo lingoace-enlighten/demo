@@ -1,0 +1,41 @@
+
+l2_w4_l2_yanwu.png
+size: 843,682
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yan
+  rotate: true
+  xy: 2, 242
+  size: 438, 480
+  orig: 444, 486
+  offset: 3, 3
+  index: -1
+yan2
+  rotate: true
+  xy: 484, 318
+  size: 362, 357
+  orig: 368, 363
+  offset: 3, 3
+  index: -1
+yan3
+  rotate: true
+  xy: 241, 110
+  size: 130, 103
+  orig: 138, 111
+  offset: 4, 4
+  index: -1
+yan4
+  rotate: false
+  xy: 2, 2
+  size: 237, 238
+  orig: 245, 246
+  offset: 4, 4
+  index: -1
+yan5
+  rotate: false
+  xy: 484, 3
+  size: 266, 313
+  orig: 274, 321
+  offset: 4, 4
+  index: -1

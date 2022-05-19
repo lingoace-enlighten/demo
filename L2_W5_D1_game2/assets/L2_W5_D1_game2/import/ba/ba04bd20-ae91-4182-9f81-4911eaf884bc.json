@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "f1LGG63xVLZKAL0kkd988L"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "tooth",
+      "rect": [
+        0,
+        0,
+        595,
+        594
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        595,
+        594
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,43 @@
+{
+    "paths": {
+        "7b5NU2NgVPcp1F1O2YDAi7": [
+            "res/img/sg1",
+            "cc.Texture2D"
+        ],
+        "92P9jgTzVKjYDlm8wql20T": [
+            "res/img/sg1",
+            "cc.SpriteFrame",
+            1
+        ],
+        "adgItHiGZL9raLxsSp0M/2": [
+            "res/img/sg2",
+            "cc.Texture2D"
+        ],
+        "b9iUkgwNpKOoZrDysx7tkY": [
+            "res/img/sg2",
+            "cc.SpriteFrame",
+            1
+        ]
+    },
+    "uuids": [
+        "7b5NU2NgVPcp1F1O2YDAi7",
+        "92P9jgTzVKjYDlm8wql20T",
+        "adgItHiGZL9raLxsSp0M/2",
+        "b9iUkgwNpKOoZrDysx7tkY"
+    ],
+    "scenes": {},
+    "redirect": [],
+    "deps": [],
+    "packs": {
+        "065a3460b": [
+            "7b5NU2NgVPcp1F1O2YDAi7",
+            "adgItHiGZL9raLxsSp0M/2"
+        ]
+    },
+    "name": "GameIcon",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": true,
+    "isZip": false,
+    "encrypted": false
+}

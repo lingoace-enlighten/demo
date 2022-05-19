@@ -1,0 +1,35 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.TextAsset",
+      [
+        "_name",
+        "text"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "描述文本",
+      "# 引导手文档描述\n\n## 使用规则\n## 调用跟读\n    ListenerManager.dispatch(BaseEvent.EVENT_FOLLOW_UP, {\n                text: \"e\",\n                textString: \"snake\",\n                word:true,\n                img: \"res/images/snake2/\" + event+\"_follow\",\n                imgScale:false,\n                music: event,\n                time: 10\n            });\n## //监听跟读正误，参数为的分数\n     ListenerManager.on(aseEvent.EVENT_FOLLOW_UP_RIGHT,  (event) => {\n     \n    })\n    ListenerManager.on(aseEvent.EVENT_FOLLOW_UP_WRONG,  (event) => {\n    })\n\n## \n"
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

@@ -1,0 +1,41 @@
+
+day1_1_zhuan.png
+size: 1618,1368
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flash_orangeStar_01
+  rotate: false
+  xy: 1012, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+flash_teleport_alabaster_castStripe
+  rotate: true
+  xy: 754, 2
+  size: 128, 256
+  orig: 128, 256
+  offset: 0, 0
+  index: -1
+zhuan1
+  rotate: false
+  xy: 754, 750
+  size: 862, 616
+  orig: 870, 618
+  offset: 0, 2
+  index: -1
+zhuan2
+  rotate: false
+  xy: 754, 132
+  size: 862, 616
+  orig: 870, 618
+  offset: 0, 2
+  index: -1
+zhuanbj
+  rotate: true
+  xy: 2, 30
+  size: 1336, 750
+  orig: 1336, 750
+  offset: 0, 0
+  index: -1

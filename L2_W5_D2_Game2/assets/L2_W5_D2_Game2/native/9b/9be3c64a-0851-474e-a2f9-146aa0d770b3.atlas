@@ -1,0 +1,20 @@
+
+qipaokuang.png
+size: 732,344
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+qiapoda
+  rotate: false
+  xy: 2, 2
+  size: 604, 340
+  orig: 612, 348
+  offset: 4, 4
+  index: -1
+qipoxiao
+  rotate: true
+  xy: 608, 166
+  size: 176, 122
+  orig: 184, 130
+  offset: 4, 4
+  index: -1

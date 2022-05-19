@@ -1,0 +1,84 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "config",
+      {
+        "maskScal": 2,
+        "Iamtigo": "audios/Hello_I_am_Tigo",
+        "level1": {
+          "checkAPos": {
+            "x": -503,
+            "y": -136
+          },
+          "word": [
+            "Tigo",
+            "hello",
+            "Tigo"
+          ],
+          "animConfig": {
+            "guadiaodeng": "tigo_ce_guadiaodeng",
+            "luodi": "tigo_ce_luodi",
+            "shuashuai": "tigo_ce_shuashuai",
+            "wunai": "tigo_ce_wunai",
+            "congmenfengtiaochu": "tigo_zheng_congmenfengtiaochu",
+            "daiji": "tigo_zheng_daiji",
+            "huishoudazhaohu": "tigo_zheng_huishoudazhaohu",
+            "minzuihuaixiao": "tigo_zheng_minzuihuaixiao",
+            "shanxianxiaoshi": "tigo_zheng_shanxianxiaoshi",
+            "touzhiyanwudan": "tigo_zheng_touzhiyanwudan",
+            "ziwojieshao": "tigo_zheng_ziwojieshao"
+          }
+        },
+        "level2": {
+          "jumpFEndX": 190,
+          "word": [
+            "hello",
+            "Tigo",
+            "hello"
+          ],
+          "animConfig": {
+            "anmenchu": "hopper_34_anmenchu",
+            "diaoruxianjing": "hopper_34_diaoruxianjing",
+            "paobu": "hopper_34_paobu",
+            "wenweidao": "hopper_34_wenweidao",
+            "xiaoxinqianjin": "hopper_34_xiaoxinqianjin",
+            "zuichan": "hopper_34_zuichan",
+            "daiji": "hopper_zheng_daiji",
+            "dazhaohu": "hopper_zheng_dazhaohu",
+            "huaxiangtiaochu": "hopper_zheng_huaxiangtiaochu",
+            "shanxian": "hopper_zheng_shanxian",
+            "youdazhaohu": "hopper_zheng_youdazhaohu",
+            "youtantou": "hopper_zheng_youtantou"
+          }
+        }
+      }
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

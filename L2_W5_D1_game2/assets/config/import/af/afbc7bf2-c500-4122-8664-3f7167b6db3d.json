@@ -1,0 +1,54 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "l1_w0_game1",
+      [
+        {
+          "bundleName": "Template",
+          "entry": "res/prefab/Template",
+          "icon": "res/img/sg1",
+          "dependencies": [
+            "commonRes",
+            "component"
+          ]
+        },
+        {
+          "bundleName": "Template2",
+          "entry": "res/prefab/Template2",
+          "icon": "res/img/sg2",
+          "dependencies": [
+            "commonRes",
+            "component"
+          ]
+        }
+      ]
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

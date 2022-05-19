@@ -1,0 +1,468 @@
+
+baoxiang.png
+size: 840,523
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+baoxianggaizi
+  rotate: false
+  xy: 387, 292
+  size: 387, 229
+  orig: 387, 229
+  offset: 0, 0
+  index: -1
+baoxiangshang
+  rotate: false
+  xy: 2, 3
+  size: 371, 237
+  orig: 371, 237
+  offset: 0, 0
+  index: -1
+baoxiangxia
+  rotate: false
+  xy: 2, 242
+  size: 383, 279
+  orig: 383, 279
+  offset: 0, 0
+  index: -1
+eye_3
+  rotate: false
+  xy: 735, 93
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+eye_4
+  rotate: false
+  xy: 747, 28
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+eye_xiao
+  rotate: false
+  xy: 568, 2
+  size: 33, 30
+  orig: 33, 30
+  offset: 0, 0
+  index: -1
+eye_xiao2
+  rotate: false
+  xy: 603, 2
+  size: 32, 30
+  orig: 32, 30
+  offset: 0, 0
+  index: -1
+hand_zhi
+  rotate: true
+  xy: 678, 26
+  size: 31, 38
+  orig: 31, 38
+  offset: 0, 0
+  index: -1
+luobo
+  rotate: false
+  xy: 387, 128
+  size: 296, 162
+  orig: 296, 162
+  offset: 0, 0
+  index: -1
+luobo_1
+  rotate: true
+  xy: 776, 407
+  size: 114, 52
+  orig: 114, 52
+  offset: 0, 0
+  index: -1
+luobo_2
+  rotate: true
+  xy: 685, 161
+  size: 129, 89
+  orig: 129, 89
+  offset: 0, 0
+  index: -1
+meimao_1
+  rotate: true
+  xy: 830, 509
+  size: 12, 6
+  orig: 12, 6
+  offset: 0, 0
+  index: -1
+meimao_2
+  rotate: true
+  xy: 766, 110
+  size: 12, 6
+  orig: 12, 6
+  offset: 0, 0
+  index: -1
+meimao_3
+  rotate: false
+  xy: 375, 229
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1
+meimao_4
+  rotate: true
+  xy: 822, 316
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1
+meimao_5
+  rotate: false
+  xy: 792, 18
+  size: 14, 11
+  orig: 14, 11
+  offset: 0, 0
+  index: -1
+meimao_6
+  rotate: true
+  xy: 792, 2
+  size: 14, 11
+  orig: 14, 11
+  offset: 0, 0
+  index: -1
+shetou
+  rotate: true
+  xy: 816, 242
+  size: 28, 19
+  orig: 29, 19
+  offset: 0, 0
+  index: -1
+xie__Layer_10
+  rotate: true
+  xy: 659, 80
+  size: 46, 17
+  orig: 46, 17
+  offset: 0, 0
+  index: -1
+xie__Layer_11
+  rotate: true
+  xy: 763, 3
+  size: 23, 27
+  orig: 23, 27
+  offset: 0, 0
+  index: -1
+xie__Layer_12
+  rotate: true
+  xy: 798, 51
+  size: 20, 12
+  orig: 20, 12
+  offset: 0, 0
+  index: -1
+xie__Layer_13
+  rotate: false
+  xy: 532, 2
+  size: 34, 29
+  orig: 34, 29
+  offset: 0, 0
+  index: -1
+xie__Layer_14
+  rotate: true
+  xy: 822, 358
+  size: 29, 14
+  orig: 29, 14
+  offset: 0, 0
+  index: -1
+xie__Layer_15
+  rotate: true
+  xy: 789, 65
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+xie__Layer_16
+  rotate: true
+  xy: 452, 4
+  size: 19, 24
+  orig: 19, 24
+  offset: 0, 0
+  index: -1
+xie__Layer_17
+  rotate: false
+  xy: 740, 3
+  size: 5, 7
+  orig: 5, 7
+  offset: 0, 0
+  index: -1
+xie__Layer_18
+  rotate: false
+  xy: 747, 2
+  size: 14, 24
+  orig: 14, 24
+  offset: 0, 0
+  index: -1
+xie__Layer_19
+  rotate: true
+  xy: 414, 2
+  size: 21, 36
+  orig: 21, 36
+  offset: 0, 0
+  index: -1
+xie__Layer_2
+  rotate: false
+  xy: 718, 26
+  size: 27, 31
+  orig: 27, 31
+  offset: 0, 0
+  index: -1
+xie__Layer_20
+  rotate: false
+  xy: 776, 108
+  size: 34, 37
+  orig: 34, 37
+  offset: 0, 0
+  index: -1
+xie__Layer_21
+  rotate: false
+  xy: 822, 389
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+xie__Layer_22
+  rotate: false
+  xy: 766, 95
+  size: 25, 11
+  orig: 25, 11
+  offset: 0, 0
+  index: -1
+xie__Layer_23
+  rotate: false
+  xy: 759, 63
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+xie__Layer_24
+  rotate: true
+  xy: 776, 316
+  size: 89, 44
+  orig: 89, 44
+  offset: 0, 0
+  index: -1
+xie__Layer_25
+  rotate: false
+  xy: 375, 25
+  size: 104, 101
+  orig: 104, 101
+  offset: 0, 0
+  index: -1
+xie__Layer_26
+  rotate: true
+  xy: 619, 34
+  size: 13, 16
+  orig: 13, 16
+  offset: 0, 0
+  index: -1
+xie__Layer_27
+  rotate: true
+  xy: 637, 3
+  size: 44, 33
+  orig: 44, 34
+  offset: 0, 1
+  index: -1
+xie__Layer_28
+  rotate: false
+  xy: 678, 59
+  size: 52, 32
+  orig: 52, 32
+  offset: 0, 0
+  index: -1
+xie__Layer_29
+  rotate: false
+  xy: 814, 154
+  size: 24, 39
+  orig: 24, 39
+  offset: 0, 0
+  index: -1
+xie__Layer_3
+  rotate: false
+  xy: 375, 222
+  size: 10, 5
+  orig: 10, 5
+  offset: 0, 0
+  index: -1
+xie__Layer_30
+  rotate: true
+  xy: 481, 2
+  size: 29, 49
+  orig: 29, 49
+  offset: 0, 0
+  index: -1
+xie__Layer_31
+  rotate: false
+  xy: 550, 34
+  size: 67, 92
+  orig: 67, 92
+  offset: 0, 0
+  index: -1
+xie__Layer_32
+  rotate: false
+  xy: 481, 33
+  size: 67, 93
+  orig: 67, 93
+  offset: 0, 0
+  index: -1
+xie__Layer_33
+  rotate: false
+  xy: 672, 5
+  size: 32, 19
+  orig: 32, 22
+  offset: 0, 0
+  index: -1
+xie__Layer_34
+  rotate: true
+  xy: 678, 93
+  size: 32, 55
+  orig: 32, 55
+  offset: 0, 0
+  index: -1
+xie__Layer_35
+  rotate: true
+  xy: 776, 181
+  size: 59, 36
+  orig: 59, 36
+  offset: 0, 0
+  index: -1
+xie__Layer_36
+  rotate: false
+  xy: 776, 242
+  size: 38, 72
+  orig: 42, 81
+  offset: 4, 9
+  index: -1
+xie__Layer_37
+  rotate: false
+  xy: 706, 5
+  size: 32, 19
+  orig: 32, 22
+  offset: 0, 0
+  index: -1
+xie__Layer_38
+  rotate: true
+  xy: 685, 127
+  size: 32, 57
+  orig: 32, 57
+  offset: 0, 0
+  index: -1
+xie__Layer_39
+  rotate: false
+  xy: 812, 96
+  size: 25, 31
+  orig: 25, 31
+  offset: 0, 0
+  index: -1
+xie__Layer_4
+  rotate: true
+  xy: 740, 12
+  size: 12, 5
+  orig: 12, 5
+  offset: 0, 0
+  index: -1
+xie__Layer_40
+  rotate: true
+  xy: 375, 2
+  size: 21, 37
+  orig: 21, 37
+  offset: 0, 0
+  index: -1
+xie__Layer_41
+  rotate: false
+  xy: 814, 195
+  size: 24, 45
+  orig: 24, 45
+  offset: 0, 0
+  index: -1
+xie__Layer_42
+  rotate: true
+  xy: 732, 59
+  size: 32, 25
+  orig: 32, 25
+  offset: 0, 0
+  index: -1
+xie__Layer_5
+  rotate: false
+  xy: 619, 49
+  size: 38, 77
+  orig: 38, 77
+  offset: 0, 0
+  index: -1
+xie__Layer_6
+  rotate: false
+  xy: 789, 73
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+xie__Layer_7
+  rotate: true
+  xy: 798, 31
+  size: 18, 12
+  orig: 18, 12
+  offset: 0, 0
+  index: -1
+xie__Layer_8
+  rotate: true
+  xy: 816, 272
+  size: 42, 22
+  orig: 52, 22
+  offset: 10, 0
+  index: -1
+xie__Layer_9
+  rotate: false
+  xy: 744, 124
+  size: 30, 15
+  orig: 30, 15
+  offset: 0, 0
+  index: -1
+yp_3
+  rotate: true
+  xy: 659, 49
+  size: 29, 17
+  orig: 29, 17
+  offset: 0, 0
+  index: -1
+yp_4
+  rotate: false
+  xy: 744, 141
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: -1
+zui_2
+  rotate: true
+  xy: 778, 33
+  size: 28, 18
+  orig: 28, 18
+  offset: 0, 0
+  index: -1
+zui_3
+  rotate: true
+  xy: 814, 129
+  size: 23, 24
+  orig: 23, 24
+  offset: 0, 0
+  index: -1
+zui_4
+  rotate: true
+  xy: 822, 328
+  size: 28, 15
+  orig: 28, 15
+  offset: 0, 0
+  index: -1
+zui_6
+  rotate: true
+  xy: 793, 95
+  size: 11, 17
+  orig: 11, 17
+  offset: 0, 0
+  index: -1
+zui_8
+  rotate: false
+  xy: 776, 147
+  size: 36, 32
+  orig: 36, 32
+  offset: 0, 0
+  index: -1

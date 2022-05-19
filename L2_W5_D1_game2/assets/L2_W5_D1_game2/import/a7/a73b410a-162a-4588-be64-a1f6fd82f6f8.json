@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "a1Ic6rMdZKeo3SukAbQyUe"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "men0",
+      "rect": [
+        0,
+        0,
+        269,
+        295
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        269,
+        295
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

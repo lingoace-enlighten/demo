@@ -1,0 +1,55 @@
+
+S_hopper_zheng.png
+size: 80,186
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huakuang
+  rotate: false
+  xy: 2, 119
+  size: 70, 65
+  orig: 70, 65
+  offset: 0, 0
+  index: -1
+zheng__Layer_20
+  rotate: false
+  xy: 2, 87
+  size: 70, 30
+  orig: 70, 30
+  offset: 0, 0
+  index: -1
+zheng__Layer_21
+  rotate: true
+  xy: 2, 2
+  size: 49, 50
+  orig: 49, 50
+  offset: 0, 0
+  index: -1
+zheng__Layer_22
+  rotate: true
+  xy: 2, 53
+  size: 32, 61
+  orig: 32, 61
+  offset: 0, 0
+  index: -1
+zheng__Layer_33
+  rotate: true
+  xy: 65, 67
+  size: 18, 13
+  orig: 18, 13
+  offset: 0, 0
+  index: -1
+zheng__Layer_35
+  rotate: true
+  xy: 65, 47
+  size: 18, 13
+  orig: 18, 13
+  offset: 0, 0
+  index: -1
+zheng__Layer_6
+  rotate: false
+  xy: 54, 22
+  size: 24, 23
+  orig: 24, 23
+  offset: 0, 0
+  index: -1

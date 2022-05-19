@@ -1,0 +1,351 @@
+[
+  1,
+  [
+    "83gxjIZUdAr4uj6ITZJ/Re"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "day1_1_zhuan",
+      "\nday1_1_zhuan.png\nsize: 1618,1368\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nflash_orangeStar_01\n  rotate: false\n  xy: 1012, 2\n  size: 128, 128\n  orig: 128, 128\n  offset: 0, 0\n  index: -1\nflash_teleport_alabaster_castStripe\n  rotate: true\n  xy: 754, 2\n  size: 128, 256\n  orig: 128, 256\n  offset: 0, 0\n  index: -1\nzhuan1\n  rotate: false\n  xy: 754, 750\n  size: 862, 616\n  orig: 870, 618\n  offset: 0, 2\n  index: -1\nzhuan2\n  rotate: false\n  xy: 754, 132\n  size: 862, 616\n  orig: 870, 618\n  offset: 0, 2\n  index: -1\nzhuanbj\n  rotate: true\n  xy: 2, 30\n  size: 1336, 750\n  orig: 1336, 750\n  offset: 0, 0\n  index: -1\n",
+      [
+        "day1_1_zhuan.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "DCWCNjuanMeumXq43AoIink0IB0",
+          "spine": "3.8.99",
+          "x": -651.67,
+          "width": 1336,
+          "height": 750,
+          "images": "./images/",
+          "audio": "E:/余悦蕾/领格英文游戏/L2/W3文件(1)/day1/L2-W3-L1-Game1-挖宝石/day1_1_zhuan/images"
+        },
+        "bones": [
+          {
+            "name": "root"
+          },
+          {
+            "name": "day1_1_zhuan",
+            "parent": "root"
+          },
+          {
+            "name": "day1_1_zhuan2",
+            "parent": "day1_1_zhuan",
+            "x": -2.95,
+            "y": 342.86
+          },
+          {
+            "name": "day1_1_zhuan3",
+            "parent": "day1_1_zhuan",
+            "x": -2.95,
+            "y": 342.86
+          },
+          {
+            "name": "texiao",
+            "parent": "root"
+          },
+          {
+            "name": "texiao1",
+            "parent": "texiao"
+          },
+          {
+            "name": "texiao2",
+            "parent": "texiao"
+          }
+        ],
+        "slots": [
+          {
+            "name": "zhuanbj",
+            "bone": "day1_1_zhuan",
+            "attachment": "zhuanbj"
+          },
+          {
+            "name": "zhuan1",
+            "bone": "day1_1_zhuan2",
+            "attachment": "zhuan1"
+          },
+          {
+            "name": "zhuan2",
+            "bone": "day1_1_zhuan3"
+          },
+          {
+            "name": "flash_orangeStar_01",
+            "bone": "texiao1",
+            "blend": "additive"
+          },
+          {
+            "name": "flash_teleport_alabaster_castStripe",
+            "bone": "texiao2",
+            "blend": "additive"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "flash_orangeStar_01": {
+                "flash_orangeStar_01": {
+                  "width": 128,
+                  "height": 128
+                }
+              },
+              "flash_teleport_alabaster_castStripe": {
+                "flash_teleport_alabaster_castStripe": {
+                  "rotation": 90,
+                  "width": 128,
+                  "height": 256
+                }
+              },
+              "zhuan1": {
+                "zhuan1": {
+                  "x": 1.28,
+                  "y": 31.14,
+                  "width": 870,
+                  "height": 618
+                },
+                "zhuan2": {
+                  "x": 1.28,
+                  "y": 31.14,
+                  "width": 870,
+                  "height": 618
+                }
+              },
+              "zhuan2": {
+                "zhuan1": {
+                  "x": 1.28,
+                  "y": 31.14,
+                  "width": 870,
+                  "height": 618
+                },
+                "zhuan2": {
+                  "x": 1.28,
+                  "y": 31.14,
+                  "width": 870,
+                  "height": 618
+                }
+              },
+              "zhuanbj": {
+                "zhuanbj": {
+                  "x": 16.33,
+                  "y": 375,
+                  "width": 1336,
+                  "height": 750
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "day1_1_zhuan_daiji": {
+            "slots": {
+              "flash_orangeStar_01": {
+                "color": [
+                  {
+                    "time": 0.2,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 0.4,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.6,
+                    "color": "ffffff00"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 0.2,
+                    "name": "flash_orangeStar_01"
+                  }
+                ]
+              },
+              "flash_teleport_alabaster_castStripe": {
+                "color": [
+                  {
+                    "time": 0.2,
+                    "color": "ffffff00"
+                  },
+                  {
+                    "time": 0.4,
+                    "color": "ffffffff"
+                  },
+                  {
+                    "time": 0.6,
+                    "color": "ffffff00"
+                  }
+                ],
+                "attachment": [
+                  {
+                    "time": 0.2,
+                    "name": "flash_teleport_alabaster_castStripe"
+                  }
+                ]
+              },
+              "zhuan1": {
+                "attachment": [
+                  {
+                    "time": 0.4,
+                    "name": null
+                  }
+                ]
+              },
+              "zhuan2": {
+                "attachment": [
+                  {
+                    "time": 0.4,
+                    "name": "zhuan2"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "day1_1_zhuan2": {
+                "scale": [
+                  {
+                    "x": 2.528,
+                    "y": 2.528
+                  },
+                  {
+                    "time": 0.2333,
+                    "x": 0.641,
+                    "y": 0.641
+                  },
+                  {
+                    "time": 0.4,
+                    "x": 0.166,
+                    "y": 0.621
+                  },
+                  {
+                    "time": 0.5667,
+                    "x": 0.641,
+                    "y": 0.641
+                  },
+                  {
+                    "time": 0.7667,
+                    "x": 2.528,
+                    "y": 2.528
+                  }
+                ]
+              },
+              "day1_1_zhuan3": {
+                "scale": [
+                  {
+                    "x": 1.683,
+                    "y": 1.683
+                  },
+                  {
+                    "time": 0.2333,
+                    "x": 0.641,
+                    "y": 0.641
+                  },
+                  {
+                    "time": 0.4,
+                    "x": 0.518,
+                    "y": 0.483
+                  },
+                  {
+                    "time": 0.7667,
+                    "x": 2.528,
+                    "y": 2.528
+                  }
+                ]
+              },
+              "texiao1": {
+                "translate": [
+                  {
+                    "time": 0.2,
+                    "x": -1.81,
+                    "y": 338.28
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.2
+                  },
+                  {
+                    "time": 0.4,
+                    "x": 10.682,
+                    "y": 10.682
+                  },
+                  {
+                    "time": 0.6,
+                    "x": 16.955,
+                    "y": 16.955
+                  }
+                ]
+              },
+              "texiao2": {
+                "translate": [
+                  {
+                    "time": 0.2,
+                    "x": -1.81,
+                    "y": 338.28
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.2,
+                    "x": 0.641,
+                    "y": 0.62
+                  },
+                  {
+                    "time": 0.4,
+                    "x": 5.301,
+                    "y": 2.374
+                  },
+                  {
+                    "time": 0.6,
+                    "x": 9.721,
+                    "y": 3.993
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "15UEmvPExHZLEqgqQs8M2W"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "tigo_zheng",
+      "rect": [
+        2,
+        7,
+        848,
+        843
+      ],
+      "offset": [
+        0,
+        -2.5
+      ],
+      "originalSize": [
+        852,
+        852
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

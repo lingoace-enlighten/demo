@@ -1,0 +1,69 @@
+
+zhangaiwutongguo.png
+size: 980,628
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhangaisuipian
+  rotate: false
+  xy: 489, 12
+  size: 327, 330
+  orig: 330, 342
+  offset: 3, 2
+  index: -1
+zhangaisuipianshangceng
+  rotate: true
+  xy: 290, 2
+  size: 226, 163
+  orig: 226, 163
+  offset: 0, 0
+  index: -1
+zhangaisuipianxiaceng
+  rotate: true
+  xy: 818, 20
+  size: 322, 154
+  orig: 322, 161
+  offset: 0, 1
+  index: -1
+zhangaitaizi
+  rotate: false
+  xy: 2, 25
+  size: 286, 198
+  orig: 299, 207
+  offset: 6, 5
+  index: -1
+zhangaiwanhao
+  rotate: false
+  xy: 2, 225
+  size: 137, 398
+  orig: 145, 406
+  offset: 4, 4
+  index: -1
+zhangaizhi
+  rotate: true
+  xy: 179, 344
+  size: 279, 796
+  orig: 283, 796
+  offset: 0, 0
+  index: -1
+zhangaizhishang
+  rotate: true
+  xy: 179, 230
+  size: 112, 308
+  orig: 112, 308
+  offset: 0, 0
+  index: -1
+zhangaizhuzi_1
+  rotate: false
+  xy: 141, 255
+  size: 36, 368
+  orig: 44, 376
+  offset: 4, 4
+  index: -1
+zhangaizhuzi_2
+  rotate: false
+  xy: 141, 255
+  size: 36, 368
+  orig: 44, 376
+  offset: 4, 4
+  index: -1

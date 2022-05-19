@@ -1,0 +1,27 @@
+
+shiyou.png
+size: 1608,1608
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shitou_1
+  rotate: false
+  xy: 2, 2
+  size: 803, 1604
+  orig: 805, 1606
+  offset: 1, 1
+  index: -1
+shitou_2
+  rotate: false
+  xy: 807, 808
+  size: 798, 798
+  orig: 800, 800
+  offset: 1, 1
+  index: -1
+tigo_beimian_shadow
+  rotate: false
+  xy: 807, 737
+  size: 281, 69
+  orig: 296, 83
+  offset: 7, 7
+  index: -1

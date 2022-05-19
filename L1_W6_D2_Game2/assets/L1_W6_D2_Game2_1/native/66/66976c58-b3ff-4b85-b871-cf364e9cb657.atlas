@@ -1,0 +1,237 @@
+
+day2_2_haunfu_monster1.png
+size: 1399,528
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1yanpi
+  rotate: true
+  xy: 1284, 60
+  size: 90, 86
+  orig: 90, 86
+  offset: 0, 0
+  index: -1
+bed1
+  rotate: false
+  xy: 1253, 309
+  size: 135, 78
+  orig: 135, 78
+  offset: 0, 0
+  index: -1
+bed2
+  rotate: false
+  xy: 1253, 389
+  size: 144, 137
+  orig: 144, 137
+  offset: 0, 0
+  index: -1
+day_1_1_monster1-10
+  rotate: false
+  xy: 1192, 60
+  size: 90, 90
+  orig: 94, 94
+  offset: 2, 2
+  index: -1
+day_1_1_monster1-11
+  rotate: false
+  xy: 924, 329
+  size: 106, 197
+  orig: 106, 197
+  offset: 0, 0
+  index: -1
+day_1_1_monster1-12
+  rotate: false
+  xy: 812, 4
+  size: 102, 190
+  orig: 102, 190
+  offset: 0, 0
+  index: -1
+day_1_1_monster1-14
+  rotate: false
+  xy: 658, 262
+  size: 264, 264
+  orig: 264, 264
+  offset: 0, 0
+  index: -1
+day_1_1_monster1-15
+  rotate: true
+  xy: 2, 15
+  size: 164, 73
+  orig: 167, 76
+  offset: 1, 2
+  index: -1
+day_1_1_monster1-16
+  rotate: true
+  xy: 77, 15
+  size: 164, 73
+  orig: 167, 76
+  offset: 1, 1
+  index: -1
+day_1_1_monster1-17
+  rotate: false
+  xy: 362, 190
+  size: 294, 336
+  orig: 294, 336
+  offset: 0, 0
+  index: -1
+day_1_1_monster1-8
+  rotate: true
+  xy: 1032, 329
+  size: 43, 51
+  orig: 43, 51
+  offset: 0, 0
+  index: -1
+day_1_1_monster1-9
+  rotate: false
+  xy: 1299, 12
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+dikeng1
+  rotate: true
+  xy: 2, 181
+  size: 345, 198
+  orig: 345, 198
+  offset: 0, 0
+  index: -1
+dikeng3
+  rotate: true
+  xy: 613, 9
+  size: 179, 100
+  orig: 179, 100
+  offset: 0, 0
+  index: -1
+monster1_01
+  rotate: false
+  xy: 946, 200
+  size: 154, 127
+  orig: 154, 127
+  offset: 0, 0
+  index: -1
+monster1_02
+  rotate: true
+  xy: 1045, 43
+  size: 155, 145
+  orig: 155, 145
+  offset: 0, 0
+  index: -1
+monster1_03
+  rotate: true
+  xy: 1218, 227
+  size: 80, 149
+  orig: 80, 149
+  offset: 0, 0
+  index: -1
+monster1_04
+  rotate: true
+  xy: 1128, 220
+  size: 152, 88
+  orig: 152, 88
+  offset: 0, 0
+  index: -1
+monster1_05
+  rotate: false
+  xy: 1218, 152
+  size: 149, 73
+  orig: 149, 73
+  offset: 0, 0
+  index: -1
+monster2_01
+  rotate: true
+  xy: 916, 36
+  size: 158, 127
+  orig: 160, 129
+  offset: 1, 1
+  index: -1
+monster2_04
+  rotate: false
+  xy: 792, 196
+  size: 152, 64
+  orig: 152, 64
+  offset: 0, 0
+  index: -1
+monster3_03
+  rotate: true
+  xy: 152, 18
+  size: 161, 134
+  orig: 163, 136
+  offset: 1, 1
+  index: -1
+monster3_034
+  rotate: true
+  xy: 715, 29
+  size: 161, 95
+  orig: 161, 95
+  offset: 0, 0
+  index: -1
+sofa1
+  rotate: true
+  xy: 1177, 375
+  size: 151, 74
+  orig: 151, 74
+  offset: 0, 0
+  index: -1
+sofa2
+  rotate: true
+  xy: 1032, 374
+  size: 152, 143
+  orig: 152, 143
+  offset: 0, 0
+  index: -1
+yday_1_1_monster1-1
+  rotate: false
+  xy: 288, 3
+  size: 323, 182
+  orig: 323, 182
+  offset: 0, 0
+  index: -1
+yday_1_1_monster1-1-2
+  rotate: true
+  xy: 202, 187
+  size: 339, 158
+  orig: 340, 164
+  offset: 0, 5
+  index: -1
+yday_1_1_monster1-2
+  rotate: false
+  xy: 715, 4
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+yday_1_1_monster1-3
+  rotate: false
+  xy: 1192, 2
+  size: 56, 56
+  orig: 56, 56
+  offset: 0, 0
+  index: -1
+yday_1_1_monster1-4
+  rotate: false
+  xy: 658, 192
+  size: 67, 68
+  orig: 67, 68
+  offset: 0, 0
+  index: -1
+yday_1_1_monster1-5
+  rotate: false
+  xy: 1085, 331
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+yday_1_1_monster1-6
+  rotate: false
+  xy: 727, 194
+  size: 63, 66
+  orig: 63, 66
+  offset: 0, 0
+  index: -1
+yday_1_1_monster1-7
+  rotate: false
+  xy: 1250, 10
+  size: 47, 48
+  orig: 47, 48
+  offset: 0, 0
+  index: -1

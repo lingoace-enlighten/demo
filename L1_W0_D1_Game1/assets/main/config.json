@@ -1,0 +1,18 @@
+{
+    "paths": {},
+    "uuids": [
+        "a5kbP2/11K5qO3hmPYXloM"
+    ],
+    "scenes": {
+        "db://assets/game.fire": "a5kbP2/11K5qO3hmPYXloM"
+    },
+    "redirect": [],
+    "deps": [],
+    "packs": {},
+    "name": "main",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": true,
+    "isZip": false,
+    "encrypted": false
+}

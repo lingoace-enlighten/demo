@@ -1,0 +1,104 @@
+
+day2_2_chuizi.png
+size: 2017,1813
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+603e0a4c
+  rotate: false
+  xy: 993, 879
+  size: 32, 128
+  orig: 32, 128
+  offset: 0, 0
+  index: -1
+beijing
+  rotate: false
+  xy: 2, 1161
+  size: 1158, 650
+  orig: 1158, 650
+  offset: 0, 0
+  index: -1
+chuizi-1
+  rotate: true
+  xy: 505, 33
+  size: 224, 227
+  orig: 224, 227
+  offset: 0, 0
+  index: -1
+chuizi-2
+  rotate: false
+  xy: 505, 259
+  size: 398, 398
+  orig: 398, 398
+  offset: 0, 0
+  index: -1
+chuizi-6
+  rotate: true
+  xy: 905, 3
+  size: 362, 391
+  orig: 362, 391
+  offset: 0, 0
+  index: -1
+chuizi-7
+  rotate: true
+  xy: 2, 165
+  size: 492, 501
+  orig: 492, 501
+  offset: 0, 0
+  index: -1
+chuizi-8
+  rotate: false
+  xy: 2, 659
+  size: 989, 500
+  orig: 989, 500
+  offset: 0, 0
+  index: -1
+chuizi-9
+  rotate: true
+  xy: 1162, 837
+  size: 974, 853
+  orig: 974, 853
+  offset: 0, 0
+  index: -1
+quan
+  rotate: false
+  xy: 993, 367
+  size: 909, 468
+  orig: 909, 468
+  offset: 0, 0
+  index: -1
+xing1
+  rotate: true
+  xy: 993, 1009
+  size: 150, 145
+  orig: 150, 145
+  offset: 0, 0
+  index: -1
+zhuan1
+  rotate: true
+  xy: 1647, 2
+  size: 265, 314
+  orig: 265, 314
+  offset: 0, 0
+  index: -1
+zhuan1-1
+  rotate: true
+  xy: 1904, 269
+  size: 267, 49
+  orig: 267, 49
+  offset: 0, 0
+  index: -1
+zhuan2
+  rotate: false
+  xy: 1298, 32
+  size: 347, 333
+  orig: 347, 333
+  offset: 0, 0
+  index: -1
+zhuan2-1
+  rotate: true
+  xy: 1904, 538
+  size: 297, 91
+  orig: 297, 91
+  offset: 0, 0
+  index: -1

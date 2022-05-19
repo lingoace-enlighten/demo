@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "eacz0ds2JKAZBowlE9WzyD"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "huatong",
+      "rect": [
+        2,
+        3,
+        156,
+        385
+      ],
+      "offset": [
+        -2,
+        0.5
+      ],
+      "originalSize": [
+        164,
+        392
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,524 @@
+
+tigo_tanchu.png
+size: 1763,1540
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b_mm01
+  rotate: false
+  xy: 1715, 851
+  size: 46, 25
+  orig: 46, 25
+  offset: 0, 0
+  index: -1
+b_mm02
+  rotate: true
+  xy: 1258, 225
+  size: 25, 16
+  orig: 25, 16
+  offset: 0, 0
+  index: -1
+b_mm_11
+  rotate: false
+  xy: 921, 36
+  size: 41, 25
+  orig: 41, 25
+  offset: 0, 0
+  index: -1
+b_mm_12
+  rotate: false
+  xy: 1608, 100
+  size: 26, 23
+  orig: 26, 23
+  offset: 0, 0
+  index: -1
+b_mm_33
+  rotate: true
+  xy: 964, 312
+  size: 38, 21
+  orig: 38, 21
+  offset: 0, 0
+  index: -1
+b_mm_34
+  rotate: false
+  xy: 1715, 769
+  size: 23, 22
+  orig: 23, 22
+  offset: 0, 0
+  index: -1
+b_mouth02
+  rotate: true
+  xy: 1715, 998
+  size: 42, 46
+  orig: 42, 46
+  offset: 0, 0
+  index: -1
+b_mouth03
+  rotate: false
+  xy: 2, 2
+  size: 74, 44
+  orig: 74, 44
+  offset: 0, 0
+  index: -1
+b_mouth04
+  rotate: true
+  xy: 1715, 878
+  size: 74, 41
+  orig: 74, 41
+  offset: 0, 0
+  index: -1
+b_mouth05
+  rotate: true
+  xy: 1141, 764
+  size: 62, 89
+  orig: 62, 89
+  offset: 0, 0
+  index: -1
+b_mouth1
+  rotate: true
+  xy: 1388, 2
+  size: 117, 73
+  orig: 117, 73
+  offset: 0, 0
+  index: -1
+b_sz03
+  rotate: false
+  xy: 1388, 121
+  size: 133, 98
+  orig: 133, 98
+  offset: 0, 0
+  index: -1
+b_sz04
+  rotate: true
+  xy: 1657, 489
+  size: 133, 101
+  orig: 133, 101
+  offset: 0, 0
+  index: -1
+b_sz05
+  rotate: true
+  xy: 1641, 349
+  size: 127, 83
+  orig: 127, 83
+  offset: 0, 0
+  index: -1
+b_sz11
+  rotate: false
+  xy: 1218, 6
+  size: 134, 88
+  orig: 134, 88
+  offset: 0, 0
+  index: -1
+b_sz12
+  rotate: true
+  xy: 1657, 624
+  size: 128, 104
+  orig: 128, 104
+  offset: 0, 0
+  index: -1
+b_yp01
+  rotate: false
+  xy: 1728, 332
+  size: 33, 28
+  orig: 33, 28
+  offset: 0, 0
+  index: -1
+b_yp02
+  rotate: true
+  xy: 1726, 413
+  size: 49, 28
+  orig: 49, 28
+  offset: 0, 0
+  index: -1
+b_yp_11
+  rotate: false
+  xy: 1718, 95
+  size: 35, 20
+  orig: 35, 20
+  offset: 0, 0
+  index: -1
+b_yp_12
+  rotate: true
+  xy: 1715, 793
+  size: 56, 27
+  orig: 95, 44
+  offset: 11, 0
+  index: -1
+c_mouth01
+  rotate: true
+  xy: 1718, 144
+  size: 74, 43
+  orig: 74, 43
+  offset: 0, 0
+  index: -1
+c_mouth02
+  rotate: false
+  xy: 78, 4
+  size: 74, 42
+  orig: 74, 42
+  offset: 0, 0
+  index: -1
+c_mouth03
+  rotate: false
+  xy: 1693, 5
+  size: 62, 88
+  orig: 62, 88
+  offset: 0, 0
+  index: -1
+c_yj01
+  rotate: false
+  xy: 1726, 464
+  size: 35, 23
+  orig: 35, 23
+  offset: 0, 0
+  index: -1
+c_yj02
+  rotate: false
+  xy: 230, 18
+  size: 57, 28
+  orig: 57, 28
+  offset: 0, 0
+  index: -1
+c_yj03
+  rotate: false
+  xy: 1718, 117
+  size: 40, 25
+  orig: 40, 25
+  offset: 0, 0
+  index: -1
+c_yj04
+  rotate: true
+  xy: 1232, 766
+  size: 60, 29
+  orig: 60, 29
+  offset: 0, 0
+  index: -1
+d_shoubiao1
+  rotate: false
+  xy: 154, 7
+  size: 74, 39
+  orig: 74, 39
+  offset: 0, 0
+  index: -1
+d_shoubiao2
+  rotate: true
+  xy: 1715, 954
+  size: 42, 46
+  orig: 42, 46
+  offset: 0, 0
+  index: -1
+day2_1_tigo-damuzhi
+  rotate: true
+  xy: 1523, 125
+  size: 94, 111
+  orig: 94, 111
+  offset: 0, 0
+  index: -1
+day2_1_tigo-shizhi
+  rotate: false
+  xy: 1639, 220
+  size: 87, 127
+  orig: 88, 127
+  offset: 1, 0
+  index: -1
+dtigo43_shenti
+  rotate: true
+  xy: 964, 65
+  size: 185, 188
+  orig: 185, 188
+  offset: 0, 0
+  index: -1
+menbeijng
+  rotate: false
+  xy: 294, 266
+  size: 343, 487
+  orig: 343, 487
+  offset: 0, 0
+  index: -1
+menyou
+  rotate: true
+  xy: 1278, 350
+  size: 126, 361
+  orig: 126, 361
+  offset: 0, 0
+  index: -1
+menzuo
+  rotate: true
+  xy: 1276, 221
+  size: 127, 361
+  orig: 127, 361
+  offset: 0, 0
+  index: -1
+tigo_43_Layer_beibao
+  rotate: false
+  xy: 772, 762
+  size: 367, 776
+  orig: 367, 776
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_33
+  rotate: true
+  xy: 862, 6
+  size: 55, 57
+  orig: 58, 57
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_34
+  rotate: false
+  xy: 639, 274
+  size: 52, 36
+  orig: 52, 36
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_35
+  rotate: true
+  xy: 1154, 2
+  size: 93, 62
+  orig: 93, 62
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_36
+  rotate: false
+  xy: 987, 252
+  size: 287, 126
+  orig: 287, 126
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_37
+  rotate: true
+  xy: 1715, 1042
+  size: 93, 39
+  orig: 93, 39
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_38
+  rotate: true
+  xy: 1240, 221
+  size: 29, 16
+  orig: 31, 16
+  offset: 2, 0
+  index: -1
+tigo_43__Layer_39
+  rotate: false
+  xy: 921, 18
+  size: 40, 16
+  orig: 40, 17
+  offset: 0, 1
+  index: -1
+tigo_43__Layer_40
+  rotate: false
+  xy: 639, 312
+  size: 65, 38
+  orig: 65, 38
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_41
+  rotate: false
+  xy: 1356, 757
+  size: 52, 69
+  orig: 52, 69
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_42
+  rotate: true
+  xy: 1726, 362
+  size: 49, 22
+  orig: 49, 22
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_43
+  rotate: false
+  xy: 1354, 6
+  size: 19, 38
+  orig: 19, 38
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_44
+  rotate: false
+  xy: 1354, 46
+  size: 32, 48
+  orig: 32, 48
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_49
+  rotate: false
+  xy: 1354, 46
+  size: 32, 48
+  orig: 32, 48
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_46
+  rotate: true
+  xy: 964, 2
+  size: 61, 69
+  orig: 61, 69
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_47
+  rotate: false
+  xy: 1463, 2
+  size: 58, 23
+  orig: 58, 23
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_48
+  rotate: false
+  xy: 964, 272
+  size: 19, 38
+  orig: 19, 38
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_51
+  rotate: true
+  xy: 786, 19
+  size: 42, 74
+  orig: 42, 74
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_53
+  rotate: true
+  xy: 706, 6
+  size: 55, 78
+  orig: 55, 78
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_55
+  rotate: true
+  xy: 706, 63
+  size: 287, 256
+  orig: 287, 287
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_56
+  rotate: false
+  xy: 1608, 7
+  size: 83, 86
+  orig: 86, 91
+  offset: 1, 5
+  index: -1
+tigo_43__Layer_57
+  rotate: false
+  xy: 1278, 754
+  size: 76, 72
+  orig: 76, 72
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_58
+  rotate: true
+  xy: 1154, 97
+  size: 153, 84
+  orig: 153, 84
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_59
+  rotate: true
+  xy: 294, 6
+  size: 258, 410
+  orig: 258, 412
+  offset: 0, 2
+  index: -1
+tigo_43__Layer_60
+  rotate: false
+  xy: 1035, 16
+  size: 81, 47
+  orig: 81, 47
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_61
+  rotate: false
+  xy: 1636, 95
+  size: 80, 123
+  orig: 80, 123
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_63
+  rotate: false
+  xy: 2, 755
+  size: 768, 783
+  orig: 768, 783
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_64
+  rotate: true
+  xy: 1424, 754
+  size: 381, 289
+  orig: 421, 292
+  offset: 0, 3
+  index: -1
+tigo_43__Layer_65
+  rotate: true
+  xy: 639, 352
+  size: 401, 346
+  orig: 401, 375
+  offset: 0, 29
+  index: -1
+tigo_43__Layer_66
+  rotate: false
+  xy: 1463, 27
+  size: 51, 92
+  orig: 51, 92
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_73
+  rotate: false
+  xy: 1463, 27
+  size: 51, 92
+  orig: 51, 92
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_67
+  rotate: true
+  xy: 1141, 828
+  size: 710, 281
+  orig: 710, 281
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_68
+  rotate: true
+  xy: 1424, 1137
+  size: 401, 336
+  orig: 401, 375
+  offset: 0, 39
+  index: -1
+tigo_43__Layer_69
+  rotate: false
+  xy: 1240, 96
+  size: 146, 123
+  orig: 146, 123
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_71
+  rotate: false
+  xy: 1118, 18
+  size: 32, 45
+  orig: 32, 45
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_72
+  rotate: true
+  xy: 987, 380
+  size: 380, 289
+  orig: 421, 292
+  offset: 0, 3
+  index: -1
+tigo_43__Layer_74
+  rotate: false
+  xy: 1523, 2
+  size: 83, 121
+  orig: 83, 121
+  offset: 0, 0
+  index: -1
+tigo_43__Layer_75
+  rotate: true
+  xy: 1278, 478
+  size: 274, 377
+  orig: 274, 393
+  offset: 0, 16
+  index: -1
+tigo_43__jiandai
+  rotate: false
+  xy: 2, 48
+  size: 290, 705
+  orig: 290, 705
+  offset: 0, 0
+  index: -1

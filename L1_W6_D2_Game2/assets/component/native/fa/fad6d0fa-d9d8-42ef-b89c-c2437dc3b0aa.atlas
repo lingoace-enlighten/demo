@@ -1,0 +1,62 @@
+
+huatong.png
+size: 164,392
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chibang1
+  rotate: false
+  xy: 92, 82
+  size: 35, 40
+  orig: 36, 40
+  offset: 0, 0
+  index: -1
+chibang2
+  rotate: false
+  xy: 92, 40
+  size: 35, 40
+  orig: 36, 40
+  offset: 1, 0
+  index: -1
+huatong
+  rotate: false
+  xy: 2, 2
+  size: 88, 120
+  orig: 88, 120
+  offset: 0, 0
+  index: -1
+jindutiao
+  rotate: false
+  xy: 2, 333
+  size: 157, 56
+  orig: 157, 56
+  offset: 0, 0
+  index: -1
+tiao
+  rotate: false
+  xy: 2, 277
+  size: 155, 54
+  orig: 155, 54
+  offset: 0, 0
+  index: -1
+yuan
+  rotate: false
+  xy: 92, 8
+  size: 28, 30
+  orig: 28, 30
+  offset: 0, 0
+  index: -1
+yuan1
+  rotate: false
+  xy: 2, 124
+  size: 149, 151
+  orig: 155, 153
+  offset: 3, 1
+  index: -1
+yuan_1
+  rotate: false
+  xy: 122, 23
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1

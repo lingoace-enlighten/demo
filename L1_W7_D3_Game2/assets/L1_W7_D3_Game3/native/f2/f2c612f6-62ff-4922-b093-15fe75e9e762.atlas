@@ -1,0 +1,83 @@
+
+paopao.png
+size: 399,842
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+p0
+  rotate: true
+  xy: 278, 711
+  size: 129, 119
+  orig: 129, 119
+  offset: 0, 0
+  index: -1
+p00
+  rotate: false
+  xy: 217, 145
+  size: 129, 124
+  orig: 129, 124
+  offset: 0, 0
+  index: -1
+p000
+  rotate: true
+  xy: 190, 18
+  size: 125, 126
+  orig: 125, 126
+  offset: 0, 0
+  index: -1
+p1
+  rotate: false
+  xy: 217, 410
+  size: 176, 191
+  orig: 176, 191
+  offset: 0, 0
+  index: -1
+p2
+  rotate: true
+  xy: 2, 391
+  size: 210, 213
+  orig: 210, 213
+  offset: 0, 0
+  index: -1
+p3
+  rotate: false
+  xy: 2, 190
+  size: 213, 199
+  orig: 213, 199
+  offset: 0, 0
+  index: -1
+pa
+  rotate: false
+  xy: 217, 271
+  size: 150, 137
+  orig: 150, 137
+  offset: 0, 0
+  index: -1
+paa
+  rotate: false
+  xy: 2, 603
+  size: 274, 237
+  orig: 274, 237
+  offset: 0, 0
+  index: -1
+pd
+  rotate: false
+  xy: 2, 2
+  size: 186, 186
+  orig: 186, 186
+  offset: 0, 0
+  index: -1
+pp
+  rotate: true
+  xy: 278, 657
+  size: 52, 60
+  orig: 52, 60
+  offset: 0, 0
+  index: -1
+pp2
+  rotate: false
+  xy: 340, 688
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1

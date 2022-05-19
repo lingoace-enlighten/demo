@@ -1,0 +1,229 @@
+{
+    "paths": {
+        "a8KF53fldM/Z8K+JlKD6/J": [
+            "animations/gateAni",
+            "cc.AnimationClip"
+        ],
+        "babcjIYr5McrPpvlUTzfHT": [
+            "prefab/gameGate",
+            "cc.Prefab"
+        ],
+        "91FM+tNUBOgYlIBPkUqLr7": [
+            "prefab/gameMenu",
+            "cc.Prefab"
+        ],
+        "e6kbrE5gdPJJoQmHo+xxFl": [
+            "prefab/gameOver",
+            "cc.Prefab"
+        ],
+        "94d1e/J+VA3roG+OgbqMoB": [
+            "spines/error/yanwu",
+            "cc.Asset"
+        ],
+        "06dxXCnONOJYx1tk9aXg6E": [
+            "spines/error/yanwu",
+            "sp.SkeletonData"
+        ],
+        "29UiKA7VJFcL2Vz2FB1L6d": [
+            "spines/error/yanwu",
+            "cc.Texture2D"
+        ],
+        "e6UvRG9dJLz55QdtHxuTgf": [
+            "spines/error/yanwu",
+            "cc.SpriteFrame",
+            1
+        ],
+        "901TXV+TtCoINAvIP9mqtM": [
+            "spines/finishSpine/caizhi",
+            "cc.Asset"
+        ],
+        "e8apXlMAlGMp+TEhNdgHeU": [
+            "spines/finishSpine/caizhi",
+            "sp.SkeletonData"
+        ],
+        "daVS/RwiFMb5u8m/FKDmRB": [
+            "spines/finishSpine/caizhi",
+            "cc.Texture2D"
+        ],
+        "8dBeqN7khHj6F0Qpate9TO": [
+            "spines/finishSpine/caizhi",
+            "cc.SpriteFrame",
+            1
+        ],
+        "ff0Yv3aMFKb42q2ljzc7Ki": [
+            "spines/right/xingxing",
+            "cc.Asset"
+        ],
+        "d06kxWJMhAL6DUdTeHnQ2l": [
+            "spines/right/xingxing",
+            "sp.SkeletonData"
+        ],
+        "5fGtbBb7FJiLIbmWE4LLRT": [
+            "spines/right/xingxing",
+            "cc.Texture2D"
+        ],
+        "9evW93tcZEEosxLOBgSUts": [
+            "spines/right/xingxing",
+            "cc.SpriteFrame",
+            1
+        ],
+        "56BiwXvzZErInaK8u+sv2l": [
+            "texture/backbut",
+            "cc.Texture2D"
+        ],
+        "4c6xhPswxIa7Zx0VbQuKG/": [
+            "texture/backbut",
+            "cc.SpriteFrame",
+            1
+        ],
+        "b1DWQ+rG1CoKpRrcVCJFVA": [
+            "texture/gate1",
+            "cc.Texture2D"
+        ],
+        "93UJAnDCJO7rLALhfCclOC": [
+            "texture/gate1",
+            "cc.SpriteFrame",
+            1
+        ],
+        "74c/lu6NhBE7nQ05Hf5bCD": [
+            "texture/gate2",
+            "cc.Texture2D"
+        ],
+        "4ethbs+MVFRZ7ufST3FyW6": [
+            "texture/gate2",
+            "cc.SpriteFrame",
+            1
+        ],
+        "6aKpCguo1IiqxQFfb+i5Kb": [
+            "texture/lock",
+            "cc.Texture2D"
+        ],
+        "68Ylt5rGlMWaS6/ck8gQEU": [
+            "texture/lock",
+            "cc.SpriteFrame",
+            1
+        ],
+        "f6bXJUSvRL0ocPMbbf6hPy": [
+            "texture/menubg",
+            "cc.Texture2D"
+        ],
+        "2aXdW0YxpItLxfandBltM0": [
+            "texture/menubg",
+            "cc.SpriteFrame",
+            1
+        ],
+        "93eU4QROlPF7Q0aRoMBJB+": [
+            "texture/popoin",
+            "cc.Texture2D"
+        ],
+        "50W8lAP1JIVYAN0Cn54yMF": [
+            "texture/popoin",
+            "cc.SpriteFrame",
+            1
+        ],
+        "90ILztHTtBspOUZsfYn0WO": [
+            "texture/unpopin",
+            "cc.Texture2D"
+        ],
+        "dbI6hV4TFMqpLJlwJZ2efs": [
+            "texture/unpopin",
+            "cc.SpriteFrame",
+            1
+        ]
+    },
+    "uuids": [
+        "a8KF53fldM/Z8K+JlKD6/J",
+        "babcjIYr5McrPpvlUTzfHT",
+        "91FM+tNUBOgYlIBPkUqLr7",
+        "e6kbrE5gdPJJoQmHo+xxFl",
+        "94d1e/J+VA3roG+OgbqMoB",
+        "06dxXCnONOJYx1tk9aXg6E",
+        "29UiKA7VJFcL2Vz2FB1L6d",
+        "e6UvRG9dJLz55QdtHxuTgf",
+        "901TXV+TtCoINAvIP9mqtM",
+        "e8apXlMAlGMp+TEhNdgHeU",
+        "daVS/RwiFMb5u8m/FKDmRB",
+        "8dBeqN7khHj6F0Qpate9TO",
+        "ff0Yv3aMFKb42q2ljzc7Ki",
+        "d06kxWJMhAL6DUdTeHnQ2l",
+        "5fGtbBb7FJiLIbmWE4LLRT",
+        "9evW93tcZEEosxLOBgSUts",
+        "56BiwXvzZErInaK8u+sv2l",
+        "4c6xhPswxIa7Zx0VbQuKG/",
+        "b1DWQ+rG1CoKpRrcVCJFVA",
+        "93UJAnDCJO7rLALhfCclOC",
+        "74c/lu6NhBE7nQ05Hf5bCD",
+        "4ethbs+MVFRZ7ufST3FyW6",
+        "6aKpCguo1IiqxQFfb+i5Kb",
+        "68Ylt5rGlMWaS6/ck8gQEU",
+        "f6bXJUSvRL0ocPMbbf6hPy",
+        "2aXdW0YxpItLxfandBltM0",
+        "93eU4QROlPF7Q0aRoMBJB+",
+        "50W8lAP1JIVYAN0Cn54yMF",
+        "90ILztHTtBspOUZsfYn0WO",
+        "dbI6hV4TFMqpLJlwJZ2efs",
+        "ecpdLyjvZBwrvm+cedCcQy",
+        "2cbuKUj3ZCIZPPuBqtwOtV",
+        "e97GVMl6JHh5Ml5qEDdSGa",
+        "f0BIwQ8D5Ml7nTNQbh1YlS",
+        "29FYIk+N1GYaeWH/q1NxQO",
+        "a2MjXRFdtLlYQ5ouAFv/+R",
+        "7a/QZLET9IDreTiBfRn2PD",
+        "b4P/PCArtIdIH38t6mlw8Y",
+        "e8Ueib+qJEhL6mXAHdnwbi",
+        "71VhFCTINJM6/Ky3oX9nBT",
+        "02delMVqdBD70a/HSD99FK"
+    ],
+    "scenes": {},
+    "redirect": [
+        "ecpdLyjvZBwrvm+cedCcQy",
+        0,
+        "7a/QZLET9IDreTiBfRn2PD",
+        0,
+        "02delMVqdBD70a/HSD99FK",
+        0
+    ],
+    "deps": [
+        "internal"
+    ],
+    "packs": {
+        "05c4a98f8": [
+            "2aXdW0YxpItLxfandBltM0",
+            "91FM+tNUBOgYlIBPkUqLr7"
+        ],
+        "081efa402": [
+            "29FYIk+N1GYaeWH/q1NxQO",
+            "2cbuKUj3ZCIZPPuBqtwOtV",
+            "4ethbs+MVFRZ7ufST3FyW6",
+            "50W8lAP1JIVYAN0Cn54yMF",
+            "68Ylt5rGlMWaS6/ck8gQEU",
+            "93UJAnDCJO7rLALhfCclOC",
+            "a8KF53fldM/Z8K+JlKD6/J",
+            "babcjIYr5McrPpvlUTzfHT",
+            "dbI6hV4TFMqpLJlwJZ2efs",
+            "e97GVMl6JHh5Ml5qEDdSGa",
+            "f0BIwQ8D5Ml7nTNQbh1YlS"
+        ],
+        "091b751f8": [
+            "29UiKA7VJFcL2Vz2FB1L6d",
+            "56BiwXvzZErInaK8u+sv2l",
+            "5fGtbBb7FJiLIbmWE4LLRT",
+            "6aKpCguo1IiqxQFfb+i5Kb",
+            "71VhFCTINJM6/Ky3oX9nBT",
+            "74c/lu6NhBE7nQ05Hf5bCD",
+            "90ILztHTtBspOUZsfYn0WO",
+            "93eU4QROlPF7Q0aRoMBJB+",
+            "b1DWQ+rG1CoKpRrcVCJFVA",
+            "b4P/PCArtIdIH38t6mlw8Y",
+            "daVS/RwiFMb5u8m/FKDmRB",
+            "e8Ueib+qJEhL6mXAHdnwbi",
+            "f6bXJUSvRL0ocPMbbf6hPy"
+        ]
+    },
+    "name": "lessonLoader",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": true,
+    "isZip": false,
+    "encrypted": false
+}

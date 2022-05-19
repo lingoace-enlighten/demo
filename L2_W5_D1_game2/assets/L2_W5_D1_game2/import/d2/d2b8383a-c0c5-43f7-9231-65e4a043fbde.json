@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "c3Xu4GgbdD66HMBw863ePq"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "tuteng",
+      "rect": [
+        2,
+        2,
+        2032,
+        1643
+      ],
+      "offset": [
+        0,
+        0.5
+      ],
+      "originalSize": [
+        2036,
+        1648
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

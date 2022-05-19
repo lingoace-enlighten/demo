@@ -1,0 +1,20 @@
+
+day4_2_mofaqiuA_hui.png
+size: 107,47
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+a_2
+  rotate: true
+  xy: 74, 13
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: -1
+a_3
+  rotate: false
+  xy: 2, 2
+  size: 70, 43
+  orig: 70, 43
+  offset: 0, 0
+  index: -1

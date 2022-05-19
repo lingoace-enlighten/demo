@@ -1,0 +1,20 @@
+
+day4_2_mofaqiuA_lan.png
+size: 107,47
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+a_0
+  rotate: false
+  xy: 74, 14
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+a_1
+  rotate: false
+  xy: 2, 2
+  size: 70, 43
+  orig: 70, 43
+  offset: 0, 0
+  index: -1

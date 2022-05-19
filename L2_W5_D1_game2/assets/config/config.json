@@ -1,0 +1,46 @@
+{
+    "paths": {
+        "22G8EqRQ1Dtp0Jd6dXJ+Pt": [
+            "GameConfig",
+            "cc.JsonAsset"
+        ],
+        "720R2mhnZOm4q+dfs1x+Ks": [
+            "GameConfigBk",
+            "cc.JsonAsset"
+        ],
+        "acHJc1pJhJu7SSM9QPq3Eh": [
+            "L2_W5_D1_game2",
+            "cc.JsonAsset"
+        ],
+        "59hxFusKdCyZJLAhTpylzA": [
+            "L2_W5_D2_game1",
+            "cc.JsonAsset"
+        ],
+        "16YuEAtAVDv5C5OnMSjWfJ": [
+            "L2_W5_D4_game1",
+            "cc.JsonAsset"
+        ],
+        "afvHvyxQBBIoZkP3Fntts9": [
+            "l1_w0_game1",
+            "cc.JsonAsset"
+        ]
+    },
+    "uuids": [
+        "22G8EqRQ1Dtp0Jd6dXJ+Pt",
+        "720R2mhnZOm4q+dfs1x+Ks",
+        "afvHvyxQBBIoZkP3Fntts9",
+        "acHJc1pJhJu7SSM9QPq3Eh",
+        "59hxFusKdCyZJLAhTpylzA",
+        "16YuEAtAVDv5C5OnMSjWfJ"
+    ],
+    "scenes": {},
+    "redirect": [],
+    "deps": [],
+    "packs": {},
+    "name": "config",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": true,
+    "isZip": false,
+    "encrypted": false
+}

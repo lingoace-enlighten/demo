@@ -1,0 +1,225 @@
+{
+    "paths": {
+        "98MX0yql1K5IdqZueFxji4": [
+            "audio/Listen_and_choose",
+            "cc.AudioClip"
+        ],
+        "edwx3anaxGj5aSNAc4mkmF": [
+            "audio/One_more_time",
+            "cc.AudioClip"
+        ],
+        "05sdJWXr9FHL6QGZNsJLrN": [
+            "audio/Oopsy",
+            "cc.AudioClip"
+        ],
+        "d1Ax6cDsZJqqxfjXTG1ucZ": [
+            "audio/You_can_do_better",
+            "cc.AudioClip"
+        ],
+        "43EkjvJulJCovN5+dM4P94": [
+            "audio/amazing",
+            "cc.AudioClip"
+        ],
+        "edm+98yz9LUL2KcNaJGK0i": [
+            "audio/bingo",
+            "cc.AudioClip"
+        ],
+        "5fgYPv4dBIcbo3cmcjl7OB": [
+            "audio/bravo",
+            "cc.AudioClip"
+        ],
+        "248l8upNBLG5lRFfDrjjpa": [
+            "audio/choose_the_correct_word",
+            "cc.AudioClip"
+        ],
+        "8cHR9hDC5PY76USzJlryAS": [
+            "audio/click",
+            "cc.AudioClip"
+        ],
+        "abr2PF5epIUqSa5BZPRYVp": [
+            "audio/coin_large",
+            "cc.AudioClip"
+        ],
+        "9bG8vUM49LX5yt6qNLrZ+f": [
+            "audio/coin_mid",
+            "cc.AudioClip"
+        ],
+        "14o1PfYWtIKK6Cyo0I1iPG": [
+            "audio/excellent",
+            "cc.AudioClip"
+        ],
+        "60Vde7jXlL5oefLMiVF9Cj": [
+            "audio/fantastic",
+            "cc.AudioClip"
+        ],
+        "eeYkcNePxHs7zPlV5hgE6/": [
+            "audio/gameEnd",
+            "cc.AudioClip"
+        ],
+        "13d/SVdtVGfaueEHKPfse7": [
+            "audio/game_error",
+            "cc.AudioClip"
+        ],
+        "b1D5twbkRJAL1/SsS3rwWm": [
+            "audio/game_right",
+            "cc.AudioClip"
+        ],
+        "5fjlLosT5H0rU5RNFpOB6A": [
+            "audio/good_job",
+            "cc.AudioClip"
+        ],
+        "6fJfPtHqBGj71pQz47Lt6f": [
+            "audio/great",
+            "cc.AudioClip"
+        ],
+        "0dUJKx3UBIo615gNE/lEpo": [
+            "audio/its_okay",
+            "cc.AudioClip"
+        ],
+        "818xfnM6ZFd4tt4YNWLaLM": [
+            "audio/jinbi1",
+            "cc.AudioClip"
+        ],
+        "16WmiNMydDEIRDnQZsPpqd": [
+            "audio/jinbi2",
+            "cc.AudioClip"
+        ],
+        "a42/n1ZUVFsYr5gmExK4yK": [
+            "audio/jinbi3",
+            "cc.AudioClip"
+        ],
+        "8bo1DdakNGwbWJGzxh3uCU": [
+            "audio/lets_move_on",
+            "cc.AudioClip"
+        ],
+        "88kmrAAAdLoY4KpU7+NmXI": [
+            "audio/lets_say",
+            "cc.AudioClip"
+        ],
+        "aeYtqc+WtGEYEhp00PLS4t": [
+            "audio/listen_and_say",
+            "cc.AudioClip"
+        ],
+        "2d6rbZcjlExp3DnHCA0qgc": [
+            "audio/nice_work",
+            "cc.AudioClip"
+        ],
+        "3e59/ujaBJVJ4v8Pz9MuYD": [
+            "audio/nicely_done",
+            "cc.AudioClip"
+        ],
+        "aewh28rhlDOYvkywpQ2fRJ": [
+            "audio/record",
+            "cc.AudioClip"
+        ],
+        "7aN29xuI1O3J0tgOOAzrTi": [
+            "audio/super",
+            "cc.AudioClip"
+        ],
+        "5a78I8zCpHQpzoqR39V4+p": [
+            "audio/super_job",
+            "cc.AudioClip"
+        ],
+        "f04WwsuZVH5rlkWKWXDPTn": [
+            "audio/terrific",
+            "cc.AudioClip"
+        ],
+        "40uKnxNEZGVrwrMhdjWk0c": [
+            "audio/try_again",
+            "cc.AudioClip"
+        ],
+        "f6Dvq0aKxByKW9MgvMVRAT": [
+            "audio/uh oh",
+            "cc.AudioClip"
+        ],
+        "42xoHopP5Lmq4Jd4lcvhGQ": [
+            "audio/well_done",
+            "cc.AudioClip"
+        ],
+        "21V2rDswtABLpBOCY+E3zv": [
+            "audio/yay",
+            "cc.AudioClip"
+        ],
+        "1e9F+NsapMfrONWNSf7oYs": [
+            "audio/youll_make_it",
+            "cc.AudioClip"
+        ],
+        "e2a3zlIjZBvJB776B6MDOH": [
+            "effects/atk_flash",
+            "cc.EffectAsset"
+        ],
+        "99kSKX9ddGz6KBHJ4RCb9L": [
+            "effects/ripple",
+            "cc.EffectAsset"
+        ],
+        "38rIEuzShEAboJUes1cSeS": [
+            "materials/atk_flash",
+            "cc.Material"
+        ],
+        "36gkG8G/9ERJvmb41gpKmX": [
+            "materials/ripple",
+            "cc.Material"
+        ]
+    },
+    "uuids": [
+        "43EkjvJulJCovN5+dM4P94",
+        "edm+98yz9LUL2KcNaJGK0i",
+        "5fgYPv4dBIcbo3cmcjl7OB",
+        "248l8upNBLG5lRFfDrjjpa",
+        "8cHR9hDC5PY76USzJlryAS",
+        "abr2PF5epIUqSa5BZPRYVp",
+        "9bG8vUM49LX5yt6qNLrZ+f",
+        "14o1PfYWtIKK6Cyo0I1iPG",
+        "60Vde7jXlL5oefLMiVF9Cj",
+        "13d/SVdtVGfaueEHKPfse7",
+        "b1D5twbkRJAL1/SsS3rwWm",
+        "eeYkcNePxHs7zPlV5hgE6/",
+        "5fjlLosT5H0rU5RNFpOB6A",
+        "6fJfPtHqBGj71pQz47Lt6f",
+        "0dUJKx3UBIo615gNE/lEpo",
+        "818xfnM6ZFd4tt4YNWLaLM",
+        "16WmiNMydDEIRDnQZsPpqd",
+        "a42/n1ZUVFsYr5gmExK4yK",
+        "8bo1DdakNGwbWJGzxh3uCU",
+        "88kmrAAAdLoY4KpU7+NmXI",
+        "98MX0yql1K5IdqZueFxji4",
+        "aeYtqc+WtGEYEhp00PLS4t",
+        "2d6rbZcjlExp3DnHCA0qgc",
+        "3e59/ujaBJVJ4v8Pz9MuYD",
+        "edwx3anaxGj5aSNAc4mkmF",
+        "05sdJWXr9FHL6QGZNsJLrN",
+        "aewh28rhlDOYvkywpQ2fRJ",
+        "5a78I8zCpHQpzoqR39V4+p",
+        "7aN29xuI1O3J0tgOOAzrTi",
+        "f04WwsuZVH5rlkWKWXDPTn",
+        "40uKnxNEZGVrwrMhdjWk0c",
+        "f6Dvq0aKxByKW9MgvMVRAT",
+        "42xoHopP5Lmq4Jd4lcvhGQ",
+        "21V2rDswtABLpBOCY+E3zv",
+        "d1Ax6cDsZJqqxfjXTG1ucZ",
+        "1e9F+NsapMfrONWNSf7oYs",
+        "e2a3zlIjZBvJB776B6MDOH",
+        "99kSKX9ddGz6KBHJ4RCb9L",
+        "38rIEuzShEAboJUes1cSeS",
+        "36gkG8G/9ERJvmb41gpKmX"
+    ],
+    "scenes": {},
+    "redirect": [],
+    "deps": [],
+    "packs": {
+        "0e7c3f8bb": [
+            "38rIEuzShEAboJUes1cSeS",
+            "e2a3zlIjZBvJB776B6MDOH"
+        ],
+        "0116dadbe": [
+            "36gkG8G/9ERJvmb41gpKmX",
+            "99kSKX9ddGz6KBHJ4RCb9L"
+        ]
+    },
+    "name": "commonRes",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": true,
+    "isZip": false,
+    "encrypted": false
+}
