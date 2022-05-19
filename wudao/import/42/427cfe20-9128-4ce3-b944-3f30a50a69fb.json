@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "54oTyoAKxE3bDQnvu7y5L/"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "L1_W3_L5_FL_tanchiguaishou_jiguang_you",
+      "rect": [
+        2,
+        2,
+        1354,
+        1030
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        1358,
+        1034
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

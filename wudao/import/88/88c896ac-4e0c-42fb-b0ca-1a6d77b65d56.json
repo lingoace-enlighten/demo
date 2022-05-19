@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "22q3Zn2KpGQZBXRB/qnR/W"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "L2_W0_day1_hopper_gedou",
+      "rect": [
+        2,
+        3,
+        2032,
+        2031
+      ],
+      "offset": [
+        0,
+        -0.5
+      ],
+      "originalSize": [
+        2036,
+        2036
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

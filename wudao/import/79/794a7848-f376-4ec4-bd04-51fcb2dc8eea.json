@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "afJyJwzAlHt5CLMyqIRwEh"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "coconuts",
+      "rect": [
+        3,
+        2,
+        603,
+        126
+      ],
+      "offset": [
+        0,
+        -0.5
+      ],
+      "originalSize": [
+        609,
+        129
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

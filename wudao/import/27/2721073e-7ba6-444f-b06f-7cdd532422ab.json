@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "e4yKsgBrFNoqZ2jfjqYRLv"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "L1_W3_L4_tanchiguaishou_xuanfeng",
+      "rect": [
+        2,
+        2,
+        745,
+        231
+      ],
+      "offset": [
+        -1.5,
+        0.5
+      ],
+      "originalSize": [
+        752,
+        236
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

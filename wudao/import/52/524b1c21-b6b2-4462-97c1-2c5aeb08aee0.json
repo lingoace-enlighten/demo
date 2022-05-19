@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "d0YXxfy/JGXqOgNiIL53qr"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "L2_W0_day1_tigo_gedou",
+      "rect": [
+        2,
+        2,
+        2032,
+        1952
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        2036,
+        1956
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

@@ -1,0 +1,132 @@
+
+L1_W3_L5_FL_tanchiguaishou_jiguang_zuo.png
+size: 1991,1109
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+TT_00000
+  rotate: true
+  xy: 666, 674
+  size: 433, 394
+  orig: 1000, 1000
+  offset: 497, 291
+  index: -1
+TT_00001
+  rotate: true
+  xy: 1460, 696
+  size: 411, 404
+  orig: 1000, 1000
+  offset: 527, 286
+  index: -1
+TT_00002
+  rotate: true
+  xy: 249, 638
+  size: 469, 415
+  orig: 1000, 1000
+  offset: 475, 281
+  index: -1
+TT_00003
+  rotate: false
+  xy: 716, 249
+  size: 403, 423
+  orig: 1000, 1000
+  offset: 541, 277
+  index: -1
+TT_00004
+  rotate: false
+  xy: 1121, 260
+  size: 404, 418
+  orig: 1000, 1000
+  offset: 534, 279
+  index: -1
+TT_00005
+  rotate: true
+  xy: 1062, 680
+  size: 427, 396
+  orig: 1000, 1000
+  offset: 504, 290
+  index: -1
+TT_00006
+  rotate: false
+  xy: 249, 230
+  size: 465, 406
+  orig: 1000, 1000
+  offset: 475, 285
+  index: -1
+chukou_1
+  rotate: true
+  xy: 1103, 2
+  size: 245, 223
+  orig: 252, 223
+  offset: 5, 0
+  index: -1
+chukou_2
+  rotate: true
+  xy: 1527, 464
+  size: 230, 223
+  orig: 239, 223
+  offset: 6, 0
+  index: -1
+chukou_3
+  rotate: true
+  xy: 1752, 470
+  size: 224, 223
+  orig: 231, 223
+  offset: 5, 0
+  index: -1
+chukou_4
+  rotate: false
+  xy: 1527, 263
+  size: 230, 199
+  orig: 248, 205
+  offset: 4, 5
+  index: -1
+chukou_5
+  rotate: true
+  xy: 1328, 12
+  size: 246, 220
+  orig: 255, 222
+  offset: 5, 0
+  index: -1
+chukou_6
+  rotate: true
+  xy: 1759, 246
+  size: 222, 223
+  orig: 237, 223
+  offset: 8, 0
+  index: -1
+chukou_7
+  rotate: true
+  xy: 1769, 27
+  size: 217, 220
+  orig: 223, 221
+  offset: 4, 0
+  index: -1
+chukou_8
+  rotate: true
+  xy: 1550, 22
+  size: 222, 217
+  orig: 237, 221
+  offset: 5, 2
+  index: -1
+suduxian
+  rotate: false
+  xy: 632, 37
+  size: 469, 191
+  orig: 514, 194
+  offset: 0, 2
+  index: -1
+suduxian_2
+  rotate: false
+  xy: 2, 23
+  size: 628, 193
+  orig: 628, 194
+  offset: 0, 0
+  index: -1
+zuo
+  rotate: true
+  xy: 2, 218
+  size: 889, 245
+  orig: 889, 245
+  offset: 0, 0
+  index: -1

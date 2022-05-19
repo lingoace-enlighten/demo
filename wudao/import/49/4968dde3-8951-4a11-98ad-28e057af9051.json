@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "99gAiY0QtPXZ7VooXOUsoB"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "L2_W0_day1_tanchiguaishou",
+      "rect": [
+        2,
+        2,
+        976,
+        420
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        980,
+        424
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

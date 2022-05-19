@@ -1,0 +1,272 @@
+
+L1_W3_L5_FL_tanchiguaishou_jiguag_qiu.png
+size: 1879,903
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+baozha_1
+  rotate: false
+  xy: 1583, 125
+  size: 121, 121
+  orig: 130, 130
+  offset: 5, 4
+  index: -1
+baozha_10
+  rotate: false
+  xy: 2, 2
+  size: 190, 190
+  orig: 190, 190
+  offset: 0, 0
+  index: -1
+baozha_11
+  rotate: false
+  xy: 194, 2
+  size: 190, 190
+  orig: 190, 190
+  offset: 0, 0
+  index: -1
+baozha_2
+  rotate: false
+  xy: 1728, 124
+  size: 132, 132
+  orig: 139, 139
+  offset: 4, 4
+  index: -1
+baozha_3
+  rotate: false
+  xy: 1728, 258
+  size: 149, 149
+  orig: 158, 160
+  offset: 4, 5
+  index: -1
+baozha_4
+  rotate: false
+  xy: 386, 15
+  size: 176, 177
+  orig: 177, 178
+  offset: 0, 1
+  index: -1
+baozha_5
+  rotate: false
+  xy: 1045, 3
+  size: 215, 215
+  orig: 218, 220
+  offset: 2, 3
+  index: -1
+baozha_6
+  rotate: true
+  xy: 564, 656
+  size: 245, 244
+  orig: 253, 256
+  offset: 4, 7
+  index: -1
+baozha_7
+  rotate: false
+  xy: 1421, 75
+  size: 160, 161
+  orig: 166, 169
+  offset: 3, 4
+  index: -1
+baozha_8
+  rotate: false
+  xy: 1569, 248
+  size: 157, 159
+  orig: 173, 174
+  offset: 8, 8
+  index: -1
+baozha_9
+  rotate: true
+  xy: 1668, 409
+  size: 162, 163
+  orig: 162, 166
+  offset: 0, 2
+  index: -1
+qiuxin
+  rotate: true
+  xy: 936, 220
+  size: 240, 233
+  orig: 259, 254
+  offset: 7, 6
+  index: -1
+qiuxin10
+  rotate: true
+  xy: 1171, 226
+  size: 238, 232
+  orig: 259, 254
+  offset: 7, 8
+  index: -1
+qiuxin2
+  rotate: true
+  xy: 810, 659
+  size: 242, 236
+  orig: 259, 254
+  offset: 6, 4
+  index: -1
+qiuxin3
+  rotate: true
+  xy: 467, 204
+  size: 246, 232
+  orig: 259, 254
+  offset: 6, 5
+  index: -1
+qiuxin4
+  rotate: true
+  xy: 2, 194
+  size: 254, 231
+  orig: 259, 254
+  offset: 3, 8
+  index: -1
+qiuxin5
+  rotate: true
+  xy: 235, 194
+  size: 254, 230
+  orig: 259, 254
+  offset: 2, 7
+  index: -1
+qiuxin6
+  rotate: true
+  xy: 330, 652
+  size: 249, 232
+  orig: 259, 254
+  offset: 3, 6
+  index: -1
+qiuxin7
+  rotate: true
+  xy: 701, 215
+  size: 242, 233
+  orig: 259, 254
+  offset: 3, 6
+  index: -1
+qiuxin8
+  rotate: true
+  xy: 1048, 661
+  size: 240, 232
+  orig: 259, 254
+  offset: 5, 8
+  index: -1
+qiuxin9
+  rotate: true
+  xy: 1282, 662
+  size: 239, 231
+  orig: 259, 254
+  offset: 6, 9
+  index: -1
+xinxuan_1
+  rotate: true
+  xy: 1169, 466
+  size: 193, 160
+  orig: 200, 172
+  offset: 3, 6
+  index: -1
+xinxuan_10
+  rotate: true
+  xy: 330, 452
+  size: 198, 165
+  orig: 206, 177
+  offset: 4, 6
+  index: -1
+xinxuan_11
+  rotate: true
+  xy: 1500, 468
+  size: 192, 166
+  orig: 202, 177
+  offset: 5, 5
+  index: -1
+xinxuan_12
+  rotate: true
+  xy: 1006, 464
+  size: 193, 161
+  orig: 200, 177
+  offset: 0, 6
+  index: -1
+xinxuan_13
+  rotate: true
+  xy: 564, 6
+  size: 196, 158
+  orig: 201, 170
+  offset: 0, 6
+  index: -1
+xinxuan_14
+  rotate: true
+  xy: 881, 18
+  size: 195, 162
+  orig: 201, 174
+  offset: 0, 6
+  index: -1
+xinxuan_15
+  rotate: true
+  xy: 838, 462
+  size: 195, 166
+  orig: 201, 178
+  offset: 1, 6
+  index: -1
+xinxuan_16
+  rotate: false
+  xy: 1668, 573
+  size: 192, 163
+  orig: 200, 175
+  offset: 1, 6
+  index: -1
+xinxuan_2
+  rotate: true
+  xy: 724, 4
+  size: 209, 155
+  orig: 214, 166
+  offset: 0, 5
+  index: -1
+xinxuan_3
+  rotate: true
+  xy: 1262, 11
+  size: 213, 157
+  orig: 220, 169
+  offset: 0, 6
+  index: -1
+xinxuan_4
+  rotate: true
+  xy: 1405, 238
+  size: 228, 162
+  orig: 235, 174
+  offset: 1, 6
+  index: -1
+xinxuan_5
+  rotate: true
+  xy: 669, 459
+  size: 195, 167
+  orig: 227, 178
+  offset: 2, 6
+  index: -1
+xinxuan_6
+  rotate: false
+  xy: 1668, 738
+  size: 192, 163
+  orig: 204, 174
+  offset: 6, 6
+  index: -1
+xinxuan_7
+  rotate: true
+  xy: 1515, 710
+  size: 191, 150
+  orig: 202, 163
+  offset: 6, 7
+  index: -1
+xinxuan_8
+  rotate: true
+  xy: 1331, 468
+  size: 192, 167
+  orig: 198, 179
+  offset: 4, 6
+  index: -1
+xinxuan_9
+  rotate: true
+  xy: 497, 454
+  size: 196, 170
+  orig: 202, 182
+  offset: 3, 6
+  index: -1
+xuanzhuanlizi
+  rotate: true
+  xy: 2, 450
+  size: 451, 326
+  orig: 455, 326
+  offset: 2, 0
+  index: -1

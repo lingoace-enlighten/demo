@@ -1,0 +1,1241 @@
+[
+  1,
+  [
+    "17XjjA1ytCP7gQYO/VSNf6"
+  ],
+  0,
+  [
+    [
+      "sp.SkeletonData",
+      [
+        "_name",
+        "_atlasText",
+        "textureNames",
+        "_skeletonJson",
+        "textures"
+      ],
+      -1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  [
+    [
+      0,
+      "L1_W3_L5_FL_tanchiguaishou_jiguang_zuo",
+      "\nL1_W3_L5_FL_tanchiguaishou_jiguang_zuo.png\nsize: 1991,1109\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nTT_00000\n  rotate: true\n  xy: 666, 674\n  size: 433, 394\n  orig: 1000, 1000\n  offset: 497, 291\n  index: -1\nTT_00001\n  rotate: true\n  xy: 1460, 696\n  size: 411, 404\n  orig: 1000, 1000\n  offset: 527, 286\n  index: -1\nTT_00002\n  rotate: true\n  xy: 249, 638\n  size: 469, 415\n  orig: 1000, 1000\n  offset: 475, 281\n  index: -1\nTT_00003\n  rotate: false\n  xy: 716, 249\n  size: 403, 423\n  orig: 1000, 1000\n  offset: 541, 277\n  index: -1\nTT_00004\n  rotate: false\n  xy: 1121, 260\n  size: 404, 418\n  orig: 1000, 1000\n  offset: 534, 279\n  index: -1\nTT_00005\n  rotate: true\n  xy: 1062, 680\n  size: 427, 396\n  orig: 1000, 1000\n  offset: 504, 290\n  index: -1\nTT_00006\n  rotate: false\n  xy: 249, 230\n  size: 465, 406\n  orig: 1000, 1000\n  offset: 475, 285\n  index: -1\nchukou_1\n  rotate: true\n  xy: 1103, 2\n  size: 245, 223\n  orig: 252, 223\n  offset: 5, 0\n  index: -1\nchukou_2\n  rotate: true\n  xy: 1527, 464\n  size: 230, 223\n  orig: 239, 223\n  offset: 6, 0\n  index: -1\nchukou_3\n  rotate: true\n  xy: 1752, 470\n  size: 224, 223\n  orig: 231, 223\n  offset: 5, 0\n  index: -1\nchukou_4\n  rotate: false\n  xy: 1527, 263\n  size: 230, 199\n  orig: 248, 205\n  offset: 4, 5\n  index: -1\nchukou_5\n  rotate: true\n  xy: 1328, 12\n  size: 246, 220\n  orig: 255, 222\n  offset: 5, 0\n  index: -1\nchukou_6\n  rotate: true\n  xy: 1759, 246\n  size: 222, 223\n  orig: 237, 223\n  offset: 8, 0\n  index: -1\nchukou_7\n  rotate: true\n  xy: 1769, 27\n  size: 217, 220\n  orig: 223, 221\n  offset: 4, 0\n  index: -1\nchukou_8\n  rotate: true\n  xy: 1550, 22\n  size: 222, 217\n  orig: 237, 221\n  offset: 5, 2\n  index: -1\nsuduxian\n  rotate: false\n  xy: 632, 37\n  size: 469, 191\n  orig: 514, 194\n  offset: 0, 2\n  index: -1\nsuduxian_2\n  rotate: false\n  xy: 2, 23\n  size: 628, 193\n  orig: 628, 194\n  offset: 0, 0\n  index: -1\nzuo\n  rotate: true\n  xy: 2, 218\n  size: 889, 245\n  orig: 889, 245\n  offset: 0, 0\n  index: -1\n",
+      [
+        "L1_W3_L5_FL_tanchiguaishou_jiguang_zuo.png"
+      ],
+      {
+        "skeleton": {
+          "hash": "89my8sWPfwmXAAQp+R/uPaH3Egc",
+          "spine": "3.8.99",
+          "x": -1080.4,
+          "y": -400,
+          "width": 1627.6,
+          "height": 800,
+          "images": "./images/",
+          "audio": "C:/Users/lin/Desktop/images"
+        },
+        "bones": [
+          {
+            "name": "root",
+            "scaleX": 0.8,
+            "scaleY": 0.8
+          },
+          {
+            "name": "bone4",
+            "parent": "root",
+            "length": 163.49,
+            "rotation": 90,
+            "x": -1096.09,
+            "y": -36.64,
+            "scaleY": -1
+          },
+          {
+            "name": "bone5",
+            "parent": "bone4",
+            "length": 766.51,
+            "rotation": 90.39,
+            "x": 1.76,
+            "y": 7.03
+          },
+          {
+            "name": "bone7",
+            "parent": "bone5",
+            "length": 239.66,
+            "rotation": -179.88,
+            "x": 477.42,
+            "y": -63.25
+          },
+          {
+            "name": "bone12",
+            "parent": "bone5",
+            "length": 205.41,
+            "rotation": 179.61,
+            "x": 583.06,
+            "y": 27.82
+          },
+          {
+            "name": "guangbo",
+            "parent": "root"
+          }
+        ],
+        "slots": [
+          {
+            "name": "图层 191",
+            "bone": "root",
+            "color": "ffffff8f"
+          },
+          {
+            "name": "chukou_9",
+            "bone": "bone4",
+            "attachment": "chukou_1"
+          },
+          {
+            "name": "chukou_10",
+            "bone": "bone4",
+            "attachment": "chukou_2"
+          },
+          {
+            "name": "chukou_11",
+            "bone": "bone4",
+            "attachment": "chukou_3"
+          },
+          {
+            "name": "chukou_12",
+            "bone": "bone4",
+            "attachment": "chukou_4"
+          },
+          {
+            "name": "chukou_13",
+            "bone": "bone4",
+            "attachment": "chukou_5"
+          },
+          {
+            "name": "chukou_14",
+            "bone": "bone4",
+            "attachment": "chukou_6"
+          },
+          {
+            "name": "chukou_15",
+            "bone": "bone4",
+            "attachment": "chukou_7"
+          },
+          {
+            "name": "chukou_16",
+            "bone": "bone4",
+            "attachment": "chukou_8"
+          },
+          {
+            "name": "zuo",
+            "bone": "bone5",
+            "attachment": "zuo"
+          },
+          {
+            "name": "suduxian2",
+            "bone": "bone7",
+            "attachment": "suduxian",
+            "blend": "additive"
+          },
+          {
+            "name": "suduxian_2",
+            "bone": "bone12",
+            "attachment": "suduxian_2",
+            "blend": "additive"
+          },
+          {
+            "name": "TT_00000",
+            "bone": "guangbo",
+            "attachment": "TT_00006"
+          }
+        ],
+        "skins": [
+          {
+            "name": "default",
+            "attachments": {
+              "TT_00000": {
+                "TT_00000": {
+                  "width": 1000,
+                  "height": 1000
+                },
+                "TT_00001": {
+                  "width": 1000,
+                  "height": 1000
+                },
+                "TT_00002": {
+                  "width": 1000,
+                  "height": 1000
+                },
+                "TT_00003": {
+                  "width": 1000,
+                  "height": 1000
+                },
+                "TT_00004": {
+                  "width": 1000,
+                  "height": 1000
+                },
+                "TT_00005": {
+                  "width": 1000,
+                  "height": 1000
+                },
+                "TT_00006": {
+                  "width": 1000,
+                  "height": 1000
+                }
+              },
+              "chukou_9": {
+                "chukou_1": {
+                  "x": 11.01,
+                  "y": 65.92,
+                  "rotation": -90,
+                  "width": 252,
+                  "height": 223
+                }
+              },
+              "chukou_10": {
+                "chukou_2": {
+                  "x": 6.01,
+                  "y": 62.42,
+                  "rotation": -90,
+                  "width": 239,
+                  "height": 223
+                }
+              },
+              "chukou_11": {
+                "chukou_3": {
+                  "x": 6.01,
+                  "y": 59.42,
+                  "rotation": -90,
+                  "width": 231,
+                  "height": 223
+                }
+              },
+              "chukou_12": {
+                "chukou_4": {
+                  "x": 2.01,
+                  "y": 57.92,
+                  "rotation": -90,
+                  "width": 248,
+                  "height": 205
+                }
+              },
+              "chukou_13": {
+                "chukou_5": {
+                  "x": 6.51,
+                  "y": 70.42,
+                  "rotation": -90,
+                  "width": 255,
+                  "height": 222
+                }
+              },
+              "chukou_14": {
+                "chukou_6": {
+                  "x": 5.01,
+                  "y": 56.42,
+                  "rotation": -90,
+                  "width": 237,
+                  "height": 223
+                }
+              },
+              "chukou_15": {
+                "chukou_7": {
+                  "x": 6.01,
+                  "y": 54.42,
+                  "rotation": -90,
+                  "width": 223,
+                  "height": 221
+                }
+              },
+              "chukou_16": {
+                "chukou_8": {
+                  "x": 9.01,
+                  "y": 56.42,
+                  "rotation": -90,
+                  "width": 237,
+                  "height": 221
+                }
+              },
+              "suduxian2": {
+                "suduxian": {
+                  "x": 482.12,
+                  "y": -21.11,
+                  "scaleX": -1,
+                  "rotation": 179.48,
+                  "width": 514,
+                  "height": 194
+                }
+              },
+              "suduxian_2": {
+                "suduxian_2": {
+                  "x": 107.99,
+                  "y": 29.97,
+                  "width": 628,
+                  "height": 194
+                }
+              },
+              "zuo": {
+                "zuo": {
+                  "x": 405.53,
+                  "y": -19.76,
+                  "rotation": -0.39,
+                  "width": 889,
+                  "height": 245
+                }
+              }
+            }
+          }
+        ],
+        "animations": {
+          "2_zuo": {
+            "slots": {
+              "TT_00000": {
+                "attachment": [
+                  {
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_9": {
+                "attachment": [
+                  {
+                    "time": 0.0667,
+                    "name": null
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "chukou_1"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": null
+                  },
+                  {
+                    "time": 1.0667,
+                    "name": "chukou_1"
+                  },
+                  {
+                    "time": 1.1333,
+                    "name": null
+                  },
+                  {
+                    "time": 1.6,
+                    "name": "chukou_1"
+                  }
+                ]
+              },
+              "chukou_10": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "chukou_2"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": null
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "chukou_2"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": null
+                  },
+                  {
+                    "time": 1.1333,
+                    "name": "chukou_2"
+                  },
+                  {
+                    "time": 1.2,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_11": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "chukou_3"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": null
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": "chukou_3"
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": null
+                  },
+                  {
+                    "time": 1.2,
+                    "name": "chukou_3"
+                  },
+                  {
+                    "time": 1.2667,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_12": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "chukou_4"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": null
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": "chukou_4"
+                  },
+                  {
+                    "time": 0.8,
+                    "name": null
+                  },
+                  {
+                    "time": 1.2667,
+                    "name": "chukou_4"
+                  },
+                  {
+                    "time": 1.3333,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_13": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "chukou_5"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": null
+                  },
+                  {
+                    "time": 0.8,
+                    "name": "chukou_5"
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": null
+                  },
+                  {
+                    "time": 1.3333,
+                    "name": "chukou_5"
+                  },
+                  {
+                    "time": 1.4,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_14": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "chukou_6"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": null
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": "chukou_6"
+                  },
+                  {
+                    "time": 0.9333,
+                    "name": null
+                  },
+                  {
+                    "time": 1.4,
+                    "name": "chukou_6"
+                  },
+                  {
+                    "time": 1.4667,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_15": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "chukou_7"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": null
+                  },
+                  {
+                    "time": 0.9333,
+                    "name": "chukou_7"
+                  },
+                  {
+                    "time": 1,
+                    "name": null
+                  },
+                  {
+                    "time": 1.4667,
+                    "name": "chukou_7"
+                  },
+                  {
+                    "time": 1.5333,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_16": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "chukou_8"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": null
+                  },
+                  {
+                    "time": 1,
+                    "name": "chukou_8"
+                  },
+                  {
+                    "time": 1.0667,
+                    "name": null
+                  },
+                  {
+                    "time": 1.5333,
+                    "name": "chukou_8"
+                  },
+                  {
+                    "time": 1.6,
+                    "name": null
+                  }
+                ]
+              },
+              "suduxian2": {
+                "attachment": [
+                  {
+                    "time": 0.8333,
+                    "name": null
+                  }
+                ]
+              },
+              "suduxian_2": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.8333,
+                    "name": "suduxian_2"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "bone4": {
+                "translate": [
+                  {
+                    "x": 815.32,
+                    "y": -70.49
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 0.212,
+                    "y": 0.282
+                  }
+                ]
+              },
+              "bone5": {
+                "scale": [
+                  {
+                    "x": 2.648
+                  }
+                ]
+              },
+              "bone7": {
+                "translate": [
+                  {
+                    "x": -332.65,
+                    "y": 44.5
+                  },
+                  {
+                    "time": 0.8333,
+                    "x": 550.31,
+                    "y": 28.42
+                  },
+                  {
+                    "time": 1.6,
+                    "x": -245.31,
+                    "y": 42.91
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 0.272
+                  },
+                  {
+                    "time": 0.8333,
+                    "x": 1.146
+                  },
+                  {
+                    "time": 1.6,
+                    "x": 0.406
+                  }
+                ]
+              },
+              "bone12": {
+                "translate": [
+                  {
+                    "time": 0.8333,
+                    "x": -490.29,
+                    "y": 8.93
+                  },
+                  {
+                    "time": 1.6,
+                    "x": 131.15,
+                    "y": -2.39
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.8333,
+                    "x": 0.378
+                  },
+                  {
+                    "time": 1.6,
+                    "x": 0.764
+                  }
+                ]
+              }
+            }
+          },
+          "chuxian": {
+            "slots": {
+              "TT_00000": {
+                "attachment": [
+                  {
+                    "name": "TT_00000"
+                  },
+                  {
+                    "time": 0.0333,
+                    "name": "TT_00001"
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "TT_00002"
+                  },
+                  {
+                    "time": 0.1,
+                    "name": "TT_00003"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "TT_00004"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": "TT_00005"
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "TT_00006"
+                  },
+                  {
+                    "time": 0.2333,
+                    "name": "TT_00000"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "TT_00001"
+                  },
+                  {
+                    "time": 0.3,
+                    "name": "TT_00002"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "TT_00003"
+                  },
+                  {
+                    "time": 0.3667,
+                    "name": "TT_00004"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "TT_00005"
+                  },
+                  {
+                    "time": 0.4333,
+                    "name": "TT_00006"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "TT_00000"
+                  },
+                  {
+                    "time": 0.5,
+                    "name": "TT_00001"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "TT_00002"
+                  },
+                  {
+                    "time": 0.5667,
+                    "name": "TT_00003"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "TT_00004"
+                  },
+                  {
+                    "time": 0.6333,
+                    "name": "TT_00005"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": "TT_00006"
+                  },
+                  {
+                    "time": 0.7,
+                    "name": "TT_00000"
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": "TT_00001"
+                  },
+                  {
+                    "time": 0.7667,
+                    "name": "TT_00002"
+                  },
+                  {
+                    "time": 0.8,
+                    "name": "TT_00003"
+                  },
+                  {
+                    "time": 0.8333,
+                    "name": "TT_00004"
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": "TT_00005"
+                  },
+                  {
+                    "time": 0.9,
+                    "name": "TT_00006"
+                  },
+                  {
+                    "time": 0.9333,
+                    "name": "TT_00000"
+                  },
+                  {
+                    "time": 0.9667,
+                    "name": "TT_00001"
+                  },
+                  {
+                    "time": 1,
+                    "name": "TT_00002"
+                  },
+                  {
+                    "time": 1.0333,
+                    "name": "TT_00003"
+                  },
+                  {
+                    "time": 1.0667,
+                    "name": "TT_00004"
+                  },
+                  {
+                    "time": 1.1,
+                    "name": "TT_00005"
+                  },
+                  {
+                    "time": 1.1333,
+                    "name": "TT_00006"
+                  },
+                  {
+                    "time": 1.1667,
+                    "name": "TT_00000"
+                  },
+                  {
+                    "time": 1.2,
+                    "name": "TT_00001"
+                  },
+                  {
+                    "time": 1.2333,
+                    "name": "TT_00002"
+                  },
+                  {
+                    "time": 1.2667,
+                    "name": "TT_00003"
+                  },
+                  {
+                    "time": 1.3,
+                    "name": "TT_00004"
+                  },
+                  {
+                    "time": 1.3333,
+                    "name": "TT_00005"
+                  },
+                  {
+                    "time": 1.3667,
+                    "name": "TT_00006"
+                  },
+                  {
+                    "time": 1.4,
+                    "name": "TT_00000"
+                  },
+                  {
+                    "time": 1.4333,
+                    "name": "TT_00001"
+                  },
+                  {
+                    "time": 1.4667,
+                    "name": "TT_00002"
+                  },
+                  {
+                    "time": 1.5,
+                    "name": "TT_00003"
+                  },
+                  {
+                    "time": 1.5333,
+                    "name": "TT_00004"
+                  },
+                  {
+                    "time": 1.5667,
+                    "name": "TT_00005"
+                  },
+                  {
+                    "time": 1.6,
+                    "name": "TT_00006"
+                  }
+                ]
+              },
+              "chukou_9": {
+                "attachment": [
+                  {
+                    "time": 0.0667,
+                    "name": null
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": "chukou_1"
+                  },
+                  {
+                    "time": 0.6,
+                    "name": null
+                  },
+                  {
+                    "time": 1.0667,
+                    "name": "chukou_1"
+                  },
+                  {
+                    "time": 1.1333,
+                    "name": null
+                  },
+                  {
+                    "time": 1.6,
+                    "name": "chukou_1"
+                  }
+                ]
+              },
+              "chukou_10": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.0667,
+                    "name": "chukou_2"
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": null
+                  },
+                  {
+                    "time": 0.6,
+                    "name": "chukou_2"
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": null
+                  },
+                  {
+                    "time": 1.1333,
+                    "name": "chukou_2"
+                  },
+                  {
+                    "time": 1.2,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_11": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.1333,
+                    "name": "chukou_3"
+                  },
+                  {
+                    "time": 0.1667,
+                    "name": null
+                  },
+                  {
+                    "time": 0.6667,
+                    "name": "chukou_3"
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": null
+                  },
+                  {
+                    "time": 1.2,
+                    "name": "chukou_3"
+                  },
+                  {
+                    "time": 1.2667,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_12": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.2,
+                    "name": "chukou_4"
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": null
+                  },
+                  {
+                    "time": 0.7333,
+                    "name": "chukou_4"
+                  },
+                  {
+                    "time": 0.8,
+                    "name": null
+                  },
+                  {
+                    "time": 1.2667,
+                    "name": "chukou_4"
+                  },
+                  {
+                    "time": 1.3333,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_13": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.2667,
+                    "name": "chukou_5"
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": null
+                  },
+                  {
+                    "time": 0.8,
+                    "name": "chukou_5"
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": null
+                  },
+                  {
+                    "time": 1.3333,
+                    "name": "chukou_5"
+                  },
+                  {
+                    "time": 1.4,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_14": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.3333,
+                    "name": "chukou_6"
+                  },
+                  {
+                    "time": 0.4,
+                    "name": null
+                  },
+                  {
+                    "time": 0.8667,
+                    "name": "chukou_6"
+                  },
+                  {
+                    "time": 0.9333,
+                    "name": null
+                  },
+                  {
+                    "time": 1.4,
+                    "name": "chukou_6"
+                  },
+                  {
+                    "time": 1.4667,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_15": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.4,
+                    "name": "chukou_7"
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": null
+                  },
+                  {
+                    "time": 0.9333,
+                    "name": "chukou_7"
+                  },
+                  {
+                    "time": 1,
+                    "name": null
+                  },
+                  {
+                    "time": 1.4667,
+                    "name": "chukou_7"
+                  },
+                  {
+                    "time": 1.5333,
+                    "name": null
+                  }
+                ]
+              },
+              "chukou_16": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.4667,
+                    "name": "chukou_8"
+                  },
+                  {
+                    "time": 0.5333,
+                    "name": null
+                  },
+                  {
+                    "time": 1,
+                    "name": "chukou_8"
+                  },
+                  {
+                    "time": 1.0667,
+                    "name": null
+                  },
+                  {
+                    "time": 1.5333,
+                    "name": "chukou_8"
+                  },
+                  {
+                    "time": 1.6,
+                    "name": null
+                  }
+                ]
+              },
+              "suduxian2": {
+                "attachment": [
+                  {
+                    "time": 0.8333,
+                    "name": null
+                  }
+                ]
+              },
+              "suduxian_2": {
+                "attachment": [
+                  {
+                    "name": null
+                  },
+                  {
+                    "time": 0.8333,
+                    "name": "suduxian_2"
+                  }
+                ]
+              }
+            },
+            "bones": {
+              "bone4": {
+                "translate": [
+                  {
+                    "x": 780.87,
+                    "y": -70.49
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 0.212,
+                    "y": 0.023
+                  },
+                  {
+                    "time": 1.6,
+                    "x": 0.212,
+                    "y": 0.283
+                  }
+                ]
+              },
+              "bone5": {
+                "scale": [
+                  {
+                    "x": 2.648
+                  }
+                ]
+              },
+              "bone7": {
+                "translate": [
+                  {
+                    "x": -332.65,
+                    "y": 44.5
+                  },
+                  {
+                    "time": 0.8333,
+                    "x": 550.31,
+                    "y": 28.42
+                  },
+                  {
+                    "time": 1.6,
+                    "x": -245.31,
+                    "y": 42.91
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 0.272
+                  },
+                  {
+                    "time": 0.8333,
+                    "x": 1.146
+                  },
+                  {
+                    "time": 1.6,
+                    "x": 0.406
+                  }
+                ]
+              },
+              "bone12": {
+                "translate": [
+                  {
+                    "time": 0.8333,
+                    "x": -490.29,
+                    "y": 8.93
+                  },
+                  {
+                    "time": 1.6,
+                    "x": 131.15,
+                    "y": -2.39
+                  }
+                ],
+                "scale": [
+                  {
+                    "time": 0.8333,
+                    "x": 0.378
+                  },
+                  {
+                    "time": 1.6,
+                    "x": 0.764
+                  }
+                ]
+              },
+              "guangbo": {
+                "translate": [
+                  {
+                    "x": -333.92,
+                    "y": -106.78
+                  },
+                  {
+                    "time": 1.6,
+                    "x": 228.82,
+                    "y": -106.78
+                  }
+                ],
+                "scale": [
+                  {
+                    "x": 0.322,
+                    "y": 0.322
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      [
+        0
+      ]
+    ]
+  ],
+  0,
+  0,
+  [
+    0
+  ],
+  [
+    -1
+  ],
+  [
+    0
+  ]
+]

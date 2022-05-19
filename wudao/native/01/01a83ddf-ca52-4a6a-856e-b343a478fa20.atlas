@@ -1,0 +1,132 @@
+
+L1_W3_L5_FL_tanchiguaishou_jiguang_you.png
+size: 1358,1034
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+TT_00000
+  rotate: true
+  xy: 379, 518
+  size: 346, 315
+  orig: 800, 800
+  offset: 398, 233
+  index: -1
+TT_00001
+  rotate: false
+  xy: 376, 193
+  size: 328, 323
+  orig: 800, 800
+  offset: 422, 229
+  index: -1
+TT_00002
+  rotate: false
+  xy: 2, 532
+  size: 375, 332
+  orig: 800, 800
+  offset: 380, 225
+  index: -1
+TT_00003
+  rotate: false
+  xy: 696, 537
+  size: 322, 338
+  orig: 800, 800
+  offset: 433, 222
+  index: -1
+TT_00004
+  rotate: false
+  xy: 1020, 540
+  size: 323, 335
+  orig: 800, 800
+  offset: 427, 223
+  index: -1
+TT_00005
+  rotate: true
+  xy: 706, 193
+  size: 342, 317
+  orig: 800, 800
+  offset: 403, 232
+  index: -1
+TT_00006
+  rotate: false
+  xy: 2, 205
+  size: 372, 325
+  orig: 800, 800
+  offset: 380, 228
+  index: -1
+chukou_1
+  rotate: false
+  xy: 2, 25
+  size: 196, 178
+  orig: 202, 178
+  offset: 4, 0
+  index: -1
+chukou_2
+  rotate: false
+  xy: 375, 13
+  size: 184, 178
+  orig: 191, 178
+  offset: 5, 0
+  index: -1
+chukou_3
+  rotate: false
+  xy: 561, 13
+  size: 179, 178
+  orig: 185, 178
+  offset: 4, 0
+  index: -1
+chukou_4
+  rotate: false
+  xy: 922, 2
+  size: 184, 160
+  orig: 198, 164
+  offset: 3, 4
+  index: -1
+chukou_5
+  rotate: true
+  xy: 1179, 162
+  size: 196, 176
+  orig: 204, 178
+  offset: 4, 0
+  index: -1
+chukou_6
+  rotate: false
+  xy: 1179, 360
+  size: 177, 178
+  orig: 190, 178
+  offset: 7, 0
+  index: -1
+chukou_7
+  rotate: false
+  xy: 200, 27
+  size: 173, 176
+  orig: 178, 177
+  offset: 3, 0
+  index: -1
+chukou_8
+  rotate: false
+  xy: 742, 16
+  size: 178, 175
+  orig: 190, 177
+  offset: 4, 1
+  index: -1
+suduxian
+  rotate: true
+  xy: 1025, 164
+  size: 374, 152
+  orig: 411, 155
+  offset: 0, 2
+  index: -1
+suduxian_2
+  rotate: false
+  xy: 687, 877
+  size: 502, 155
+  orig: 502, 155
+  offset: 0, 0
+  index: -1
+you
+  rotate: false
+  xy: 2, 866
+  size: 683, 166
+  orig: 683, 167
+  offset: 0, 0
+  index: -1
