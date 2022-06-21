@@ -1,0 +1,41 @@
+
+day5_2_mupai.png
+size: 290,158
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+day5_2_Q
+  rotate: true
+  xy: 197, 64
+  size: 55, 62
+  orig: 57, 64
+  offset: 1, 1
+  index: -1
+day5_2_R
+  rotate: false
+  xy: 197, 2
+  size: 45, 60
+  orig: 47, 62
+  offset: 1, 1
+  index: -1
+day5_2_cao
+  rotate: false
+  xy: 197, 121
+  size: 74, 35
+  orig: 76, 37
+  offset: 1, 1
+  index: -1
+day5_2_hua
+  rotate: false
+  xy: 244, 3
+  size: 44, 59
+  orig: 52, 62
+  offset: 7, 1
+  index: -1
+day5_2_mupai
+  rotate: true
+  xy: 2, 2
+  size: 154, 193
+  orig: 156, 195
+  offset: 1, 1
+  index: -1
