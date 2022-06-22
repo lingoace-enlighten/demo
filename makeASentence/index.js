@@ -334,6 +334,8 @@ window.__require = function e(t, n, r) {
         var _this = this;
         this.curRound = this.operation.round;
         this.curRoundData = Config_1.Config.data[this.curRound];
+        this.root.rootNode.removeAllChildren();
+        this.root.questionNode.removeAllChildren();
         this.createRoundElement();
         this.step = this.operation.step;
         this.root.questionNode.children.forEach(function(node) {
