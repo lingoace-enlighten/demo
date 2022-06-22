@@ -4,6 +4,10 @@
             "project",
             "cc.JsonAsset"
         ],
+        "81tR8+XuFE2KdPCaREC0/8": [
+            "res/audios/huanhu",
+            "cc.AudioClip"
+        ],
         "bbHKWz/4RLyaCzWd5+/z+V": [
             "res/font/SofiaProSoftBold",
             "cc.TTFFont"
@@ -165,6 +169,7 @@
         "7a/QZLET9IDreTiBfRn2PD",
         "7bBuscOzBIE6cKsjuUUtuY",
         "7dEKhl0BNHd6shBhriDmI9",
+        "81tR8+XuFE2KdPCaREC0/8",
         "8ae7dygXtELosKlEzThEK1",
         "9bvaMerUlDyary99mJa6xp",
         "a2MjXRFdtLlYQ5ouAFv/+R",

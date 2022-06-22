@@ -430,6 +430,7 @@ window.__require = function e(t, n, r) {
       };
       Delegate.prototype.synchronous = function(opDt) {
         if (this.operation && this.operation.round == opDt.round) {
+          this.removeLayoutFromRoot();
           this.operation.round = opDt.round;
           this.step = this.operation.step = opDt.step;
           var tempData = opDt.data;
