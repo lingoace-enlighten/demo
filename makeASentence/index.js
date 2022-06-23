@@ -353,7 +353,6 @@ window.__require = function e(t, n, r) {
         this.createRoundElement();
       };
       Delegate.prototype.nextRound = function() {
-        this.operateLock = false;
         this.curTarget = null;
         this.curTargetBasePos = null;
         this.curRound++;
@@ -476,6 +475,7 @@ window.__require = function e(t, n, r) {
         return bool;
       };
       Delegate.prototype.checkAllCorrect = function() {
+        var _this = this;
         var allCorrect = true;
         this.operation.data.forEach(function(itemData) {
           allCorrect && (allCorrect = itemData.correct);
@@ -486,8 +486,10 @@ window.__require = function e(t, n, r) {
             this.timeout = null;
           }
           this.root.hideLaser(this.operation.round);
-          this.root.exportOperationData(this.operation, "roundComplete");
           this.root.sentenceComplete();
+          setTimeout(function() {
+            _this.root.exportOperationData(_this.operation, "roundComplete");
+          }, 1e3);
         }
       };
       return Delegate;
@@ -573,7 +575,6 @@ window.__require = function e(t, n, r) {
       };
       MakeASentenceScript.prototype.onDestroy = function() {
         _super.prototype.onDestroy.call(this);
-        this.exportOperationData({}, "gameEnd");
         this.delegate.onDestroy();
         this.delegate = null;
       };
@@ -582,7 +583,7 @@ window.__require = function e(t, n, r) {
         this.content && this.content.onGameReady();
         this.isTeacher ? this.delegate.setOperationLock() : this.delegate.setOperationFree();
         this.playIdle();
-        if (this.snapData && "gameEnd" != this.snapData.action) {
+        if (this.snapData && "gameComplete" != this.snapData.action) {
           var round_1 = this.snapData.actionData.round;
           this.lasers.forEach(function(laser, index) {
             index >= round_1 && (laser.node.opacity = _this.laserBaseOpacity[index]);
@@ -731,7 +732,7 @@ window.__require = function e(t, n, r) {
           });
           setTimeout(function() {
             _this.onNextRound(false);
-          }, 2);
+          }, 2e3);
         }
       };
       MakeASentenceScript.prototype.openTheDoor = function() {
@@ -747,13 +748,15 @@ window.__require = function e(t, n, r) {
       };
       MakeASentenceScript.prototype.exportOperationData = function(data, action, correct) {
         void 0 === correct && (correct = -1);
-        var tempData = {
-          isTeacher: this.isTeacher,
-          action: action,
-          actionData: data,
-          correct: correct
-        };
-        this.content && this.content.postMessage(JSON.stringify(tempData));
+        if (!this.isTeacher) {
+          var tempData = {
+            isTeacher: this.isTeacher,
+            action: action,
+            actionData: data,
+            correct: correct
+          };
+          this.content && this.content.postMessage(JSON.stringify(tempData));
+        }
       };
       MakeASentenceScript.prototype.onNextRound = function(dispatch) {
         void 0 === dispatch && (dispatch = false);
