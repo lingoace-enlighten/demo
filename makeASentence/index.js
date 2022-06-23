@@ -387,6 +387,7 @@ window.__require = function e(t, n, r) {
             step: this.step,
             data: tempData_1
           };
+          this.curRound > 0 && this.root.exportOperationData(this.operation, "operation", -1);
           this.root.scheduleOnce(function() {
             _this.removeLayoutFromRoot();
           }, .5);
@@ -451,9 +452,9 @@ window.__require = function e(t, n, r) {
           }
         } else {
           this.operation = opDt;
-          this.addLayoutToRoot();
+          0 == this.operation.step ? this.addLayoutToRoot() : this.removeLayoutFromRoot();
           this.resumeGameStatus();
-          this.root.scheduleOnce(function() {
+          0 == this.operation.step && this.root.scheduleOnce(function() {
             _this.removeLayoutFromRoot();
           }, .5);
         }
@@ -742,12 +743,13 @@ window.__require = function e(t, n, r) {
         };
         this.content && this.content.postMessage(JSON.stringify(tempData));
       };
-      MakeASentenceScript.prototype.onNextRound = function() {
+      MakeASentenceScript.prototype.onNextRound = function(dispatch) {
+        void 0 === dispatch && (dispatch = false);
         var data = {
           isTeacher: this.isTeacher,
           actionData: "nextRound"
         };
-        this.content && this.content.postMessage(JSON.stringify(data));
+        dispatch && this.content && this.content.postMessage(JSON.stringify(data));
         this.delegate && this.delegate.nextRound();
         cc.log("onNextRound");
       };
