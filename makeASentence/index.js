@@ -731,7 +731,7 @@ window.__require = function e(t, n, r) {
             _this.playSpine(_this.mili, "daiji", true);
           });
           setTimeout(function() {
-            _this.onNextRound(false);
+            !_this.isTeacher && _this.onNextRound(false);
           }, 2e3);
         }
       };
