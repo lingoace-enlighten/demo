@@ -573,6 +573,7 @@ window.__require = function e(t, n, r) {
       };
       MakeASentenceScript.prototype.onDestroy = function() {
         _super.prototype.onDestroy.call(this);
+        this.exportOperationData({}, "gameEnd");
         this.delegate.onDestroy();
         this.delegate = null;
       };
@@ -581,10 +582,10 @@ window.__require = function e(t, n, r) {
         this.content && this.content.onGameReady();
         this.isTeacher ? this.delegate.setOperationLock() : this.delegate.setOperationFree();
         this.playIdle();
-        if (this.snapData) {
+        if (this.snapData && "gameEnd" != this.snapData.action) {
           var round_1 = this.snapData.actionData.round;
           this.lasers.forEach(function(laser, index) {
-            index > round_1 && (laser.node.opacity = _this.laserBaseOpacity[index]);
+            index >= round_1 && (laser.node.opacity = _this.laserBaseOpacity[index]);
           });
           this.delegate.synchronous(this.snapData.actionData);
           this.delegate.start(true);
@@ -728,7 +729,9 @@ window.__require = function e(t, n, r) {
           this.playSpine(this.mili, "zheng_fk", false, function() {
             _this.playSpine(_this.mili, "daiji", true);
           });
-          this.scheduleOnce(this.onNextRound.bind(this), 2);
+          setTimeout(function() {
+            _this.onNextRound(false);
+          }, 2);
         }
       };
       MakeASentenceScript.prototype.openTheDoor = function() {
@@ -758,9 +761,11 @@ window.__require = function e(t, n, r) {
           isTeacher: this.isTeacher,
           actionData: "nextRound"
         };
-        dispatch && this.content && this.content.postMessage(JSON.stringify(data));
+        if (this.isTeacher && dispatch && this.content) {
+          cc.log("dispatch NextRound");
+          this.content.postMessage(JSON.stringify(data));
+        }
         this.delegate && this.delegate.nextRound();
-        cc.log("onNextRound");
       };
       MakeASentenceScript.prototype.onToggleSwitch = function() {
         var data = {
