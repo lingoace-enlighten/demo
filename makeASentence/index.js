@@ -594,7 +594,7 @@ window.__require = function e(t, n, r) {
       MakeASentenceScript.prototype.setContent = function(content) {
         this.content = content;
         var snapShot = this.content.getSnapshot();
-        snapShot && (this.snapData = JSON.parse(snapShot));
+        snapShot instanceof Object ? this.snapData = snapShot : this.snapData = JSON.parse(snapShot);
       };
       MakeASentenceScript.prototype.receiveMessage = function(data) {
         cc.log("receiveMessage: " + data);
