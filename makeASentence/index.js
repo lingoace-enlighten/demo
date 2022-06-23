@@ -151,16 +151,14 @@ window.__require = function e(t, n, r) {
       Delegate.prototype.start = function() {
         var _this = this;
         this.addListener();
-        if (!this.root.isTeacher) {
-          this.operation ? this.resumeGameStatus() : this.gameStart();
-          this.root.scheduleOnce(function() {
-            var startPos = _this.root.questionNode.children[2].convertToWorldSpaceAR(cc.Vec3.ZERO);
-            startPos = _this.root.node.convertToNodeSpaceAR(cc.v2(startPos.x, startPos.y));
-            var endPos = _this.root.rootNode.children[0].convertToWorldSpaceAR(cc.Vec3.ZERO);
-            endPos = _this.root.node.convertToNodeSpaceAR(cc.v2(endPos.x, endPos.y));
-            _this.root.guildHand(startPos, endPos);
-          }, .5);
-        }
+        this.operation ? this.resumeGameStatus() : this.gameStart();
+        this.root.isTeacher || this.root.scheduleOnce(function() {
+          var startPos = _this.root.questionNode.children[2].convertToWorldSpaceAR(cc.Vec3.ZERO);
+          startPos = _this.root.node.convertToNodeSpaceAR(cc.v2(startPos.x, startPos.y));
+          var endPos = _this.root.rootNode.children[0].convertToWorldSpaceAR(cc.Vec3.ZERO);
+          endPos = _this.root.node.convertToNodeSpaceAR(cc.v2(endPos.x, endPos.y));
+          _this.root.guildHand(startPos, endPos);
+        }, .5);
       };
       Delegate.prototype.onDestroy = function() {
         this.delListener();
@@ -208,7 +206,7 @@ window.__require = function e(t, n, r) {
             x: this.curTargetBasePos.x,
             y: this.curTargetBasePos.y
           }, cc.easeCubicActionOut()).call(function() {
-            _this.root.exportOperationData(_this.operation);
+            _this.root.exportOperationData(_this.operation, "operation", -1);
           }).start();
           this.curTarget = null;
           this.curTargetBasePos = null;
@@ -318,7 +316,7 @@ window.__require = function e(t, n, r) {
               data.position = moveToPos_1 ? cc.v2(moveToPos_1.x >> 0, moveToPos_1.y >> 0) : cc.v2(_this.curTarget.x >> 0, _this.curTarget.y >> 0);
             }
           });
-          this.root.exportOperationData(this.operation);
+          this.root.exportOperationData(this.operation, "operation", correct_1 ? 1 : 0);
           if (!correct_1) {
             this.root.playersHurt();
             this.backToBase();
@@ -360,6 +358,7 @@ window.__require = function e(t, n, r) {
         this.curRound++;
         if (this.curRound >= Config_1.Config.data.length) {
           this.root.sentenceComplete(true);
+          this.root.exportOperationData(this.operation, "gameComplete");
           return;
         }
         this.curRoundData = Config_1.Config.data[this.curRound];
@@ -388,7 +387,6 @@ window.__require = function e(t, n, r) {
             step: this.step,
             data: tempData_1
           };
-          this.root.exportOperationData(this.operation);
           this.root.scheduleOnce(function() {
             _this.removeLayoutFromRoot();
           }, .5);
@@ -396,9 +394,9 @@ window.__require = function e(t, n, r) {
       };
       Delegate.prototype.addLayoutToRoot = function() {
         if (this.root.questionNode) {
-          var layout = this.root.questionNode.addComponent(cc.Layout);
-          layout.resizeMode = cc.Layout.ResizeMode.CONTAINER;
+          var layout = this.root.questionNode.getComponent(cc.Layout);
           layout.type = cc.Layout.Type.GRID;
+          layout.resizeMode = cc.Layout.ResizeMode.CONTAINER;
           layout.startAxis = cc.Layout.AxisDirection.HORIZONTAL;
           layout.spacingX = 58;
           layout.spacingY = 40;
@@ -406,7 +404,11 @@ window.__require = function e(t, n, r) {
         }
       };
       Delegate.prototype.removeLayoutFromRoot = function() {
-        this.root.questionNode.removeComponent(cc.Layout);
+        if (this.root.questionNode) {
+          var layout = this.root.questionNode.getComponent(cc.Layout);
+          layout.resizeMode = cc.Layout.ResizeMode.NONE;
+          layout.type = cc.Layout.Type.NONE;
+        }
       };
       Delegate.prototype.addItemToRoot = function() {
         var answers = this.curRoundData.correctAnswer.split(" ");
@@ -420,15 +422,18 @@ window.__require = function e(t, n, r) {
         this.root.stopCode.string = this.curRoundData.stopCode;
       };
       Delegate.prototype.addItemToQuestion = function() {
-        var count = this.curRoundData.questions.length, i = 0;
-        while (i < count) {
-          var item = kit.pool.PrefabPool.get(this.root.questionPrefab, "questionItem", QuestionItem_1.default);
-          item.getComponent(QuestionItem_1.default).setString(this.curRoundData.questions[i]);
-          item.parent = this.root.questionNode;
-          i++;
+        if (this.curRoundData && this.curRoundData.questions) {
+          var count = this.curRoundData.questions.length, i = 0;
+          while (i < count) {
+            var item = kit.pool.PrefabPool.get(this.root.questionPrefab, "questionItem", QuestionItem_1.default);
+            item.getComponent(QuestionItem_1.default).setString(this.curRoundData.questions[i]);
+            item.parent = this.root.questionNode;
+            i++;
+          }
         }
       };
       Delegate.prototype.synchronous = function(opDt) {
+        var _this = this;
         if (this.operation && this.operation.round == opDt.round) {
           this.removeLayoutFromRoot();
           this.operation.round = opDt.round;
@@ -446,7 +451,11 @@ window.__require = function e(t, n, r) {
           }
         } else {
           this.operation = opDt;
+          this.addLayoutToRoot();
           this.resumeGameStatus();
+          this.root.scheduleOnce(function() {
+            _this.removeLayoutFromRoot();
+          }, .5);
         }
       };
       Delegate.prototype.syncItemPosition = function(data) {
@@ -475,6 +484,7 @@ window.__require = function e(t, n, r) {
             this.timeout = null;
           }
           this.root.hideLaser(this.operation.round);
+          this.root.exportOperationData(this.operation, "roundComplete");
           this.root.sentenceComplete();
         }
       };
@@ -568,7 +578,7 @@ window.__require = function e(t, n, r) {
         this.content && this.content.onGameReady();
         this.isTeacher && this.delegate.setOperationLock();
         this.playIdle();
-        this.showLasers(this.onStart.bind(this));
+        this.snapData ? this.delegate.synchronous(this.snapData.actionData) : this.showLasers(this.onStart.bind(this));
       };
       MakeASentenceScript.prototype.onStart = function() {
         this.delegate.start();
@@ -582,6 +592,8 @@ window.__require = function e(t, n, r) {
       };
       MakeASentenceScript.prototype.setContent = function(content) {
         this.content = content;
+        var snapShot = this.content.getSnapshot();
+        snapShot && (this.snapData = JSON.parse(snapShot));
       };
       MakeASentenceScript.prototype.receiveMessage = function(data) {
         cc.log("receiveMessage: " + data);
@@ -593,8 +605,26 @@ window.__require = function e(t, n, r) {
               this.delegate.nextRound();
             }
           }
-        } else this.isTeacher && this.delegate.synchronous(data.actionData);
+        } else if (this.isTeacher) {
+          var action = data.action;
+          switch (action) {
+           case "operation":
+            this.delegate.synchronous(data.actionData);
+            0 == data.correct && this.playersHurt();
+            break;
+
+           case "roundComplete":
+            var round = data.actionData.round;
+            this.hideLaser(round);
+            this.sentenceComplete();
+            break;
+
+           case "gameComplete":
+            this.sentenceComplete(true);
+          }
+        }
       };
+      MakeASentenceScript.prototype.timeout = function() {};
       MakeASentenceScript.prototype.showLasers = function(callBack) {
         var _this = this;
         var that = this;
@@ -702,10 +732,13 @@ window.__require = function e(t, n, r) {
           _this.content && _this.content.onGameComplete();
         }).start();
       };
-      MakeASentenceScript.prototype.exportOperationData = function(data) {
+      MakeASentenceScript.prototype.exportOperationData = function(data, action, correct) {
+        void 0 === correct && (correct = -1);
         var tempData = {
           isTeacher: this.isTeacher,
-          actionData: data
+          action: action,
+          actionData: data,
+          correct: correct
         };
         this.content && this.content.postMessage(JSON.stringify(tempData));
       };
