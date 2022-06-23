@@ -148,11 +148,12 @@ window.__require = function e(t, n, r) {
         this.root = rootParam;
         this.operateLock = false;
       }
-      Delegate.prototype.start = function() {
+      Delegate.prototype.start = function(sync) {
         var _this = this;
+        void 0 === sync && (sync = false);
         this.addListener();
-        this.operation ? this.resumeGameStatus() : this.gameStart();
-        this.root.isTeacher || this.root.scheduleOnce(function() {
+        !sync && this.gameStart();
+        sync || this.root.isTeacher || this.root.scheduleOnce(function() {
           var startPos = _this.root.questionNode.children[2].convertToWorldSpaceAR(cc.Vec3.ZERO);
           startPos = _this.root.node.convertToNodeSpaceAR(cc.v2(startPos.x, startPos.y));
           var endPos = _this.root.rootNode.children[0].convertToWorldSpaceAR(cc.Vec3.ZERO);
@@ -576,10 +577,18 @@ window.__require = function e(t, n, r) {
         this.delegate = null;
       };
       MakeASentenceScript.prototype.start = function() {
+        var _this = this;
         this.content && this.content.onGameReady();
-        this.isTeacher && this.delegate.setOperationLock();
+        this.isTeacher ? this.delegate.setOperationLock() : this.delegate.setOperationFree();
         this.playIdle();
-        this.snapData ? this.delegate.synchronous(this.snapData.actionData) : this.showLasers(this.onStart.bind(this));
+        if (this.snapData) {
+          var round_1 = this.snapData.actionData.round;
+          this.lasers.forEach(function(laser, index) {
+            index > round_1 && (laser.node.opacity = _this.laserBaseOpacity[index]);
+          });
+          this.delegate.synchronous(this.snapData.actionData);
+          this.delegate.start(true);
+        } else this.showLasers(this.onStart.bind(this));
       };
       MakeASentenceScript.prototype.onStart = function() {
         this.delegate.start();
