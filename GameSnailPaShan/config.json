@@ -1,0 +1,228 @@
+{
+    "paths": {
+        "2f5U7AO3dCQ42tZ+fN8Yi3": [
+            "project",
+            "cc.JsonAsset"
+        ],
+        "aeoHwtGX9M5q7fjJhwJjNS": [
+            "res/audio/drop",
+            "cc.AudioClip"
+        ],
+        "60IK1pMpdDdpBVhHPk7yYC": [
+            "res/audio/error",
+            "cc.AudioClip"
+        ],
+        "b6czsJ9K9Fg4YNwd5sY/63": [
+            "res/audio/throw",
+            "cc.AudioClip"
+        ],
+        "b0uRSV7vRJEbycroGJ5fLd": [
+            "res/audio/walk",
+            "cc.AudioClip"
+        ],
+        "521Wbaa95CRZj7DKJ14HR7": [
+            "res/audio/win",
+            "cc.AudioClip"
+        ],
+        "afpTtrSrZMAadXUXzCRAic": [
+            "res/hand/res/images/arrow",
+            "cc.Texture2D"
+        ],
+        "64+pAZphxHmJ9gsvBkJ4wV": [
+            "res/hand/res/images/arrow",
+            "cc.SpriteFrame",
+            1
+        ],
+        "79etd9dK5I9qrKJO4dUXCj": [
+            "res/hand/res/prefab/hand",
+            "cc.Prefab"
+        ],
+        "5d6oRCQXlAZJSxJffTj3Qf": [
+            "res/hand/res/spine/diandian",
+            "cc.Asset"
+        ],
+        "26Ym5J57xF47zHJ0HBEWSY": [
+            "res/hand/res/spine/diandian",
+            "sp.SkeletonData"
+        ],
+        "aduTbfHFtETIX17Wh0pwef": [
+            "res/hand/res/spine/diandian",
+            "cc.Texture2D"
+        ],
+        "48jf5qlRFKMqOx60PddByk": [
+            "res/hand/res/spine/diandian",
+            "cc.SpriteFrame",
+            1
+        ],
+        "20synk9xxHro5RFynmLhLn": [
+            "res/hand/res/spine/skeleton",
+            "cc.Asset"
+        ],
+        "10nI5eXDVPKKzWqb0onxGN": [
+            "res/hand/res/spine/skeleton",
+            "sp.SkeletonData"
+        ],
+        "45RKkeGEBKXLET/kyw+1cY": [
+            "res/hand/res/spine/skeleton",
+            "cc.Texture2D"
+        ],
+        "e1rTUfuwpEnqWYXDcViniz": [
+            "res/hand/res/spine/skeleton",
+            "cc.SpriteFrame",
+            1
+        ],
+        "46wKnji9lA55ZU0aABnbpg": [
+            "res/hand/描述文本",
+            "cc.TextAsset"
+        ],
+        "d8oimeHv9Cd4HZ+cJXzm3A": [
+            "res/img/back",
+            "cc.Texture2D"
+        ],
+        "24S/kT7yFH7YsKIx44LW9x": [
+            "res/img/back",
+            "cc.SpriteFrame",
+            1
+        ],
+        "9aZSfD1pNLU5mj7uwP5IDS": [
+            "res/img/bg0",
+            "cc.Texture2D"
+        ],
+        "a0+Doi6rpG24JxbjAuljwN": [
+            "res/img/bg0",
+            "cc.SpriteFrame",
+            1
+        ],
+        "21Ri3EOj1KBKMquFmVoBFO": [
+            "res/img/bg1",
+            "cc.Texture2D"
+        ],
+        "58jrRhDalOkJPU3N2ADxgw": [
+            "res/img/bg1",
+            "cc.SpriteFrame",
+            1
+        ],
+        "1bDQYZT2xIPKLVlUqhkxqL": [
+            "res/img/icon",
+            "cc.Texture2D"
+        ],
+        "8aoh7sCHdC74psFDefm9dU": [
+            "res/img/icon",
+            "cc.SpriteFrame",
+            1
+        ],
+        "cbkA6D2d9K/bTQ5eQ2oQqd": [
+            "res/img/sign",
+            "cc.Texture2D"
+        ],
+        "40T9SEDQRMErXiW7RSmD95": [
+            "res/img/sign",
+            "cc.SpriteFrame",
+            1
+        ],
+        "9a6/HVCClLs47csfDXzpGz": [
+            "res/prefab/GameSnailPaShan",
+            "cc.Prefab"
+        ],
+        "18rtCZ7tpFgKto8s9xQqF1": [
+            "res/spine/woniu",
+            "cc.Asset"
+        ],
+        "09gnD31hVAp6JhZ9TQyfgM": [
+            "res/spine/woniu",
+            "sp.SkeletonData"
+        ],
+        "38IMAuA95CrYsKKA72Iv95": [
+            "res/spine/woniu",
+            "cc.Texture2D"
+        ],
+        "f5Sywsff1HL54FmjOEHU7/": [
+            "res/spine/woniu",
+            "cc.SpriteFrame",
+            1
+        ]
+    },
+    "uuids": [
+        "2f5U7AO3dCQ42tZ+fN8Yi3",
+        "aeoHwtGX9M5q7fjJhwJjNS",
+        "60IK1pMpdDdpBVhHPk7yYC",
+        "b6czsJ9K9Fg4YNwd5sY/63",
+        "b0uRSV7vRJEbycroGJ5fLd",
+        "521Wbaa95CRZj7DKJ14HR7",
+        "46wKnji9lA55ZU0aABnbpg",
+        "afpTtrSrZMAadXUXzCRAic",
+        "64+pAZphxHmJ9gsvBkJ4wV",
+        "79etd9dK5I9qrKJO4dUXCj",
+        "5d6oRCQXlAZJSxJffTj3Qf",
+        "26Ym5J57xF47zHJ0HBEWSY",
+        "aduTbfHFtETIX17Wh0pwef",
+        "48jf5qlRFKMqOx60PddByk",
+        "20synk9xxHro5RFynmLhLn",
+        "10nI5eXDVPKKzWqb0onxGN",
+        "45RKkeGEBKXLET/kyw+1cY",
+        "e1rTUfuwpEnqWYXDcViniz",
+        "d8oimeHv9Cd4HZ+cJXzm3A",
+        "24S/kT7yFH7YsKIx44LW9x",
+        "9aZSfD1pNLU5mj7uwP5IDS",
+        "a0+Doi6rpG24JxbjAuljwN",
+        "21Ri3EOj1KBKMquFmVoBFO",
+        "58jrRhDalOkJPU3N2ADxgw",
+        "1bDQYZT2xIPKLVlUqhkxqL",
+        "8aoh7sCHdC74psFDefm9dU",
+        "cbkA6D2d9K/bTQ5eQ2oQqd",
+        "40T9SEDQRMErXiW7RSmD95",
+        "9a6/HVCClLs47csfDXzpGz",
+        "18rtCZ7tpFgKto8s9xQqF1",
+        "09gnD31hVAp6JhZ9TQyfgM",
+        "38IMAuA95CrYsKKA72Iv95",
+        "f5Sywsff1HL54FmjOEHU7/",
+        "ecpdLyjvZBwrvm+cedCcQy",
+        "7a/QZLET9IDreTiBfRn2PD",
+        "9bvaMerUlDyary99mJa6xp",
+        "d8HsitJHxOYqo801xBk8ev"
+    ],
+    "scenes": {},
+    "redirect": [
+        "ecpdLyjvZBwrvm+cedCcQy",
+        0,
+        "7a/QZLET9IDreTiBfRn2PD",
+        0
+    ],
+    "deps": [
+        "internal"
+    ],
+    "packs": {
+        "0fdc2ea00": [
+            "24S/kT7yFH7YsKIx44LW9x",
+            "40T9SEDQRMErXiW7RSmD95",
+            "521Wbaa95CRZj7DKJ14HR7",
+            "58jrRhDalOkJPU3N2ADxgw",
+            "60IK1pMpdDdpBVhHPk7yYC",
+            "8aoh7sCHdC74psFDefm9dU",
+            "9a6/HVCClLs47csfDXzpGz",
+            "9bvaMerUlDyary99mJa6xp",
+            "a0+Doi6rpG24JxbjAuljwN",
+            "aeoHwtGX9M5q7fjJhwJjNS",
+            "b0uRSV7vRJEbycroGJ5fLd",
+            "b6czsJ9K9Fg4YNwd5sY/63"
+        ],
+        "092c0642b": [
+            "1bDQYZT2xIPKLVlUqhkxqL",
+            "21Ri3EOj1KBKMquFmVoBFO",
+            "38IMAuA95CrYsKKA72Iv95",
+            "45RKkeGEBKXLET/kyw+1cY",
+            "9aZSfD1pNLU5mj7uwP5IDS",
+            "aduTbfHFtETIX17Wh0pwef",
+            "afpTtrSrZMAadXUXzCRAic",
+            "cbkA6D2d9K/bTQ5eQ2oQqd",
+            "d8HsitJHxOYqo801xBk8ev",
+            "d8oimeHv9Cd4HZ+cJXzm3A"
+        ]
+    },
+    "name": "GameSnailPaShan",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": true,
+    "isZip": false,
+    "encrypted": false
+}
