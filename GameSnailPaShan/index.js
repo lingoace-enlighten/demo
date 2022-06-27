@@ -130,7 +130,7 @@ window.__require = function e(t, n, r) {
         this.arrNodeForRolePos = this.getArrByNode(nodeRole, "pos");
       };
       GameSnailPaShan.prototype.resetData = function() {
-        var _data = this.content && this.content["getSnapshot"] ? JSON.parse(this.content["getSnapshot"]()) : {};
+        var _data = this.content && this.content["getSnapshot"] ? this.content["getSnapshot"]() : {};
         _data && (_data = _data.actionData);
         if (_data && _data.cmd && _data.cmd != this.event_game_end && _data.info && _data.page == this.pageNum) {
           var info = _data.info;
