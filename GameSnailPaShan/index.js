@@ -79,7 +79,7 @@ window.__require = function e(t, n, r) {
         _this.event_game_touch = "EVENT_GAME_TOUDH";
         _this.event_game_end = "EVENT_GAME_END";
         _this.reDebug = false;
-        _this.isTeacher = _this.reDebug;
+        _this.isTeacher = !!_this.reDebug;
         _this.tiptimeCount = 0;
         _this.tipTimeMax = 10;
         _this.tipState = 0;
@@ -130,7 +130,7 @@ window.__require = function e(t, n, r) {
         this.arrNodeForRolePos = this.getArrByNode(nodeRole, "pos");
       };
       GameSnailPaShan.prototype.resetData = function() {
-        var _data = this.content["getSnapshot"] ? JSON.parse(this.content["getSnapshot"]()) : {};
+        var _data = this.content && this.content["getSnapshot"] ? JSON.parse(this.content["getSnapshot"]()) : {};
         _data && (_data = _data.actionData);
         if (_data && _data.cmd && _data.cmd != this.event_game_end && _data.info && _data.page == this.pageNum) {
           var info = _data.info;
@@ -214,7 +214,7 @@ window.__require = function e(t, n, r) {
         var _loop_2 = function(index, length) {
           var element = this_2.arrQues[index];
           var hand = element.getChildByName("hand");
-          if (element.active) {
+          if (element.active && hand.active) {
             hand.active = true;
             hand.opacity = 255;
             cc.tween(hand).to(.3, {
@@ -332,7 +332,7 @@ window.__require = function e(t, n, r) {
           this.playAniSuccess(itemId, callBack.bind(this));
         } else {
           var callBack = function() {
-            _this.nextQuestion();
+            _this.setIsLock(false);
           };
           this.playAniWrong(itemId, callBack.bind(this));
         }
@@ -489,7 +489,7 @@ window.__require = function e(t, n, r) {
           actionData: handleData
         };
         if (this.reDebug) {
-          this.receiveMessage(JSON.stringify(tempData));
+          this.receiveMessage(tempData);
           return;
         }
         this.content.postMessage(JSON.stringify(tempData));
@@ -545,8 +545,7 @@ window.__require = function e(t, n, r) {
         this.content = content;
       };
       GameSnailPaShan.prototype.receiveMessage = function(data) {
-        var tempData = JSON.parse(data);
-        var handleData = tempData.actionData;
+        var handleData = data.actionData;
         cc.log(JSON.stringify(handleData) + ",");
         if (handleData && handleData.cmd && handleData.info) {
           var info = handleData.info;
