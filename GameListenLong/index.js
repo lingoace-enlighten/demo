@@ -1,1 +1,706 @@
-window.__require=function t(e,i,o){function n(a,r){if(!i[a]){if(!e[a]){var c=a.split("/");if(c=c[c.length-1],!e[c]){var l="function"==typeof __require&&__require;if(!r&&l)return l(c,!0);if(s)return s(c,!0);throw new Error("Cannot find module '"+a+"'")}a=c}var p=i[a]={exports:{}};e[a][0].call(p.exports,function(t){return n(e[a][1][t]||t)},p,p.exports,t,e,i,o)}return i[a].exports}for(var s="function"==typeof __require&&__require,a=0;a<o.length;a++)n(o[a]);return n}({GameListenLong:[function(t,e,i){"use strict";cc._RF.push(e,"53ed8GqUWdJMYG7I4+cFFFr","GameListenLong");var o,n=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),s=this&&this.__decorate||function(t,e,i,o){var n,s=arguments.length,a=s<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,i):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)a=Reflect.decorate(t,e,i,o);else for(var r=t.length-1;r>=0;r--)(n=t[r])&&(a=(s<3?n(a):s>3?n(e,i,a):n(e,i))||a);return s>3&&a&&Object.defineProperty(e,i,a),a};Object.defineProperty(i,"__esModule",{value:!0});var a=t("../res/hand/script/HandCtrLong"),r=cc._decorator,c=r.ccclass,l=r.property,p=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.arrAudioCom=[],e.arrAudioRight=[],e.arrAudioTitle=[],e.arrAudioSpine=[],e.nodeLong=null,e.nodeRole=null,e.arrQues=[],e.btnElse=null,e.skeletonRole=null,e.skeletonLaba=null,e.isLock=!1,e.isFinish=!1,e.quesIndex=0,e.selectItems=[],e.pageNum=0,e.event_game_next="EVENT_GAME_NEXT",e.event_game_sound="EVENT_GAME_SOUND",e.event_game_touch="EVENT_GAME_TOUDH",e.event_game_end="EVENT_GAME_END",e.reDebug=!1,e.isTeacher=!!e.reDebug,e.tiptimeCount=0,e.tipTimeMax=5,e.tipState=0,e.dataQues={options:[{title:"\u9f3b\u5b50",scaleType:0,delay:.8},{title:"\u773c\u775b",scaleType:0,delay:.1},{title:"\u5634\u5df4",scaleType:0,delay:.1},{title:"\u8033\u6735",scaleType:0,delay:.4},{title:"\u5934\u53d1",scaleType:0,delay:.1},{title:"\u811a",scaleType:1,delay:.1}],scaleTo:[{scaleLong:2,scaleRole:1},{scaleLong:1,scaleRole:2}],dataSpine:[["daiji","guzhang","xuanyun","hello"],["bizi","yanjing","zuiba","erduo","toufa","jiao"],["daiji","bobao"]]},e}return n(e,t),e.prototype.onDisable=function(){kit.AudioPlayer.stopAll()},e.prototype.onDestroy=function(){t.prototype.onDestroy.call(this),this.sendMessage(this.event_game_end,{})},e.prototype.start=function(){this.setIsLock(!0),this.initData(),this.resetData(),this.updateUI(),this.nextQuestion()},e.prototype.update=function(t){this.isFinish||0===this.tipState&&(this.tiptimeCount+=t,this.tiptimeCount>=this.tipTimeMax&&(this.tiptimeCount=0,this.tipState=1,this.tipShow()))},e.prototype.initData=function(){},e.prototype.resetData=function(){var t=this.content&&this.content.getSnapshot?this.content.getSnapshot():{};if(t&&(t=t.actionData),t&&t.cmd&&t.cmd!=this.event_game_end&&t.info&&t.page==this.pageNum){var e=t.info;this.refreshDataForMsg(e),t.cmd===this.event_game_touch&&e.result&&this.updateDataForMsg(e),window.sessionStorage.removeItem("workInfoList")}},e.prototype.updateUI=function(){this.updateUIForQues(),this.updateUIForSpine()},e.prototype.updateUIForQues=function(){for(var t=this.selectItems.length,e=0,i=this.arrQues.length;e<i;e++)this.arrQues[e].active=e===t},e.prototype.updateUIForSpine=function(){var t=this.dataQues.dataSpine;this.playAnimation(this.skeletonRole,t[0][0],!0,1,null),this.playAnimation(this.skeletonLaba,t[2][0],!0,1,null)},e.prototype.tipStart=function(){this.tipState=0,this.tiptimeCount=0},e.prototype.tipShow=function(){var t=this;this.tipState=1;for(var e=function(e){var o=i.arrQues[e];if(o.active){var n=o.getChildByName("hand");n.active=!0;var s=n.getComponent(a.default),r=0,c=function(){r<3?(r++,s.Click(c)):(t.tipHide(),t.tipStart())};c()}},i=this,o=0,n=this.arrQues.length;o<n;o++)e(o)},e.prototype.tipHide=function(){this.tipState=1;for(var t=function(t){var i=e.arrQues[t],o=i.getChildByName("hand");i.active&&o.active&&(o.active=!0,o.opacity=255,cc.tween(o).to(.3,{opacity:0}).call(function(){o.opacity=255,o.active=!1}).start())},e=this,i=0,o=this.arrQues.length;i<o;i++)t(i)},e.prototype.nextQuestion=function(){var t=this;if(!this.isFinish){this.tipHide();var e=this.selectItems.length,i=this.dataQues.options[e],o=this.dataQues.dataSpine,n=function(){var e=t.dataQues.scaleTo[i.scaleType],o=.5*e.scaleLong/2,n=.5*e.scaleRole/2,s=e.scaleLong>1||e.scaleRole>1?.5:.1;cc.tween(t.node).call(function(){cc.tween(t.nodeLong).to(o,{scale:e.scaleLong}).start()}).delay(o).call(function(){cc.tween(t.nodeRole).to(n,{scale:e.scaleRole}).start()}).delay(n+s).call(function(){t.playAniSound()}).start()};e>0?n():this.scheduleOnce(function(){var e;e=n,kit.AudioPlayer.playEffect(t.arrAudioCom[0]),t.playAniArray(t.skeletonRole,0,[o[0][3],o[0][0]],e)},.5)}},e.prototype.eventElse=function(){this.isLock||(this.setIsLock(!0),this.sendMessage(this.event_game_next,{itemId:0,result:!1}))},e.prototype.msgResultElse=function(t){this.setIsLock(!0),this.refreshDataForMsg(t),this.playAniWrong(this.playAniSound.bind(this))},e.prototype.eventSound=function(){this.isLock||(this.setIsLock(!0),this.sendMessage(this.event_game_sound,{itemId:0,result:!0}))},e.prototype.msgResultSound=function(t){this.setIsLock(!0),this.refreshDataForMsg(t),this.playAniSound()},e.prototype.eventTouch=function(t){if(!this.isLock){var e=this.arrQues.indexOf(t.target.parent);e<0||this.selectItems.indexOf(e)>=0||(this.setIsLock(!0),this.sendMessage(this.event_game_touch,{itemId:e,result:!0}))}},e.prototype.msgResultTouch=function(t){var e=this;this.setIsLock(!0),this.refreshDataForMsg(t),this.playAniSuccess(function(){e.updateDataForMsg(t),e.isFinish?e.playAniWin():(e.updateUIForQues(),e.nextQuestion())})},e.prototype.playAniSuccess=function(t){var e=this,i=this.selectItems.length,o=this.dataQues.dataSpine,n=[o[1][i],o[0][1],o[0][0]],s=this.dataQues.options[i];cc.tween(this.node).delay(s.delay).call(function(){kit.AudioPlayer.playEffect(e.arrAudioSpine[i])}).start(),this.playAnimation(this.skeletonRole,n[0],!1,1,function(){kit.AudioPlayer.stopAll();var i=Math.floor(3*Math.random());kit.AudioPlayer.playEffect(e.arrAudioRight[i]),e.playAniArray(e.skeletonRole,0,[n[1],n[2]],function(){e.scheduleOnce(t,1)})})},e.prototype.playAniWrong=function(t){var e=this;kit.AudioPlayer.playEffect(this.arrAudioCom[1]);var i=this.dataQues.dataSpine,o=[i[0][2],i[0][0]];this.playAniArray(this.skeletonRole,0,o,function(){cc.tween(e.node).delay(.8).call(function(){kit.AudioPlayer.playEffect(e.arrAudioCom[2])}).delay(2.2).call(function(){t()}).start()})},e.prototype.playAniSound=function(){var t=this,e=this.dataQues.dataSpine,i=this.selectItems.length;kit.AudioPlayer.playEffect(this.arrAudioTitle[i]),this.playAnimation(this.skeletonLaba,e[2][1],!0,1,null),this.scheduleOnce(function(){t.playAnimation(t.skeletonLaba,e[2][0],!0,1,null),t.setIsLock(!1),t.tipStart()},1.5)},e.prototype.playAniWin=function(){var t=this,e=.5*this.nodeLong.scale/2,i=.5*this.nodeRole.scale/2;cc.tween(this.node).call(function(){cc.tween(t.nodeLong).to(e,{scale:1}).start()}).delay(e).call(function(){cc.tween(t.nodeRole).to(i,{scale:1}).start()}).delay(i).call(function(){kit.AudioPlayer.playEffect(t.arrAudioCom[3])}).start()},e.prototype.setIsLock=function(t){this.isLock=t,this.isLock&&this.tipHide()},e.prototype.refreshDataForMsg=function(t){this.quesIndex=t.quesIndex,this.selectItems=t.selectItems},e.prototype.updateDataForMsg=function(t){this.selectItems.push(t.itemId),this.selectItems.length>this.arrQues.length-1&&(this.isFinish=!0)},e.prototype.sendMessage=function(t,e){var i={cmd:t,page:this.pageNum,info:{itemId:0,result:!1,quesIndex:this.quesIndex,selectItems:this.selectItems}};for(var o in e)Object.prototype.hasOwnProperty.call(e,o)&&(i.info[o]=e[o]);var n={isTeacher:this.isTeacher,actionData:i};this.reDebug?this.receiveMessage(n):this.content.postMessage(JSON.stringify(n))},e.prototype.playAnimation=function(t,e,i,o,n){return t.timeScale=o,t.setToSetupPose(),t.clearTracks(),n&&t.setCompleteListener(function(){t.setCompleteListener(null),n()}),t.setAnimation(0,e,i)},e.prototype.playAniArray=function(t,e,i,o){var n=this,s=i.length;e<s-1?this.playAnimation(t,i[e],!1,1,function(){e++,n.playAniArray(t,e,i,o)}):(this.playAnimation(t,i[e],!0,1,null),o&&o())},e.prototype.setParams=function(t){cc.log("set params: "+JSON.stringify(t)),this.pageNum=0,this.isTeacher=t.isTeacher||!1},e.prototype.setContent=function(t){this.content=t},e.prototype.receiveMessage=function(t){var e=t.actionData;if(cc.log(JSON.stringify(e)+","),e&&e.cmd&&e.info){var i=e.info;switch(e.cmd){case this.event_game_next:this.msgResultElse(i);break;case this.event_game_sound:this.msgResultSound(i);break;case this.event_game_touch:this.msgResultTouch(i)}}},s([l([cc.AudioClip])],e.prototype,"arrAudioCom",void 0),s([l([cc.AudioClip])],e.prototype,"arrAudioRight",void 0),s([l([cc.AudioClip])],e.prototype,"arrAudioTitle",void 0),s([l([cc.AudioClip])],e.prototype,"arrAudioSpine",void 0),s([l(cc.Node)],e.prototype,"nodeLong",void 0),s([l(cc.Node)],e.prototype,"nodeRole",void 0),s([l([cc.Node])],e.prototype,"arrQues",void 0),s([l(cc.Node)],e.prototype,"btnElse",void 0),s([l(sp.Skeleton)],e.prototype,"skeletonRole",void 0),s([l(sp.Skeleton)],e.prototype,"skeletonLaba",void 0),s([c],e)}(cc.Component);i.default=p,cc._RF.pop()},{"../res/hand/script/HandCtrLong":"HandCtrLong"}],HandCtrLong:[function(t,e,i){"use strict";cc._RF.push(e,"5cffcKCFBhFhqL40gEcET53","HandCtrLong");var o,n=this&&this.__extends||(o=function(t,e){return(o=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}o(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}),s=this&&this.__decorate||function(t,e,i,o){var n,s=arguments.length,a=s<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,i):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)a=Reflect.decorate(t,e,i,o);else for(var r=t.length-1;r>=0;r--)(n=t[r])&&(a=(s<3?n(a):s>3?n(e,i,a):n(e,i))||a);return s>3&&a&&Object.defineProperty(e,i,a),a};Object.defineProperty(i,"__esModule",{value:!0});var a,r,c=cc._decorator,l=c.ccclass,p=c.property;(function(t){t.danji="dainji",t.dianji="dainjitaiqi",t.taishou="taiqi"})(a||(a={})),function(t){t.dianji="dianji",t.taishou="taishou"}(r||(r={}));var u=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.skAperture=null,e.skHand=null,e.arrow=null,e.arrowWidth=0,e}return n(e,t),e.prototype.start=function(){},e.prototype.onEnable=function(){this.skAperture.node.active=!1},e.prototype.onDisable=function(){this.arrow.stopAllActions(),this.arrow.width=0,this.node.stopAllActions(),this.unscheduleAllCallbacks()},e.prototype.Press=function(t){var e=this;this.skAperture.node.active=!1,this.playSpine(this.skHand,a.danji,!1,function(){e.skAperture.node.active=!0,e.playSpine(e.skAperture,r.dianji,!1,function(){t&&t()})})},e.prototype.Lift=function(t){this.playSpine(this.skHand,a.taishou,!1,function(){t&&t()})},e.prototype.Click=function(t){var e=this;void 0===t&&(t=null),this.skAperture.node.active=!0,this.playSpine(this.skAperture,r.dianji,!1),this.playSpine(this.skHand,a.danji,!1,function(){e.playSpine(e.skHand,a.taishou,!1,function(){t&&t()})})},e.prototype.ClickCycle=function(){var t=this;this.node.active=!0,this.schedule(function(){t.Click()},2,cc.macro.REPEAT_FOREVER,.01)},e.prototype.ClickCycleByScale=function(t,e){var i=this;this.node.active=!0,this.schedule(function(){i.Click()},e,cc.macro.REPEAT_FOREVER,.01),this.skHand.timeScale=t,this.skAperture.timeScale=t},e.prototype.TouchAnimation=function(t,e,i){var o=this;void 0===i&&(i=.5),this.node.active=!0,this.node.stopAllActions(),this.node.setPosition(t),this.arrow.width=0,this.Press(function(){cc.tween(o.node).to(i,{position:cc.v3(e.x,e.y,0)}).call(function(){o.Lift(null)}).start(),cc.tween(o.arrow).to(i,{width:o.arrowWidth}).call(function(){}).start()})},e.prototype.MoveWithPosList=function(t,e){var i=this;this.node.active=!0,this.node.stopAllActions(),this.node.setPosition(t),this.arrow.width=0;for(var o=[],n=function(t){o.push(function(){return new Promise(function(e){cc.tween(i.node).to(t.time,{position:cc.v3(t.pos.x,t.pos.y,0)}).call(function(){e(null)}).start()})})},s=0,a=e;s<a.length;s++)n(a[s]);return new Promise(function(t){i.Press(function(){var e,n;(e=o,n=Promise.resolve(),e.forEach(function(t){n=n.then(t)}),n).then(function(){i.Lift(null),t()})})})},e.prototype.TouchCycle=function(t,e,i,o){var n=this;void 0===i&&(i=3),void 0===o&&(o=.5),this.node.setPosition(t),this.schedule(function(){n.TouchAnimation(t,e,o)},i,cc.macro.REPEAT_FOREVER,.01);var s=Math.abs(e.x-t.x),a=Math.abs(e.y-t.y),r=e.sub(t).signAngle(cc.v2(1,0))/Math.PI*180;this.arrow.active=!0,this.arrow.angle=-r,this.arrowWidth=Math.sqrt(s*s+a*a)/this.node.scale,this.arrow.getChildByName("arrow").width<this.arrowWidth&&(this.arrow.getChildByName("arrow").width=this.arrowWidth)},e.prototype.stopCycleAllAction=function(){this.unscheduleAllCallbacks(),cc.Tween.stopAllByTarget(this.node),cc.Tween.stopAllByTarget(this.arrow)},e.prototype.wipeCycle=function(t,e,i){var o=this;void 0===i&&(i=200),this.node.active=!0,this.node.setPosition(t),this.arrow.active=!1;var n=e.sub(t).mag();this.playSpine(this.skHand,a.danji,!1,function(){o.skAperture.node.active=!0,o.playSpine(o.skAperture,r.dianji,!0),cc.tween(o.node).repeatForever(cc.tween().to(n/i,{position:cc.v3(e)}).to(n/i,{position:cc.v3(t)})).start()})},e.prototype.playSpine=function(t,e,i,o){void 0===i&&(i=!1),void 0===o&&(o=null),t.clearTracks(),t.setToSetupPose(),t.setAnimation(0,e,i)&&!i&&t.setCompleteListener(function(t){(t.animation.name?t.animation.name:"")==e&&o&&o()})},s([p({type:sp.Skeleton,displayName:"\u5149\u5708"})],e.prototype,"skAperture",void 0),s([p({type:sp.Skeleton,displayName:"\u624b\u6307"})],e.prototype,"skHand",void 0),s([p({type:cc.Node,displayName:"\u7bad\u5934"})],e.prototype,"arrow",void 0),s([l],e)}(cc.Component);i.default=u,cc._RF.pop()},{}]},{},["HandCtrLong","GameListenLong"]);
+window.__require = function e(t, n, r) {
+  function s(o, u) {
+    if (!n[o]) {
+      if (!t[o]) {
+        var b = o.split("/");
+        b = b[b.length - 1];
+        if (!t[b]) {
+          var a = "function" == typeof __require && __require;
+          if (!u && a) return a(b, !0);
+          if (i) return i(b, !0);
+          throw new Error("Cannot find module '" + o + "'");
+        }
+        o = b;
+      }
+      var f = n[o] = {
+        exports: {}
+      };
+      t[o][0].call(f.exports, function(e) {
+        var n = t[o][1][e];
+        return s(n || e);
+      }, f, f.exports, e, t, n, r);
+    }
+    return n[o].exports;
+  }
+  var i = "function" == typeof __require && __require;
+  for (var o = 0; o < r.length; o++) s(r[o]);
+  return s;
+}({
+  GameListenLong: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "53ed8GqUWdJMYG7I4+cFFFr", "GameListenLong");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var HandCtrLong_1 = require("../res/hand/script/HandCtrLong");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var GameSnailPaShan = function(_super) {
+      __extends(GameSnailPaShan, _super);
+      function GameSnailPaShan() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.arrAudioCom = [];
+        _this.arrAudioRight = [];
+        _this.arrAudioTitle = [];
+        _this.arrAudioSpine = [];
+        _this.nodeLong = null;
+        _this.nodeRole = null;
+        _this.arrQues = [];
+        _this.btnElse = null;
+        _this.skeletonRole = null;
+        _this.skeletonLaba = null;
+        _this.isLock = false;
+        _this.isFinish = false;
+        _this.quesIndex = 0;
+        _this.selectItems = [];
+        _this.pageNum = 0;
+        _this.event_game_next = "EVENT_GAME_NEXT";
+        _this.event_game_sound = "EVENT_GAME_SOUND";
+        _this.event_game_touch = "EVENT_GAME_TOUDH";
+        _this.event_game_end = "EVENT_GAME_END";
+        _this.reDebug = false;
+        _this.isTeacher = !!_this.reDebug;
+        _this.tiptimeCount = 0;
+        _this.tipTimeMax = 5;
+        _this.tipState = 0;
+        _this.dataQues = {
+          options: [ {
+            title: "\u9f3b\u5b50",
+            scaleType: 0,
+            delay: .8
+          }, {
+            title: "\u773c\u775b",
+            scaleType: 0,
+            delay: .1
+          }, {
+            title: "\u5634\u5df4",
+            scaleType: 0,
+            delay: .1
+          }, {
+            title: "\u8033\u6735",
+            scaleType: 0,
+            delay: .4
+          }, {
+            title: "\u5934\u53d1",
+            scaleType: 0,
+            delay: .1
+          }, {
+            title: "\u811a",
+            scaleType: 1,
+            delay: .1
+          } ],
+          scaleTo: [ {
+            scaleLong: 2,
+            scaleRole: 1
+          }, {
+            scaleLong: 1,
+            scaleRole: 2
+          } ],
+          dataSpine: [ [ "daiji", "guzhang", "xuanyun", "hello" ], [ "bizi", "yanjing", "zuiba", "erduo", "toufa", "jiao" ], [ "daiji", "bobao" ] ]
+        };
+        return _this;
+      }
+      GameSnailPaShan.prototype.onDisable = function() {
+        kit.AudioPlayer.stopAll();
+      };
+      GameSnailPaShan.prototype.onDestroy = function() {
+        _super.prototype.onDestroy.call(this);
+        this.sendMessage(this.event_game_end, {});
+      };
+      GameSnailPaShan.prototype.start = function() {
+        this.setIsLock(true);
+        this.initData();
+        this.resetData();
+        this.updateUI();
+        this.nextQuestion();
+      };
+      GameSnailPaShan.prototype.update = function(dt) {
+        if (this.isFinish) return;
+        if (0 === this.tipState) {
+          this.tiptimeCount += dt;
+          if (this.tiptimeCount >= this.tipTimeMax) {
+            this.tiptimeCount = 0;
+            this.tipState = 1;
+            this.tipShow();
+          }
+        }
+      };
+      GameSnailPaShan.prototype.initData = function() {};
+      GameSnailPaShan.prototype.resetData = function() {
+        var _data = this.content && this.content["getSnapshot"] ? this.content["getSnapshot"]() : {};
+        _data && (_data = _data.actionData);
+        if (_data && _data.cmd && _data.cmd != this.event_game_end && _data.info && _data.page == this.pageNum) {
+          var info = _data.info;
+          this.refreshDataForMsg(info);
+          _data.cmd === this.event_game_touch && info.result && this.updateDataForMsg(info);
+          window.sessionStorage.removeItem("workInfoList");
+        }
+      };
+      GameSnailPaShan.prototype.updateUI = function() {
+        this.updateUIForQues();
+        this.updateUIForSpine();
+      };
+      GameSnailPaShan.prototype.updateUIForQues = function() {
+        var selectNum = this.selectItems.length;
+        for (var index = 0, length = this.arrQues.length; index < length; index++) {
+          var element = this.arrQues[index];
+          element.active = index === selectNum;
+        }
+      };
+      GameSnailPaShan.prototype.updateUIForSpine = function() {
+        var dataSpine = this.dataQues.dataSpine;
+        this.playAnimation(this.skeletonRole, dataSpine[0][0], true, 1, null);
+        this.playAnimation(this.skeletonLaba, dataSpine[2][0], true, 1, null);
+      };
+      GameSnailPaShan.prototype.tipStart = function() {
+        this.tipState = 0;
+        this.tiptimeCount = 0;
+      };
+      GameSnailPaShan.prototype.tipShow = function() {
+        var _this = this;
+        this.tipState = 1;
+        var _loop_1 = function(index, length) {
+          var element = this_1.arrQues[index];
+          if (element.active) {
+            var hand = element.getChildByName("hand");
+            hand.active = true;
+            var script_1 = hand.getComponent(HandCtrLong_1.default);
+            var count_1 = 0, number_1 = 3;
+            var funcHand_1 = function() {
+              if (count_1 < number_1) {
+                count_1++;
+                script_1.Click(funcHand_1);
+              } else {
+                _this.tipHide();
+                _this.tipStart();
+              }
+            };
+            funcHand_1();
+          }
+        };
+        var this_1 = this;
+        for (var index = 0, length = this.arrQues.length; index < length; index++) _loop_1(index, length);
+      };
+      GameSnailPaShan.prototype.tipHide = function() {
+        this.tipState = 1;
+        var _loop_2 = function(index, length) {
+          var element = this_2.arrQues[index];
+          var hand = element.getChildByName("hand");
+          if (element.active && hand.active) {
+            hand.active = true;
+            hand.opacity = 255;
+            cc.tween(hand).to(.3, {
+              opacity: 0
+            }).call(function() {
+              hand.opacity = 255;
+              hand.active = false;
+            }).start();
+          }
+        };
+        var this_2 = this;
+        for (var index = 0, length = this.arrQues.length; index < length; index++) _loop_2(index, length);
+      };
+      GameSnailPaShan.prototype.nextQuestion = function() {
+        var _this = this;
+        if (this.isFinish) return;
+        this.tipHide();
+        var selectNum = this.selectItems.length;
+        var dataOne = this.dataQues.options[selectNum];
+        var dataSpine = this.dataQues.dataSpine;
+        var funcHello = function(callBack) {
+          kit.AudioPlayer.playEffect(_this.arrAudioCom[0]);
+          _this.playAniArray(_this.skeletonRole, 0, [ dataSpine[0][3], dataSpine[0][0] ], callBack);
+        };
+        var funcTitle = function() {
+          var scaleObj = _this.dataQues.scaleTo[dataOne.scaleType];
+          var timeDis = .5, scaleDis = 2;
+          var timeLong = scaleObj.scaleLong * timeDis / scaleDis;
+          var timeRole = scaleObj.scaleRole * timeDis / scaleDis;
+          var timeDelay = scaleObj.scaleLong > 1 || scaleObj.scaleRole > 1 ? .5 : .1;
+          cc.tween(_this.node).call(function() {
+            cc.tween(_this.nodeLong).to(timeLong, {
+              scale: scaleObj.scaleLong
+            }).start();
+          }).delay(timeLong).call(function() {
+            cc.tween(_this.nodeRole).to(timeRole, {
+              scale: scaleObj.scaleRole
+            }).start();
+          }).delay(timeRole + timeDelay).call(function() {
+            _this.playAniSound();
+          }).start();
+        };
+        if (selectNum > 0) funcTitle(); else {
+          var timeDelay = .5;
+          this.scheduleOnce(function() {
+            funcHello(funcTitle);
+          }, timeDelay);
+        }
+      };
+      GameSnailPaShan.prototype.eventElse = function() {
+        if (this.isLock) return;
+        this.setIsLock(true);
+        this.sendMessage(this.event_game_next, {
+          itemId: 0,
+          result: false
+        });
+      };
+      GameSnailPaShan.prototype.msgResultElse = function(_data) {
+        this.setIsLock(true);
+        this.refreshDataForMsg(_data);
+        this.playAniWrong(this.playAniSound.bind(this));
+      };
+      GameSnailPaShan.prototype.eventSound = function() {
+        if (this.isLock) return;
+        this.setIsLock(true);
+        this.sendMessage(this.event_game_sound, {
+          itemId: 0,
+          result: true
+        });
+      };
+      GameSnailPaShan.prototype.msgResultSound = function(_data) {
+        this.setIsLock(true);
+        this.refreshDataForMsg(_data);
+        this.playAniSound();
+      };
+      GameSnailPaShan.prototype.eventTouch = function(_event) {
+        if (this.isLock) return;
+        var itemId = this.arrQues.indexOf(_event.target.parent);
+        if (itemId < 0 || this.selectItems.indexOf(itemId) >= 0) return;
+        this.setIsLock(true);
+        this.sendMessage(this.event_game_touch, {
+          itemId: itemId,
+          result: true
+        });
+      };
+      GameSnailPaShan.prototype.msgResultTouch = function(_data) {
+        var _this = this;
+        this.setIsLock(true);
+        this.refreshDataForMsg(_data);
+        var callBack = function() {
+          _this.updateDataForMsg(_data);
+          if (_this.isFinish) _this.playAniWin(); else {
+            _this.updateUIForQues();
+            _this.nextQuestion();
+          }
+        };
+        this.playAniSuccess(callBack);
+      };
+      GameSnailPaShan.prototype.playAniSuccess = function(callBack) {
+        var _this = this;
+        var selectNum = this.selectItems.length;
+        var dataSpine = this.dataQues.dataSpine;
+        var arrSpine = [ dataSpine[1][selectNum], dataSpine[0][1], dataSpine[0][0] ];
+        var funcRight = function() {
+          kit.AudioPlayer.stopAll();
+          var rightId = Math.floor(3 * Math.random());
+          kit.AudioPlayer.playEffect(_this.arrAudioRight[rightId]);
+          _this.playAniArray(_this.skeletonRole, 0, [ arrSpine[1], arrSpine[2] ], function() {
+            _this.scheduleOnce(callBack, 1);
+          });
+        };
+        var dataOne = this.dataQues.options[selectNum];
+        cc.tween(this.node).delay(dataOne.delay).call(function() {
+          kit.AudioPlayer.playEffect(_this.arrAudioSpine[selectNum]);
+        }).start();
+        this.playAnimation(this.skeletonRole, arrSpine[0], false, 1, funcRight);
+      };
+      GameSnailPaShan.prototype.playAniWrong = function(callBack) {
+        var _this = this;
+        kit.AudioPlayer.playEffect(this.arrAudioCom[1]);
+        var dataSpine = this.dataQues.dataSpine;
+        var arrSpine = [ dataSpine[0][2], dataSpine[0][0] ];
+        this.playAniArray(this.skeletonRole, 0, arrSpine, function() {
+          cc.tween(_this.node).delay(.8).call(function() {
+            kit.AudioPlayer.playEffect(_this.arrAudioCom[2]);
+          }).delay(2.2).call(function() {
+            callBack();
+          }).start();
+        });
+      };
+      GameSnailPaShan.prototype.playAniSound = function() {
+        var _this = this;
+        var dataSpine = this.dataQues.dataSpine;
+        var selectNum = this.selectItems.length;
+        kit.AudioPlayer.playEffect(this.arrAudioTitle[selectNum]);
+        this.playAnimation(this.skeletonLaba, dataSpine[2][1], true, 1, null);
+        this.scheduleOnce(function() {
+          _this.playAnimation(_this.skeletonLaba, dataSpine[2][0], true, 1, null);
+          _this.setIsLock(false);
+          _this.tipStart();
+        }, 1.5);
+      };
+      GameSnailPaShan.prototype.playAniWin = function() {
+        var _this = this;
+        var timeDis = .5, scaleDis = 2;
+        var timeLong = this.nodeLong.scale * timeDis / scaleDis;
+        var timeRole = this.nodeRole.scale * timeDis / scaleDis;
+        cc.tween(this.node).call(function() {
+          cc.tween(_this.nodeLong).to(timeLong, {
+            scale: 1
+          }).start();
+        }).delay(timeLong).call(function() {
+          cc.tween(_this.nodeRole).to(timeRole, {
+            scale: 1
+          }).start();
+        }).delay(timeRole).call(function() {
+          kit.AudioPlayer.playEffect(_this.arrAudioCom[3]);
+        }).start();
+      };
+      GameSnailPaShan.prototype.setIsLock = function(isLock) {
+        this.isLock = isLock;
+        this.isLock && this.tipHide();
+      };
+      GameSnailPaShan.prototype.refreshDataForMsg = function(_data) {
+        this.quesIndex = _data.quesIndex;
+        this.selectItems = _data.selectItems;
+      };
+      GameSnailPaShan.prototype.updateDataForMsg = function(_data) {
+        this.selectItems.push(_data.itemId);
+        this.selectItems.length > this.arrQues.length - 1 && (this.isFinish = true);
+      };
+      GameSnailPaShan.prototype.sendMessage = function(cmd, object) {
+        var handleData = {
+          cmd: cmd,
+          page: this.pageNum,
+          info: {
+            itemId: 0,
+            result: false,
+            quesIndex: this.quesIndex,
+            selectItems: this.selectItems
+          }
+        };
+        for (var key in object) Object.prototype.hasOwnProperty.call(object, key) && (handleData.info[key] = object[key]);
+        var tempData = {
+          isTeacher: this.isTeacher,
+          actionData: handleData
+        };
+        if (this.reDebug) {
+          this.receiveMessage(tempData);
+          return;
+        }
+        this.content.postMessage(JSON.stringify(tempData));
+      };
+      GameSnailPaShan.prototype.playAnimation = function(skeleton, aniName, isLoop, timeScale, callBack) {
+        skeleton.timeScale = timeScale;
+        skeleton.setToSetupPose();
+        skeleton.clearTracks();
+        callBack && skeleton.setCompleteListener(function() {
+          skeleton.setCompleteListener(null);
+          callBack();
+        });
+        var entry = skeleton.setAnimation(0, aniName, isLoop);
+        return entry;
+      };
+      GameSnailPaShan.prototype.playAniArray = function(skeleton, index, arrSpine, callBack) {
+        var _this = this;
+        var length = arrSpine.length;
+        if (index < length - 1) this.playAnimation(skeleton, arrSpine[index], false, 1, function() {
+          index++;
+          _this.playAniArray(skeleton, index, arrSpine, callBack);
+        }); else {
+          this.playAnimation(skeleton, arrSpine[index], true, 1, null);
+          callBack && callBack();
+        }
+      };
+      GameSnailPaShan.prototype.setParams = function(data) {
+        cc.log("set params: " + JSON.stringify(data));
+        this.pageNum = 0;
+        this.isTeacher = data.isTeacher || false;
+      };
+      GameSnailPaShan.prototype.setContent = function(content) {
+        this.content = content;
+      };
+      GameSnailPaShan.prototype.receiveMessage = function(data) {
+        var handleData = data.actionData;
+        cc.log(JSON.stringify(handleData) + ",");
+        if (handleData && handleData.cmd && handleData.info) {
+          var info = handleData.info;
+          switch (handleData.cmd) {
+           case this.event_game_next:
+            this.msgResultElse(info);
+            break;
+
+           case this.event_game_sound:
+            this.msgResultSound(info);
+            break;
+
+           case this.event_game_touch:
+            this.msgResultTouch(info);
+          }
+        }
+      };
+      __decorate([ property([ cc.AudioClip ]) ], GameSnailPaShan.prototype, "arrAudioCom", void 0);
+      __decorate([ property([ cc.AudioClip ]) ], GameSnailPaShan.prototype, "arrAudioRight", void 0);
+      __decorate([ property([ cc.AudioClip ]) ], GameSnailPaShan.prototype, "arrAudioTitle", void 0);
+      __decorate([ property([ cc.AudioClip ]) ], GameSnailPaShan.prototype, "arrAudioSpine", void 0);
+      __decorate([ property(cc.Node) ], GameSnailPaShan.prototype, "nodeLong", void 0);
+      __decorate([ property(cc.Node) ], GameSnailPaShan.prototype, "nodeRole", void 0);
+      __decorate([ property([ cc.Node ]) ], GameSnailPaShan.prototype, "arrQues", void 0);
+      __decorate([ property(cc.Node) ], GameSnailPaShan.prototype, "btnElse", void 0);
+      __decorate([ property(sp.Skeleton) ], GameSnailPaShan.prototype, "skeletonRole", void 0);
+      __decorate([ property(sp.Skeleton) ], GameSnailPaShan.prototype, "skeletonLaba", void 0);
+      GameSnailPaShan = __decorate([ ccclass ], GameSnailPaShan);
+      return GameSnailPaShan;
+    }(cc.Component);
+    exports.default = GameSnailPaShan;
+    cc._RF.pop();
+  }, {
+    "../res/hand/script/HandCtrLong": "HandCtrLong"
+  } ],
+  HandCtrLong: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "5cffcKCFBhFhqL40gEcET53", "HandCtrLong");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var HandSpineAnimationName;
+    (function(HandSpineAnimationName) {
+      HandSpineAnimationName["danji"] = "dainji";
+      HandSpineAnimationName["dianji"] = "dainjitaiqi";
+      HandSpineAnimationName["taishou"] = "taiqi";
+    })(HandSpineAnimationName || (HandSpineAnimationName = {}));
+    var ApertureAnimationName;
+    (function(ApertureAnimationName) {
+      ApertureAnimationName["dianji"] = "dianji";
+      ApertureAnimationName["taishou"] = "taishou";
+    })(ApertureAnimationName || (ApertureAnimationName = {}));
+    var HandCtrLong = function(_super) {
+      __extends(HandCtrLong, _super);
+      function HandCtrLong() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.skAperture = null;
+        _this.skHand = null;
+        _this.arrow = null;
+        _this.arrowWidth = 0;
+        return _this;
+      }
+      HandCtrLong.prototype.start = function() {};
+      HandCtrLong.prototype.onEnable = function() {
+        this.skAperture.node.active = false;
+      };
+      HandCtrLong.prototype.onDisable = function() {
+        this.arrow.stopAllActions();
+        this.arrow.width = 0;
+        this.node.stopAllActions();
+        this.unscheduleAllCallbacks();
+      };
+      HandCtrLong.prototype.Press = function(callback) {
+        var _this = this;
+        this.skAperture.node.active = false;
+        this.playSpine(this.skHand, HandSpineAnimationName.danji, false, function() {
+          _this.skAperture.node.active = true;
+          _this.playSpine(_this.skAperture, ApertureAnimationName.dianji, false, function() {
+            callback && callback();
+          });
+        });
+      };
+      HandCtrLong.prototype.Lift = function(callback) {
+        this.playSpine(this.skHand, HandSpineAnimationName.taishou, false, function() {
+          callback && callback();
+        });
+      };
+      HandCtrLong.prototype.Click = function(callback) {
+        var _this = this;
+        void 0 === callback && (callback = null);
+        this.skAperture.node.active = true;
+        this.playSpine(this.skAperture, ApertureAnimationName.dianji, false);
+        this.playSpine(this.skHand, HandSpineAnimationName.danji, false, function() {
+          _this.playSpine(_this.skHand, HandSpineAnimationName.taishou, false, function() {
+            callback && callback();
+          });
+        });
+      };
+      HandCtrLong.prototype.ClickCycle = function() {
+        var _this = this;
+        this.node.active = true;
+        this.schedule(function() {
+          _this.Click();
+        }, 2, cc.macro.REPEAT_FOREVER, .01);
+      };
+      HandCtrLong.prototype.ClickCycleByScale = function(mScale, speed) {
+        var _this = this;
+        this.node.active = true;
+        this.schedule(function() {
+          _this.Click();
+        }, speed, cc.macro.REPEAT_FOREVER, .01);
+        this.skHand.timeScale = mScale;
+        this.skAperture.timeScale = mScale;
+      };
+      HandCtrLong.prototype.TouchAnimation = function(starPos, endPos, time) {
+        var _this = this;
+        void 0 === time && (time = .5);
+        this.node.active = true;
+        this.node.stopAllActions();
+        this.node.setPosition(starPos);
+        this.arrow.width = 0;
+        this.Press(function() {
+          cc.tween(_this.node).to(time, {
+            position: cc.v3(endPos.x, endPos.y, 0)
+          }).call(function() {
+            _this.Lift(null);
+          }).start();
+          cc.tween(_this.arrow).to(time, {
+            width: _this.arrowWidth
+          }).call(function() {}).start();
+        });
+      };
+      HandCtrLong.prototype.MoveWithPosList = function(starPos, nxetPosList) {
+        var _this = this;
+        this.node.active = true;
+        this.node.stopAllActions();
+        this.node.setPosition(starPos);
+        this.arrow.width = 0;
+        var allMove = [];
+        var _loop_1 = function(v) {
+          var move = function() {
+            return new Promise(function(resolve, reject) {
+              cc.tween(_this.node).to(v.time, {
+                position: cc.v3(v.pos.x, v.pos.y, 0)
+              }).call(function() {
+                resolve(null);
+              }).start();
+            });
+          };
+          allMove.push(move);
+        };
+        for (var _i = 0, nxetPosList_1 = nxetPosList; _i < nxetPosList_1.length; _i++) {
+          var v = nxetPosList_1[_i];
+          _loop_1(v);
+        }
+        function queue(arr) {
+          var sequence = Promise.resolve();
+          arr.forEach(function(item) {
+            sequence = sequence.then(item);
+          });
+          return sequence;
+        }
+        return new Promise(function(resolve) {
+          _this.Press(function() {
+            queue(allMove).then(function(res) {
+              _this.Lift(null);
+              resolve();
+            });
+          });
+        });
+      };
+      HandCtrLong.prototype.TouchCycle = function(starPos, endPos, waitTime, runTime) {
+        var _this = this;
+        void 0 === waitTime && (waitTime = 3);
+        void 0 === runTime && (runTime = .5);
+        this.node.setPosition(starPos);
+        this.schedule(function() {
+          _this.TouchAnimation(starPos, endPos, runTime);
+        }, waitTime, cc.macro.REPEAT_FOREVER, .01);
+        var arrowWidth = Math.abs(endPos.x - starPos.x);
+        var arrowHeight = Math.abs(endPos.y - starPos.y);
+        var dir = endPos.sub(starPos);
+        var angle = dir.signAngle(cc.v2(1, 0));
+        var degree = angle / Math.PI * 180;
+        this.arrow.active = true;
+        this.arrow.angle = -degree;
+        this.arrowWidth = Math.sqrt(arrowWidth * arrowWidth + arrowHeight * arrowHeight) / this.node.scale;
+        this.arrow.getChildByName("arrow").width < this.arrowWidth && (this.arrow.getChildByName("arrow").width = this.arrowWidth);
+      };
+      HandCtrLong.prototype.stopCycleAllAction = function() {
+        this.unscheduleAllCallbacks();
+        cc.Tween.stopAllByTarget(this.node);
+        cc.Tween.stopAllByTarget(this.arrow);
+      };
+      HandCtrLong.prototype.wipeCycle = function(starPos, endPos, speed) {
+        var _this = this;
+        void 0 === speed && (speed = 200);
+        this.node.active = true;
+        this.node.setPosition(starPos);
+        this.arrow.active = false;
+        var len = endPos.sub(starPos).mag();
+        this.playSpine(this.skHand, HandSpineAnimationName.danji, false, function() {
+          _this.skAperture.node.active = true;
+          _this.playSpine(_this.skAperture, ApertureAnimationName.dianji, true);
+          cc.tween(_this.node).repeatForever(cc.tween().to(len / speed, {
+            position: cc.v3(endPos)
+          }).to(len / speed, {
+            position: cc.v3(starPos)
+          })).start();
+        });
+      };
+      HandCtrLong.prototype.playSpine = function(spNode, spName, loop, callback) {
+        void 0 === loop && (loop = false);
+        void 0 === callback && (callback = null);
+        spNode.clearTracks();
+        spNode.setToSetupPose();
+        var track = spNode.setAnimation(0, spName, loop);
+        track && !loop && spNode.setCompleteListener(function(trackEntry, loopCount) {
+          var name = trackEntry.animation.name ? trackEntry.animation.name : "";
+          name == spName && callback && callback();
+        });
+      };
+      __decorate([ property({
+        type: sp.Skeleton,
+        displayName: "\u5149\u5708"
+      }) ], HandCtrLong.prototype, "skAperture", void 0);
+      __decorate([ property({
+        type: sp.Skeleton,
+        displayName: "\u624b\u6307"
+      }) ], HandCtrLong.prototype, "skHand", void 0);
+      __decorate([ property({
+        type: cc.Node,
+        displayName: "\u7bad\u5934"
+      }) ], HandCtrLong.prototype, "arrow", void 0);
+      HandCtrLong = __decorate([ ccclass ], HandCtrLong);
+      return HandCtrLong;
+    }(cc.Component);
+    exports.default = HandCtrLong;
+    cc._RF.pop();
+  }, {} ]
+}, {}, [ "HandCtrLong", "GameListenLong" ]);
+//# sourceMappingURL=index.js.map
