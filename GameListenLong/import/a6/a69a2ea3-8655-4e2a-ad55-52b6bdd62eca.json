@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "ebFjE9Im9O0I0rJ+LYG9m3"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "laba",
+      "rect": [
+        2,
+        2,
+        244,
+        412
+      ],
+      "offset": [
+        -132,
+        48
+      ],
+      "originalSize": [
+        512,
+        512
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]
