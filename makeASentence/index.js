@@ -1,1 +1,1062 @@
-window.__require=function t(e,o,i){function n(s,a){if(!o[s]){if(!e[s]){var c=s.split("/");if(c=c[c.length-1],!e[c]){var u="function"==typeof __require&&__require;if(!a&&u)return u(c,!0);if(r)return r(c,!0);throw new Error("Cannot find module '"+s+"'")}s=c}var p=o[s]={exports:{}};e[s][0].call(p.exports,function(t){return n(e[s][1][t]||t)},p,p.exports,t,e,o,i)}return o[s].exports}for(var r="function"==typeof __require&&__require,s=0;s<i.length;s++)n(i[s]);return n}({AnswerItem:[function(t,e,o){"use strict";cc._RF.push(e,"de911k7qNBBNI2WXjopCaSw","AnswerItem");var i,n=this&&this.__extends||(i=function(t,e){return(i=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var o in e)Object.prototype.hasOwnProperty.call(e,o)&&(t[o]=e[o])})(t,e)},function(t,e){function o(){this.constructor=t}i(t,e),t.prototype=null===e?Object.create(e):(o.prototype=e.prototype,new o)}),r=this&&this.__decorate||function(t,e,o,i){var n,r=arguments.length,s=r<3?e:null===i?i=Object.getOwnPropertyDescriptor(e,o):i;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,o,i);else for(var a=t.length-1;a>=0;a--)(n=t[a])&&(s=(r<3?n(s):r>3?n(e,o,s):n(e,o))||s);return r>3&&s&&Object.defineProperty(e,o,s),s};Object.defineProperty(o,"__esModule",{value:!0});var s=cc._decorator,a=s.ccclass,c=s.property,u=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.label=null,e}var o;return n(e,t),o=e,e.prototype.setString=function(t){this.label.string=t},e.prototype.getString=function(){return this.label.string},e.prototype.isValueEqual=function(t){return t.getString()==this.getString()},e.prototype.onDestroy=function(){this.unuse(),kit.pool.PrefabPool.put(this.node,"answerItem",o)},e.prototype.reuse=function(){cc.log("reuse item")},e.prototype.unuse=function(){cc.log("unuse item")},r([c(cc.Label)],e.prototype,"label",void 0),o=r([a],e)}(cc.Component);o.default=u,cc._RF.pop()},{}],Config:[function(t,e,o){"use strict";cc._RF.push(e,"7d259bcpq1GepgSPh9U8W5v","Config"),Object.defineProperty(o,"__esModule",{value:!0}),o.Config=void 0,o.Config={data:[{index:0,correctAnswer:"What's your name",questions:["your","name","What's"],stopCode:"?"},{index:1,correctAnswer:"How old are you",questions:["old","you","are","How"],stopCode:"?"},{index:2,correctAnswer:"I am seven",questions:["am","I","seven"],stopCode:"."},{index:3,correctAnswer:"Raise your hand please",questions:["please","your","Raise","hand"],stopCode:"."},{index:4,correctAnswer:"Be quiet please",questions:["quiet","Be","please"],stopCode:"."}]},cc._RF.pop()},{}],Delegate:[function(t,e,o){"use strict";cc._RF.push(e,"c986aZS7eJF9LbSvqvx3QPN","Delegate"),Object.defineProperty(o,"__esModule",{value:!0});var i=t("./AnswerItem"),n=t("./Config"),r=t("./QuestionItem"),s=function(){function t(t){this.lastOpTime=0,this.tipSpaceTime=5e3,this.touchMoveSpaceTime=100,this.root=t,this.operateLock=!1}return t.prototype.start=function(t){var e=this;void 0===t&&(t=!1),this.addListener(),!t&&this.gameStart(),t||this.root.isTeacher||this.root.scheduleOnce(function(){var t=e.root.questionNode.children[2].convertToWorldSpaceAR(cc.Vec3.ZERO);t=e.root.node.convertToNodeSpaceAR(cc.v2(t.x,t.y));var o=e.root.rootNode.children[0].convertToWorldSpaceAR(cc.Vec3.ZERO);o=e.root.node.convertToNodeSpaceAR(cc.v2(o.x,o.y)),e.root.guildHand(t,o)},.5)},t.prototype.clearGameTable=function(){this.curTarget=null,this.curTargetBasePos=null,this.root.rootNode.removeAllChildren(),this.root.questionNode.removeAllChildren()},t.prototype.reStart=function(){this.curRound=0,this.curRoundData=n.Config.data[this.curRound],this.operation=null,this.root.stopCode.node.parent.active=!1,this.createRoundElement()},t.prototype.lastRound=function(){this.curRound--,this.curRound<0&&(this.curRound=0),this.curRoundData=n.Config.data[this.curRound],this.operation=null,this.root.stopCode.node.parent.active=!1,this.createRoundElement(!0),this.root.resetLasers(this.operation.round)},t.prototype.onDestroy=function(){this.delListener(),this.root=null,this.operation=null,this.curRoundData=null,this.curTarget=null,this.curTargetBasePos=null},t.prototype.setOperationLock=function(){this.operateLock=!0,this.timeout&&(clearTimeout(this.timeout),this.timeout=null,this.root.stopTip()),this.root.stopTip(),this.backToBase()},t.prototype.setOperationFree=function(){var t=this;this.operateLock=!1,this.step>0&&(this.timeout=setTimeout(function(){t.checkShowOpTip()},this.tipSpaceTime))},t.prototype.checkShowOpTip=function(){var t=Date.now();if(t-this.lastOpTime>=this.tipSpaceTime){this.lastOpTime=t;var e=[];this.operation.data.forEach(function(t){t.correct||e.push(t.content)}),this.root.tipShow(e)}},t.prototype.backToBase=function(){var t=this;if(this.curTarget&&this.curTargetBasePos){var e=this.operation.data,o=this.curTarget.getComponent(r.default).getString();e.forEach(function(e){if(e.content==o){var i=t.curTargetBasePos.clone();e.position=cc.v2(i.x>>0,i.y>>0)}}),cc.tween(this.curTarget).to(.5,{x:this.curTargetBasePos.x>>0,y:this.curTargetBasePos.y>>0},cc.easeCubicActionOut()).call(function(){t.root.exportOperationData(t.operation,"operation",-1)}).start(),this.curTarget=null,this.curTargetBasePos=null}},t.prototype.addListener=function(){this.root.node.on(cc.Node.EventType.TOUCH_START,this.onTouchBegin,this),this.root.node.on(cc.Node.EventType.TOUCH_MOVE,this.onTouchMoved,this),this.root.node.on(cc.Node.EventType.TOUCH_END,this.onTouchReleased,this),this.root.node.on(cc.Node.EventType.TOUCH_CANCEL,this.onTouchReleased,this)},t.prototype.delListener=function(){this.root.node.off(cc.Node.EventType.TOUCH_START,this.onTouchBegin,this),this.root.node.off(cc.Node.EventType.TOUCH_MOVE,this.onTouchMoved,this),this.root.node.off(cc.Node.EventType.TOUCH_END,this.onTouchReleased,this),this.root.node.off(cc.Node.EventType.TOUCH_CANCEL,this.onTouchReleased,this)},t.prototype.onChooseTarget=function(t){this.timeout&&(clearTimeout(this.timeout),this.timeout=null,this.root.stopTip()),this.root.operator.string=t.nickName;var e,o=t.actionData.curContent;this.root.questionNode.children.forEach(function(t){t.getComponent(r.default).getString()==o&&(e=t.convertToWorldSpaceAR(cc.Vec2.ZERO))});var i=this.root.node.convertToNodeSpaceAR(e);this.root.hand.x=i.x,this.root.hand.y=i.y,this.root.hand.active=!0},t.prototype.onMoveTarget=function(t){var e=this;this.timeout&&(clearTimeout(this.timeout),this.timeout=null,this.root.stopTip()),this.root.hand.active=!0,this.root.operator.string=t.nickName;var o,i,n=t.actionData,s=n.curContent;n.data.forEach(function(t){t.content==s&&(o=t.position)}),this.root.questionNode.children.forEach(function(t){t.getComponent(r.default).getString()==s&&(o&&(cc.Tween.stopAllByTarget(t),t.setSiblingIndex(e.root.questionNode.childrenCount-1),cc.tween(t).to(.2,{x:o.x,y:o.y}).start()),i=t.convertToWorldSpaceAR(cc.Vec2.ZERO))});var a=this.root.node.convertToNodeSpaceAR(i);cc.Tween.stopAllByTarget(this.root.hand),cc.tween(this.root.hand).to(.2,{x:a.x,y:a.y}).start()},t.prototype.onTouchBegin=function(t){var e=this;if(!this.operateLock){this.root.stopHand(),this.root.stopTip(),this.timeout&&(clearTimeout(this.timeout),this.timeout=null,this.root.stopTip()),this.removeLayoutFromRoot();var o=t.getLocation();this.root.questionNode.children.forEach(function(t){var i=t.getComponent(r.default).getString();if(!e.getCorrect(i)){var n=t.getBoundingBoxToWorld();!e.curTarget&&n.contains(o)&&(e.touchStartTime=Date.now(),e.curTarget=t,e.curTargetBasePos=e.curTarget.getPosition(),e.curTarget.setSiblingIndex(e.root.questionNode.childrenCount-1),cc.log("get target, name: "+i),e.operation.curContent=e.curTarget.getComponent(r.default).getString(),e.root.exportOperationData(e.operation,"chooseTarget"))}})}},t.prototype.onTouchMoved=function(t){var e=this;if(!this.operateLock&&this.curTarget){this.curTarget.x+=t.getDeltaX(),this.curTarget.y+=t.getDeltaY();var o=Date.now();o-this.touchStartTime>=this.touchMoveSpaceTime&&(this.touchStartTime=o,this.operation.data.forEach(function(t){t.content==e.curTarget.getComponent(r.default).getString()&&(t.position.x=e.curTarget.x,t.position.y=e.curTarget.y)}),this.root.exportOperationData(this.operation,"moveTarget"))}},t.prototype.onTouchReleased=function(t){var e=this;if(!this.operateLock){if(this.curTarget){var o=t.getLocation();this.operation.step++;var i,n=this.curTarget.getComponent(r.default).getString(),s=this.operation.data,a=!1,c=[];if(this.root.rootNode.children.forEach(function(t,r){var s=t.getBoundingBoxToWorld();if(e.curTarget&&s.contains(o))i=e.root.questionNode.convertToNodeSpaceAR(t.convertToWorldSpaceAR(cc.Vec3.ZERO)),cc.tween(e.curTarget).to(.25,{x:i.x,y:i.y,scale:1},cc.easeCubicActionOut()).start(),r==e.curRoundData.correctAnswer.split(" ").indexOf(n)&&(a=!0);else{var u=e.curTarget.getBoundingBoxToWorld();if(u.intersects(s)){var p=new cc.Rect;u.intersection(p,s),c.push({item:t,rect:p,index:r})}}}),!a&&c.length>0){for(var u=void 0,p=0;p<c.length;){if(u){var h=c[p].rect.size,l=h.width*h.height,d=u.rect.size;d.width*d.height<l&&(u=c[p])}else u=c[p];p++}u&&(i=this.root.questionNode.convertToNodeSpaceAR(u.item.convertToWorldSpaceAR(cc.Vec3.ZERO)),cc.tween(this.curTarget).to(.25,{x:i.x,y:i.y,scale:1},cc.easeCubicActionOut()).start(),u.index==this.curRoundData.correctAnswer.split(" ").indexOf(n)&&(a=!0))}s.forEach(function(t){t.content==n&&(t.correct=a,t.position=i?cc.v2(i.x>>0,i.y>>0):cc.v2(e.curTarget.x>>0,e.curTarget.y>>0))}),this.root.exportOperationData(this.operation,"operation",a?1:0),a||(this.root.playersHurt(),this.backToBase()),this.checkAllCorrect()}this.curTarget=null,this.timeout=setTimeout(function(){e.checkShowOpTip()},this.tipSpaceTime)}},t.prototype.resumeGameStatus=function(){var t=this;this.curRound=this.operation.round,this.curRoundData=n.Config.data[this.curRound],this.root.rootNode.removeAllChildren(),this.root.questionNode.removeAllChildren(),this.createRoundElement(),this.step=this.operation.step,this.root.questionNode.children.forEach(function(e){t.resumePosition(e)})},t.prototype.resumePosition=function(t){var e=t.getComponent(r.default).getString();this.operation.data.forEach(function(o){e==o.content&&(t.x=o.position.x,t.y=o.position.y)})},t.prototype.gameStart=function(){this.curRound=0,this.curRoundData=n.Config.data[this.curRound],this.createRoundElement()},t.prototype.nextRound=function(){this.curRound++,this.curRound>=n.Config.data.length&&(this.curRound=n.Config.data.length-1),this.curRoundData=n.Config.data[this.curRound],this.operation=null,this.root.stopCode.node.parent.active=!1,this.createRoundElement(),this.root.resetLasers(this.operation.round)},t.prototype.createRoundElement=function(t){var e=this;if(void 0===t&&(t=!1),this.addItemToQuestion(),this.addItemToRoot(),!this.operation){this.addLayoutToRoot(),this.step=0;var o=[];this.root.questionNode.children.forEach(function(t){o.push({content:t.getComponent(r.default).getString(),position:cc.v2(t.x>>0,t.y>>0),correct:!1})}),this.operation={round:this.curRound,step:this.step,data:o},(this.curRound>0||t)&&this.root.exportOperationData(this.operation,"operation",-1),this.root.scheduleOnce(function(){e.removeLayoutFromRoot()},.5)}},t.prototype.addLayoutToRoot=function(){if(this.root.questionNode){var t=this.root.questionNode.getComponent(cc.Layout);t.type=cc.Layout.Type.GRID,t.resizeMode=cc.Layout.ResizeMode.CONTAINER,t.startAxis=cc.Layout.AxisDirection.HORIZONTAL,t.spacingX=58,t.spacingY=40,t.updateLayout()}},t.prototype.removeLayoutFromRoot=function(){if(this.root.questionNode){var t=this.root.questionNode.getComponent(cc.Layout);t.resizeMode=cc.Layout.ResizeMode.NONE,t.type=cc.Layout.Type.NONE}},t.prototype.addItemToRoot=function(){for(var t=this.curRoundData.correctAnswer.split(" "),e=t.length,o=0;o<e;){var n=kit.pool.PrefabPool.get(this.root.answerPrefab,"answerItem",i.default);t[o].includes(this.curRoundData.stopCode)?n.getComponent(i.default).setString(t[o].substring(0,t[o].length-1)):n.getComponent(i.default).setString(t[o]),this.root.rootNode&&(n.parent=this.root.rootNode),o++}this.root.stopCode.node.parent.active=!0,this.root.stopCode.string=this.curRoundData.stopCode},t.prototype.addItemToQuestion=function(){if(this.curRoundData&&this.curRoundData.questions)for(var t=this.curRoundData.questions.length,e=0;e<t;){var o=kit.pool.PrefabPool.get(this.root.questionPrefab,"questionItem",r.default);o.getComponent(r.default).setString(this.curRoundData.questions[e]),o.parent=this.root.questionNode,e++}},t.prototype.synchronous=function(t){var e=this;if(this.operation&&this.operation.round==t.round){this.timeout&&(clearTimeout(this.timeout),this.timeout=null,this.root.stopTip()),this.root.hand.active&&(this.root.operator.string="",this.root.hand.active=!1),this.removeLayoutFromRoot(),this.operation.round=t.round,this.step=this.operation.step=t.step;for(var o=t.data,i=0;i<o.length;){var n=o[i];n&&this.operation.data[i]&&n.content==this.operation.data[i].content&&(this.operation.data[i].position.x==n.position.x&&this.operation.data[i].position.y==n.position.y||(this.syncItemPosition(n),this.operation.data[i].position.x=n.position.x,this.operation.data[i].position.y=n.position.y),this.operation.data[i].correct=n.correct),i++}}else this.operation=t,0==this.operation.step?this.addLayoutToRoot():this.removeLayoutFromRoot(),this.root.resetLasers(t.round),this.resumeGameStatus(),0==this.operation.step&&this.root.scheduleOnce(function(){e.removeLayoutFromRoot()},.5)},t.prototype.syncItemPosition=function(t){this.root.questionNode.children.forEach(function(e){e.getComponent(r.default).getString()==t.content&&cc.tween(e).to(.25,{x:t.position.x,y:t.position.y,scale:1},cc.easeCubicActionOut()).start()})},t.prototype.getCorrect=function(t){var e=!1;return this.operation.data.forEach(function(o){o.content==t&&(e=o.correct)}),e},t.prototype.checkAllCorrect=function(){var t=this,e=!0;this.operation.data.forEach(function(t){e&&(e=t.correct)}),e&&(this.timeout&&(clearTimeout(this.timeout),this.timeout=null,this.root.stopTip()),this.root.hideLaser(this.operation.round),this.root.sentenceComplete(),setTimeout(function(){t.root.exportOperationData(t.operation,"roundComplete")},1e3))},t}();o.default=s,cc._RF.pop()},{"./AnswerItem":"AnswerItem","./Config":"Config","./QuestionItem":"QuestionItem"}],IItem:[function(t,e,o){"use strict";cc._RF.push(e,"86e5arO89pFsLVBZpQgK5bu","IItem"),Object.defineProperty(o,"__esModule",{value:!0}),cc._RF.pop()},{}],MakeASentenceScript:[function(t,e,o){"use strict";cc._RF.push(e,"75b66DIknBJ84XES7ar8Uwp","MakeASentenceScript");var i,n=this&&this.__extends||(i=function(t,e){return(i=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var o in e)Object.prototype.hasOwnProperty.call(e,o)&&(t[o]=e[o])})(t,e)},function(t,e){function o(){this.constructor=t}i(t,e),t.prototype=null===e?Object.create(e):(o.prototype=e.prototype,new o)}),r=this&&this.__decorate||function(t,e,o,i){var n,r=arguments.length,s=r<3?e:null===i?i=Object.getOwnPropertyDescriptor(e,o):i;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,o,i);else for(var a=t.length-1;a>=0;a--)(n=t[a])&&(s=(r<3?n(s):r>3?n(e,o,s):n(e,o))||s);return r>3&&s&&Object.defineProperty(e,o,s),s};Object.defineProperty(o,"__esModule",{value:!0});var s=t("./Delegate"),a=t("./QuestionItem"),c=cc._decorator,u=c.ccclass,p=c.property,h=function(t){function e(){var e=null!==t&&t.apply(this,arguments)||this;return e.TaskNode=null,e.answerPrefab=null,e.questionPrefab=null,e.rootNode=null,e.stopCode=null,e.questionNode=null,e.taskAudio=null,e.cheerAudio=null,e.suspireAudio=null,e.laserAudio=null,e.hand=null,e.operator=null,e.leftDoor=null,e.rightDoor=null,e.lasers=[],e.max=null,e.melinda=null,e.mili=null,e.teacherNode=null,e}return n(e,t),e.prototype.onLoad=function(){this.delegate=new s.default(this),this.initLasers()},e.prototype.onDestroy=function(){t.prototype.onDestroy.call(this),this.delegate.onDestroy(),this.delegate=null},e.prototype.initLasers=function(){this.laserBaseOpacity=[];for(var t=0;t<this.lasers.length;){var e=this.lasers[t];e.node.active=!0,this.laserBaseOpacity.push(e.node.opacity),e.node.opacity=0,t++}},e.prototype.resetLasers=function(t){var e=this;this.lasers.forEach(function(o,i){o.node.opacity=i>=t?e.laserBaseOpacity[i]:0})},e.prototype.start=function(){var t=this;if(this.content&&this.content.onGameReady(),this.teacherNode.active=this.isTeacher,this.playIdle(),this.snapData&&"gameComplete"!=this.snapData.action&&"gameRestart"!=this.snapData.action){this.TaskNode.active=!1;var e=this.snapData.actionData.round;this.resetLasers(e),this.delegate.synchronous(this.snapData.actionData),this.delegate.start(!0)}else this.scheduleOnce(function(){cc.audioEngine.play(t.taskAudio,!1,1)},1),this.scheduleOnce(function(){t.TaskNode.active=!1,t.showLasers(t.onStart.bind(t))},this.taskAudio.duration+1)},e.prototype.onStart=function(){this.delegate.start()},e.prototype.onRestart=function(){var t=this;this.TaskNode.active=!0,this.delegate.clearGameTable(),this.initLasers(),this.scheduleOnce(function(){cc.audioEngine.play(t.taskAudio,!1,1)},1),this.scheduleOnce(function(){t.TaskNode.active=!1,t.showLasers(function(){t.delegate.reStart()})},this.taskAudio.duration+1),this.isTeacher&&this.exportOperationData({},"gameRestart")},e.prototype.onClickLastRound=function(){this.isTeacher&&(this.delegate.clearGameTable(),this.delegate.lastRound())},e.prototype.onClickNextRound=function(){this.isTeacher&&(this.delegate.clearGameTable(),this.delegate.nextRound())},e.prototype.cloneActDt=function(t){return JSON.parse(JSON.stringify(t))},e.prototype.setParams=function(t){cc.log("set params: "+JSON.stringify(t)),this.isTeacher=t.isTeacher||!1,t.userInfo&&(this.roleName=t.userInfo.name)},e.prototype.setContent=function(t){this.content=t;var e=this.content.getSnapshot();this.snapData=e},e.prototype.receiveMessage=function(t){if(cc.log("receiveMessage: "+t.action),t.nickName!=this.roleName)switch(t.action){case"operation":this.delegate.synchronous(t.actionData),0==t.correct&&this.playersHurt();break;case"roundComplete":var e=t.actionData.round;this.hideLaser(e),this.sentenceComplete();break;case"gameComplete":this.sentenceComplete(!0);break;case"chooseTarget":this.delegate.onChooseTarget(t);break;case"moveTarget":this.delegate.onMoveTarget(t);break;case"gameRestart":this.onRestart()}},e.prototype.timeout=function(){},e.prototype.showLasers=function(t){var e=this,o=this,i=0;this.lasers.forEach(function(n,r){n.node.active=!0,cc.tween(n).delay(.2*r).call(function(){cc.audioEngine.play(e.laserAudio,!1,1),n.node.opacity=e.laserBaseOpacity[r],o.playSpine(n,"appear",!1,function(){o.playSpine(n,"idle",!0),++i==o.lasers.length&&t&&t.apply(null)})}).start()})},e.prototype.hideLaser=function(t){var e=this;this.lasers.forEach(function(o,i){t==i&&e.playSpine(o,"disappear",!1,function(){o.node.active=!1})})},e.prototype.guildHand=function(t,e){this.hand&&(this.hand.active=!0,cc.tween(this.hand).repeatForever(cc.tween().set({x:t.x,y:t.y}).to(1.5,{x:e.x,y:e.y},cc.easeCubicActionOut()).delay(.5)).start())},e.prototype.stopHand=function(){cc.Tween.stopAllByTarget(this.hand),this.hand.active=!1},e.prototype.tipShow=function(t){this.questionNode.children.forEach(function(e){t.includes(e.getComponent(a.default).getString())&&e.getComponent(a.default).showTip()})},e.prototype.stopTip=function(){this.questionNode.children.forEach(function(t){t.getComponent(a.default).hideTip()})},e.prototype.playIdle=function(){this.playSpine(this.max,"idle",!0),this.playSpine(this.melinda,"daiji",!0),this.playSpine(this.mili,"daiji",!0)},e.prototype.playersHurt=function(){var t=this;cc.log("playersHurt"),cc.audioEngine.play(this.suspireAudio,!1,1),this.playSpine(this.max,"shiluo",!1,function(){t.playSpine(t.max,"idle",!0)}),this.playSpine(this.melinda,"fu_fk",!1,function(){t.playSpine(t.melinda,"daiji",!0)}),this.playSpine(this.mili,"fu_fankui",!1,function(){t.playSpine(t.mili,"daiji",!0)})},e.prototype.sentenceComplete=function(t){var e=this;void 0===t&&(t=!1),cc.log("sentenceComplete"),t?(this.playSpine(this.max,"qinzhu",!1,function(){e.playSpine(e.max,"idle",!0)}),this.playSpine(this.melinda,"qingzhu",!1,function(){e.playSpine(e.melinda,"daiji",!0)}),this.playSpine(this.mili,"qingzhu",!1,function(){e.playSpine(e.mili,"daiji",!0)}),this.openTheDoor()):(this.playSpine(this.max,"kaixin",!1,function(){e.playSpine(e.max,"idle",!0)}),this.playSpine(this.melinda,"zheng_fk",!1,function(){e.playSpine(e.melinda,"daiji",!0)}),this.playSpine(this.mili,"zheng_fk",!1,function(){e.playSpine(e.mili,"daiji",!0)}),cc.audioEngine.play(this.cheerAudio,!1,1))},e.prototype.openTheDoor=function(){var t=this;cc.tween(this.leftDoor).to(1,{x:-164},cc.easeCubicActionOut()).start(),cc.tween(this.rightDoor).to(1,{x:164},cc.easeCircleActionOut()).delay(2).call(function(){t.content&&t.content.onGameComplete()}).start()},e.prototype.exportOperationData=function(t,e,o){void 0===o&&(o=-1);var i={isTeacher:this.isTeacher,nickName:this.roleName,action:e,actionData:t,correct:o};this.content&&this.content.postMessage(JSON.stringify(i))},e.prototype.onNextRound=function(t){void 0===t&&(t=!1);var e={isTeacher:this.isTeacher,actionData:"nextRound"};this.isTeacher&&t&&this.content&&(cc.log("dispatch NextRound"),this.content.postMessage(JSON.stringify(e))),this.delegate&&(this.delegate.clearGameTable(),this.delegate.nextRound())},e.prototype.onToggleSwitch=function(){var t={isTeacher:this.isTeacher,actionData:""};this.content&&this.content.postMessage(JSON.stringify(t))},e.prototype.playSpine=function(t,e,o,i){void 0===o&&(o=!1),t&&t.animation!=e&&(t.clearTracks(),t.setToSetupPose(),t.setAnimation(0,e,o),i&&t.setCompleteListener(i))},r([p(cc.Node)],e.prototype,"TaskNode",void 0),r([p(cc.Prefab)],e.prototype,"answerPrefab",void 0),r([p(cc.Prefab)],e.prototype,"questionPrefab",void 0),r([p(cc.Node)],e.prototype,"rootNode",void 0),r([p(cc.Label)],e.prototype,"stopCode",void 0),r([p(cc.Node)],e.prototype,"questionNode",void 0),r([p(cc.AudioClip)],e.prototype,"taskAudio",void 0),r([p(cc.AudioClip)],e.prototype,"cheerAudio",void 0),r([p(cc.AudioClip)],e.prototype,"suspireAudio",void 0),r([p(cc.AudioClip)],e.prototype,"laserAudio",void 0),r([p(cc.Node)],e.prototype,"hand",void 0),r([p(cc.Label)],e.prototype,"operator",void 0),r([p(cc.Node)],e.prototype,"leftDoor",void 0),r([p(cc.Node)],e.prototype,"rightDoor",void 0),r([p([sp.Skeleton])],e.prototype,"lasers",void 0),r([p(sp.Skeleton)],e.prototype,"max",void 0),r([p(sp.Skeleton)],e.prototype,"melinda",void 0),r([p(sp.Skeleton)],e.prototype,"mili",void 0),r([p(cc.Node)],e.prototype,"teacherNode",void 0),r([u],e)}(cc.Component);o.default=h,cc._RF.pop()},{"./Delegate":"Delegate","./QuestionItem":"QuestionItem"}],QuestionItem:[function(t,e,o){"use strict";cc._RF.push(e,"a4ec2E+YkNGQ504oIEscwLh","QuestionItem");var i,n=this&&this.__extends||(i=function(t,e){return(i=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var o in e)Object.prototype.hasOwnProperty.call(e,o)&&(t[o]=e[o])})(t,e)},function(t,e){function o(){this.constructor=t}i(t,e),t.prototype=null===e?Object.create(e):(o.prototype=e.prototype,new o)}),r=this&&this.__decorate||function(t,e,o,i){var n,r=arguments.length,s=r<3?e:null===i?i=Object.getOwnPropertyDescriptor(e,o):i;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,o,i);else for(var a=t.length-1;a>=0;a--)(n=t[a])&&(s=(r<3?n(s):r>3?n(e,o,s):n(e,o))||s);return r>3&&s&&Object.defineProperty(e,o,s),s};Object.defineProperty(o,"__esModule",{value:!0});var s=t("./AnswerItem"),a=cc._decorator,c=a.ccclass,u=(a.property,function(t){function e(){return null!==t&&t.apply(this,arguments)||this}var o;return n(e,t),o=e,e.prototype.showTip=function(){cc.Tween.stopAllByTarget(this.node),cc.tween(this.node).repeatForever(cc.tween(this.node).to(.5,{scale:1.2},cc.easeCubicActionOut()).delay(.2).to(.5,{scale:1},cc.easeCubicActionOut())).start()},e.prototype.hideTip=function(){cc.Tween.stopAllByTarget(this.node),this.node.scale=1},e.prototype.onDestroy=function(){this.unuse(),kit.pool.PrefabPool.put(this.node,"questionItem",o)},e.prototype.reuse=function(){cc.log("QuestionItem reuse item")},e.prototype.unuse=function(){cc.log("QuestionItem un use")},o=r([c],e)}(s.default));o.default=u,cc._RF.pop()},{"./AnswerItem":"AnswerItem"}]},{},["AnswerItem","Config","Delegate","IItem","MakeASentenceScript","QuestionItem"]);
+window.__require = function e(t, n, r) {
+  function s(o, u) {
+    if (!n[o]) {
+      if (!t[o]) {
+        var b = o.split("/");
+        b = b[b.length - 1];
+        if (!t[b]) {
+          var a = "function" == typeof __require && __require;
+          if (!u && a) return a(b, !0);
+          if (i) return i(b, !0);
+          throw new Error("Cannot find module '" + o + "'");
+        }
+        o = b;
+      }
+      var f = n[o] = {
+        exports: {}
+      };
+      t[o][0].call(f.exports, function(e) {
+        var n = t[o][1][e];
+        return s(n || e);
+      }, f, f.exports, e, t, n, r);
+    }
+    return n[o].exports;
+  }
+  var i = "function" == typeof __require && __require;
+  for (var o = 0; o < r.length; o++) s(r[o]);
+  return s;
+}({
+  AnswerItem: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "de911k7qNBBNI2WXjopCaSw", "AnswerItem");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var AnswerItem = function(_super) {
+      __extends(AnswerItem, _super);
+      function AnswerItem() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.label = null;
+        return _this;
+      }
+      AnswerItem_1 = AnswerItem;
+      AnswerItem.prototype.setString = function(value) {
+        this.label.string = value;
+      };
+      AnswerItem.prototype.getString = function() {
+        return this.label.string;
+      };
+      AnswerItem.prototype.isValueEqual = function(item) {
+        return item.getString() == this.getString();
+      };
+      AnswerItem.prototype.onDestroy = function() {
+        this.unuse();
+        kit.pool.PrefabPool.put(this.node, "answerItem", AnswerItem_1);
+      };
+      AnswerItem.prototype.reuse = function() {
+        cc.log("reuse item");
+      };
+      AnswerItem.prototype.unuse = function() {
+        cc.log("unuse item");
+      };
+      var AnswerItem_1;
+      __decorate([ property(cc.Label) ], AnswerItem.prototype, "label", void 0);
+      AnswerItem = AnswerItem_1 = __decorate([ ccclass ], AnswerItem);
+      return AnswerItem;
+    }(cc.Component);
+    exports.default = AnswerItem;
+    cc._RF.pop();
+  }, {} ],
+  Config: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "7d259bcpq1GepgSPh9U8W5v", "Config");
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.Config = void 0;
+    exports.Config = {
+      data: [ {
+        index: 0,
+        correctAnswer: "What's your name",
+        questions: [ "your", "name", "What's" ],
+        stopCode: "?"
+      }, {
+        index: 1,
+        correctAnswer: "How old are you",
+        questions: [ "old", "you", "are", "How" ],
+        stopCode: "?"
+      }, {
+        index: 2,
+        correctAnswer: "I am seven",
+        questions: [ "am", "I", "seven" ],
+        stopCode: "."
+      }, {
+        index: 3,
+        correctAnswer: "Raise your hand please",
+        questions: [ "please", "your", "Raise", "hand" ],
+        stopCode: "."
+      }, {
+        index: 4,
+        correctAnswer: "Be quiet please",
+        questions: [ "quiet", "Be", "please" ],
+        stopCode: "."
+      } ]
+    };
+    cc._RF.pop();
+  }, {} ],
+  Delegate: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "c986aZS7eJF9LbSvqvx3QPN", "Delegate");
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var AnswerItem_1 = require("./AnswerItem");
+    var Config_1 = require("./Config");
+    var QuestionItem_1 = require("./QuestionItem");
+    var Delegate = function() {
+      function Delegate(rootParam) {
+        this.lastOpTime = 0;
+        this.tipSpaceTime = 5e3;
+        this.touchMoveSpaceTime = 100;
+        this.root = rootParam;
+        this.operateLock = false;
+      }
+      Delegate.prototype.start = function(sync) {
+        var _this = this;
+        void 0 === sync && (sync = false);
+        this.addListener();
+        !sync && this.gameStart();
+        sync || this.root.isTeacher || this.root.scheduleOnce(function() {
+          var startPos = _this.root.questionNode.children[2].convertToWorldSpaceAR(cc.Vec3.ZERO);
+          startPos = _this.root.node.convertToNodeSpaceAR(cc.v2(startPos.x, startPos.y));
+          var endPos = _this.root.rootNode.children[0].convertToWorldSpaceAR(cc.Vec3.ZERO);
+          endPos = _this.root.node.convertToNodeSpaceAR(cc.v2(endPos.x, endPos.y));
+          _this.root.guildHand(startPos, endPos);
+        }, .5);
+      };
+      Delegate.prototype.clearGameTable = function() {
+        this.curTarget = null;
+        this.curTargetBasePos = null;
+        this.root.rootNode.removeAllChildren();
+        this.root.questionNode.removeAllChildren();
+      };
+      Delegate.prototype.reStart = function() {
+        this.curRound = 0;
+        this.curRoundData = Config_1.Config.data[this.curRound];
+        this.operation = null;
+        this.root.stopCode.node.parent.active = false;
+        this.createRoundElement();
+      };
+      Delegate.prototype.lastRound = function() {
+        this.curRound--;
+        this.curRound < 0 && (this.curRound = 0);
+        this.curRoundData = Config_1.Config.data[this.curRound];
+        this.operation = null;
+        this.root.stopCode.node.parent.active = false;
+        this.createRoundElement(true);
+        this.root.resetLasers(this.operation.round);
+      };
+      Delegate.prototype.onDestroy = function() {
+        this.delListener();
+        this.root = null;
+        this.operation = null;
+        this.curRoundData = null;
+        this.curTarget = null;
+        this.curTargetBasePos = null;
+      };
+      Delegate.prototype.setOperationLock = function() {
+        this.operateLock = true;
+        if (this.timeout) {
+          clearTimeout(this.timeout);
+          this.timeout = null;
+          this.root.stopTip();
+        }
+        this.root.stopTip();
+        this.backToBase();
+      };
+      Delegate.prototype.setOperationFree = function() {
+        var _this = this;
+        this.operateLock = false;
+        this.step > 0 && (this.timeout = setTimeout(function() {
+          _this.checkShowOpTip();
+        }, this.tipSpaceTime));
+      };
+      Delegate.prototype.checkShowOpTip = function() {
+        var now = Date.now();
+        if (now - this.lastOpTime >= this.tipSpaceTime) {
+          this.lastOpTime = now;
+          var words_1 = [];
+          this.operation.data.forEach(function(item) {
+            item.correct || words_1.push(item.content);
+          });
+          this.root.tipShow(words_1);
+        }
+      };
+      Delegate.prototype.backToBase = function() {
+        var _this = this;
+        if (this.curTarget && this.curTargetBasePos) {
+          var tempData = this.operation.data;
+          var curString_1 = this.curTarget.getComponent(QuestionItem_1.default).getString();
+          tempData.forEach(function(item) {
+            if (item.content == curString_1) {
+              var clonePos = _this.curTargetBasePos.clone();
+              item.position = cc.v2(clonePos.x >> 0, clonePos.y >> 0);
+            }
+          });
+          cc.tween(this.curTarget).to(.5, {
+            x: this.curTargetBasePos.x >> 0,
+            y: this.curTargetBasePos.y >> 0
+          }, cc.easeCubicActionOut()).call(function() {
+            _this.root.exportOperationData(_this.operation, "operation", -1);
+          }).start();
+          this.curTarget = null;
+          this.curTargetBasePos = null;
+        }
+      };
+      Delegate.prototype.addListener = function() {
+        this.root.node.on(cc.Node.EventType.TOUCH_START, this.onTouchBegin, this);
+        this.root.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+        this.root.node.on(cc.Node.EventType.TOUCH_END, this.onTouchReleased, this);
+        this.root.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchReleased, this);
+      };
+      Delegate.prototype.delListener = function() {
+        this.root.node.off(cc.Node.EventType.TOUCH_START, this.onTouchBegin, this);
+        this.root.node.off(cc.Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+        this.root.node.off(cc.Node.EventType.TOUCH_END, this.onTouchReleased, this);
+        this.root.node.off(cc.Node.EventType.TOUCH_CANCEL, this.onTouchReleased, this);
+      };
+      Delegate.prototype.onChooseTarget = function(data) {
+        if (this.timeout) {
+          clearTimeout(this.timeout);
+          this.timeout = null;
+          this.root.stopTip();
+        }
+        this.root.operator.string = data.nickName;
+        var actDt = data.actionData;
+        var content = actDt.curContent;
+        var curPos;
+        this.root.questionNode.children.forEach(function(quest) {
+          quest.getComponent(QuestionItem_1.default).getString() == content && (curPos = quest.convertToWorldSpaceAR(cc.Vec2.ZERO));
+        });
+        var rootLocalPos = this.root.node.convertToNodeSpaceAR(curPos);
+        this.root.hand.x = rootLocalPos.x;
+        this.root.hand.y = rootLocalPos.y;
+        this.root.hand.active = true;
+      };
+      Delegate.prototype.onMoveTarget = function(data) {
+        var _this = this;
+        if (this.timeout) {
+          clearTimeout(this.timeout);
+          this.timeout = null;
+          this.root.stopTip();
+        }
+        this.root.hand.active = true;
+        this.root.operator.string = data.nickName;
+        var actDt = data.actionData;
+        var content = actDt.curContent;
+        var pos;
+        actDt.data.forEach(function(item) {
+          item.content == content && (pos = item.position);
+        });
+        var curPos;
+        this.root.questionNode.children.forEach(function(quest) {
+          if (quest.getComponent(QuestionItem_1.default).getString() == content) {
+            if (pos) {
+              cc.Tween.stopAllByTarget(quest);
+              quest.setSiblingIndex(_this.root.questionNode.childrenCount - 1);
+              cc.tween(quest).to(.2, {
+                x: pos.x,
+                y: pos.y
+              }).start();
+            }
+            curPos = quest.convertToWorldSpaceAR(cc.Vec2.ZERO);
+          }
+        });
+        var rootLocalPos = this.root.node.convertToNodeSpaceAR(curPos);
+        cc.Tween.stopAllByTarget(this.root.hand);
+        cc.tween(this.root.hand).to(.2, {
+          x: rootLocalPos.x,
+          y: rootLocalPos.y
+        }).start();
+      };
+      Delegate.prototype.onTouchBegin = function(event) {
+        var _this = this;
+        if (this.operateLock) return;
+        this.root.stopHand();
+        this.root.stopTip();
+        if (this.timeout) {
+          clearTimeout(this.timeout);
+          this.timeout = null;
+          this.root.stopTip();
+        }
+        this.removeLayoutFromRoot();
+        var touchPos = event.getLocation();
+        this.root.questionNode.children.forEach(function(item) {
+          var str = item.getComponent(QuestionItem_1.default).getString();
+          if (!_this.getCorrect(str)) {
+            var boundWorld = item.getBoundingBoxToWorld();
+            if (!_this.curTarget && boundWorld.contains(touchPos)) {
+              _this.touchStartTime = Date.now();
+              _this.curTarget = item;
+              _this.curTargetBasePos = _this.curTarget.getPosition();
+              _this.curTarget.setSiblingIndex(_this.root.questionNode.childrenCount - 1);
+              cc.log("get target, name: " + str);
+              _this.operation.curContent = _this.curTarget.getComponent(QuestionItem_1.default).getString();
+              _this.root.exportOperationData(_this.operation, "chooseTarget");
+            }
+          }
+        });
+      };
+      Delegate.prototype.onTouchMoved = function(event) {
+        var _this = this;
+        if (this.operateLock) return;
+        if (this.curTarget) {
+          this.curTarget.x += event.getDeltaX();
+          this.curTarget.y += event.getDeltaY();
+          var now = Date.now();
+          if (now - this.touchStartTime >= this.touchMoveSpaceTime) {
+            this.touchStartTime = now;
+            var tempData = this.operation.data;
+            tempData.forEach(function(data) {
+              if (data.content == _this.curTarget.getComponent(QuestionItem_1.default).getString()) {
+                data.position.x = _this.curTarget.x;
+                data.position.y = _this.curTarget.y;
+              }
+            });
+            this.root.exportOperationData(this.operation, "moveTarget");
+          }
+        }
+      };
+      Delegate.prototype.onTouchReleased = function(event) {
+        var _this = this;
+        if (this.operateLock) return;
+        if (this.curTarget) {
+          var touchPos_1 = event.getLocation();
+          this.operation.step++;
+          var curString_2 = this.curTarget.getComponent(QuestionItem_1.default).getString();
+          var tempData = this.operation.data;
+          var correct_1 = false;
+          var intersectRect_1 = [];
+          var moveToPos_1;
+          this.root.rootNode.children.forEach(function(item, index) {
+            var boundWorld = item.getBoundingBoxToWorld();
+            if (_this.curTarget && boundWorld.contains(touchPos_1)) {
+              moveToPos_1 = _this.root.questionNode.convertToNodeSpaceAR(item.convertToWorldSpaceAR(cc.Vec3.ZERO));
+              cc.tween(_this.curTarget).to(.25, {
+                x: moveToPos_1.x,
+                y: moveToPos_1.y,
+                scale: 1
+              }, cc.easeCubicActionOut()).start();
+              index == _this.curRoundData.correctAnswer.split(" ").indexOf(curString_2) && (correct_1 = true);
+            } else {
+              var curBoundWorld = _this.curTarget.getBoundingBoxToWorld();
+              if (curBoundWorld.intersects(boundWorld)) {
+                var containRect = new cc.Rect();
+                curBoundWorld.intersection(containRect, boundWorld);
+                intersectRect_1.push({
+                  item: item,
+                  rect: containRect,
+                  index: index
+                });
+              }
+            }
+          });
+          if (!correct_1 && intersectRect_1.length > 0) {
+            var maxRect = void 0;
+            var i = 0;
+            while (i < intersectRect_1.length) {
+              if (maxRect) {
+                var tempSize = intersectRect_1[i].rect.size;
+                var tempArea = tempSize.width * tempSize.height;
+                var lastSize = maxRect.rect.size;
+                var lastArea = lastSize.width * lastSize.height;
+                lastArea < tempArea && (maxRect = intersectRect_1[i]);
+              } else maxRect = intersectRect_1[i];
+              i++;
+            }
+            if (maxRect) {
+              moveToPos_1 = this.root.questionNode.convertToNodeSpaceAR(maxRect.item.convertToWorldSpaceAR(cc.Vec3.ZERO));
+              cc.tween(this.curTarget).to(.25, {
+                x: moveToPos_1.x,
+                y: moveToPos_1.y,
+                scale: 1
+              }, cc.easeCubicActionOut()).start();
+              maxRect.index == this.curRoundData.correctAnswer.split(" ").indexOf(curString_2) && (correct_1 = true);
+            }
+          }
+          tempData.forEach(function(data) {
+            if (data.content == curString_2) {
+              data.correct = correct_1;
+              data.position = moveToPos_1 ? cc.v2(moveToPos_1.x >> 0, moveToPos_1.y >> 0) : cc.v2(_this.curTarget.x >> 0, _this.curTarget.y >> 0);
+            }
+          });
+          this.root.exportOperationData(this.operation, "operation", correct_1 ? 1 : 0);
+          if (!correct_1) {
+            this.root.playersHurt();
+            this.backToBase();
+          }
+          this.checkAllCorrect();
+        }
+        this.curTarget = null;
+        this.timeout = setTimeout(function() {
+          _this.checkShowOpTip();
+        }, this.tipSpaceTime);
+      };
+      Delegate.prototype.resumeGameStatus = function() {
+        var _this = this;
+        this.curRound = this.operation.round;
+        this.curRoundData = Config_1.Config.data[this.curRound];
+        this.root.rootNode.removeAllChildren();
+        this.root.questionNode.removeAllChildren();
+        this.createRoundElement();
+        this.step = this.operation.step;
+        this.root.questionNode.children.forEach(function(node) {
+          _this.resumePosition(node);
+        });
+      };
+      Delegate.prototype.resumePosition = function(node) {
+        var nodeStr = node.getComponent(QuestionItem_1.default).getString();
+        this.operation.data.forEach(function(itemData) {
+          if (nodeStr == itemData.content) {
+            node.x = itemData.position.x;
+            node.y = itemData.position.y;
+          }
+        });
+      };
+      Delegate.prototype.gameStart = function() {
+        this.curRound = 0;
+        this.curRoundData = Config_1.Config.data[this.curRound];
+        this.createRoundElement();
+      };
+      Delegate.prototype.nextRound = function() {
+        this.curRound++;
+        this.curRound >= Config_1.Config.data.length && (this.curRound = Config_1.Config.data.length - 1);
+        this.curRoundData = Config_1.Config.data[this.curRound];
+        this.operation = null;
+        this.root.stopCode.node.parent.active = false;
+        this.createRoundElement();
+        this.root.resetLasers(this.operation.round);
+      };
+      Delegate.prototype.createRoundElement = function(force) {
+        var _this = this;
+        void 0 === force && (force = false);
+        this.addItemToQuestion();
+        this.addItemToRoot();
+        if (!this.operation) {
+          this.addLayoutToRoot();
+          this.step = 0;
+          var tempData_1 = [];
+          this.root.questionNode.children.forEach(function(item) {
+            tempData_1.push({
+              content: item.getComponent(QuestionItem_1.default).getString(),
+              position: cc.v2(item.x >> 0, item.y >> 0),
+              correct: false
+            });
+          });
+          this.operation = {
+            round: this.curRound,
+            step: this.step,
+            data: tempData_1
+          };
+          (this.curRound > 0 || force) && this.root.exportOperationData(this.operation, "operation", -1);
+          this.root.scheduleOnce(function() {
+            _this.removeLayoutFromRoot();
+          }, .5);
+        }
+      };
+      Delegate.prototype.addLayoutToRoot = function() {
+        if (this.root.questionNode) {
+          var layout = this.root.questionNode.getComponent(cc.Layout);
+          layout.type = cc.Layout.Type.GRID;
+          layout.resizeMode = cc.Layout.ResizeMode.CONTAINER;
+          layout.startAxis = cc.Layout.AxisDirection.HORIZONTAL;
+          layout.spacingX = 58;
+          layout.spacingY = 40;
+          layout.updateLayout();
+        }
+      };
+      Delegate.prototype.removeLayoutFromRoot = function() {
+        if (this.root.questionNode) {
+          var layout = this.root.questionNode.getComponent(cc.Layout);
+          layout.resizeMode = cc.Layout.ResizeMode.NONE;
+          layout.type = cc.Layout.Type.NONE;
+        }
+      };
+      Delegate.prototype.addItemToRoot = function() {
+        var answers = this.curRoundData.correctAnswer.split(" ");
+        var count = answers.length, i = 0;
+        while (i < count) {
+          var item = kit.pool.PrefabPool.get(this.root.answerPrefab, "answerItem", AnswerItem_1.default);
+          answers[i].includes(this.curRoundData.stopCode) ? item.getComponent(AnswerItem_1.default).setString(answers[i].substring(0, answers[i].length - 1)) : item.getComponent(AnswerItem_1.default).setString(answers[i]);
+          this.root.rootNode && (item.parent = this.root.rootNode);
+          i++;
+        }
+        this.root.stopCode.node.parent.active = true;
+        this.root.stopCode.string = this.curRoundData.stopCode;
+      };
+      Delegate.prototype.addItemToQuestion = function() {
+        if (this.curRoundData && this.curRoundData.questions) {
+          var count = this.curRoundData.questions.length, i = 0;
+          while (i < count) {
+            var item = kit.pool.PrefabPool.get(this.root.questionPrefab, "questionItem", QuestionItem_1.default);
+            item.getComponent(QuestionItem_1.default).setString(this.curRoundData.questions[i]);
+            item.parent = this.root.questionNode;
+            i++;
+          }
+        }
+      };
+      Delegate.prototype.synchronous = function(opDt) {
+        var _this = this;
+        if (this.operation && this.operation.round == opDt.round) {
+          if (this.timeout) {
+            clearTimeout(this.timeout);
+            this.timeout = null;
+            this.root.stopTip();
+          }
+          if (this.root.hand.active) {
+            this.root.operator.string = "";
+            this.root.hand.active = false;
+          }
+          this.removeLayoutFromRoot();
+          this.operation.round = opDt.round;
+          this.step = this.operation.step = opDt.step;
+          var tempData = opDt.data;
+          var index = 0;
+          while (index < tempData.length) {
+            var temp = tempData[index];
+            if (temp && this.operation.data[index] && temp.content == this.operation.data[index].content) {
+              if (this.operation.data[index].position.x != temp.position.x || this.operation.data[index].position.y != temp.position.y) {
+                this.syncItemPosition(temp);
+                this.operation.data[index].position.x = temp.position.x;
+                this.operation.data[index].position.y = temp.position.y;
+              }
+              this.operation.data[index].correct = temp.correct;
+            }
+            index++;
+          }
+        } else {
+          this.operation = opDt;
+          0 == this.operation.step ? this.addLayoutToRoot() : this.removeLayoutFromRoot();
+          this.root.resetLasers(opDt.round);
+          this.resumeGameStatus();
+          0 == this.operation.step && this.root.scheduleOnce(function() {
+            _this.removeLayoutFromRoot();
+          }, .5);
+        }
+      };
+      Delegate.prototype.syncItemPosition = function(data) {
+        this.root.questionNode.children.forEach(function(child) {
+          child.getComponent(QuestionItem_1.default).getString() == data.content && cc.tween(child).to(.25, {
+            x: data.position.x,
+            y: data.position.y,
+            scale: 1
+          }, cc.easeCubicActionOut()).start();
+        });
+      };
+      Delegate.prototype.getCorrect = function(str) {
+        var bool = false;
+        this.operation.data.forEach(function(itemData) {
+          itemData.content == str && (bool = itemData.correct);
+        });
+        return bool;
+      };
+      Delegate.prototype.checkAllCorrect = function() {
+        var _this = this;
+        var allCorrect = true;
+        this.operation.data.forEach(function(itemData) {
+          allCorrect && (allCorrect = itemData.correct);
+        });
+        if (allCorrect) {
+          if (this.timeout) {
+            clearTimeout(this.timeout);
+            this.timeout = null;
+            this.root.stopTip();
+          }
+          this.root.hideLaser(this.operation.round);
+          this.root.sentenceComplete();
+          setTimeout(function() {
+            _this.root.exportOperationData(_this.operation, "roundComplete");
+          }, 1e3);
+        }
+      };
+      return Delegate;
+    }();
+    exports.default = Delegate;
+    cc._RF.pop();
+  }, {
+    "./AnswerItem": "AnswerItem",
+    "./Config": "Config",
+    "./QuestionItem": "QuestionItem"
+  } ],
+  IItem: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "86e5arO89pFsLVBZpQgK5bu", "IItem");
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    cc._RF.pop();
+  }, {} ],
+  MakeASentenceScript: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "75b66DIknBJ84XES7ar8Uwp", "MakeASentenceScript");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var Delegate_1 = require("./Delegate");
+    var QuestionItem_1 = require("./QuestionItem");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var MakeASentenceScript = function(_super) {
+      __extends(MakeASentenceScript, _super);
+      function MakeASentenceScript() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.TaskNode = null;
+        _this.answerPrefab = null;
+        _this.questionPrefab = null;
+        _this.rootNode = null;
+        _this.stopCode = null;
+        _this.questionNode = null;
+        _this.taskAudio = null;
+        _this.cheerAudio = null;
+        _this.suspireAudio = null;
+        _this.laserAudio = null;
+        _this.hand = null;
+        _this.operator = null;
+        _this.leftDoor = null;
+        _this.rightDoor = null;
+        _this.lasers = [];
+        _this.max = null;
+        _this.melinda = null;
+        _this.mili = null;
+        _this.teacherNode = null;
+        return _this;
+      }
+      MakeASentenceScript.prototype.onLoad = function() {
+        this.delegate = new Delegate_1.default(this);
+        this.initLasers();
+      };
+      MakeASentenceScript.prototype.onDestroy = function() {
+        _super.prototype.onDestroy.call(this);
+        this.delegate.onDestroy();
+        this.delegate = null;
+      };
+      MakeASentenceScript.prototype.initLasers = function() {
+        this.laserBaseOpacity = [];
+        var i = 0;
+        while (i < this.lasers.length) {
+          var laser = this.lasers[i];
+          laser.node.active = true;
+          this.laserBaseOpacity.push(laser.node.opacity);
+          laser.node.opacity = 0;
+          i++;
+        }
+      };
+      MakeASentenceScript.prototype.resetLasers = function(round) {
+        var _this = this;
+        this.lasers.forEach(function(laser, index) {
+          laser.node.opacity = index >= round ? _this.laserBaseOpacity[index] : 0;
+        });
+      };
+      MakeASentenceScript.prototype.start = function() {
+        var _this = this;
+        this.content && this.content.onGameReady();
+        this.teacherNode.active = this.isTeacher;
+        this.playIdle();
+        if (this.snapData && "gameComplete" != this.snapData.action && "gameRestart" != this.snapData.action) {
+          this.TaskNode.active = false;
+          var round = this.snapData.actionData.round;
+          this.resetLasers(round);
+          this.delegate.synchronous(this.snapData.actionData);
+          this.delegate.start(true);
+        } else {
+          this.scheduleOnce(function() {
+            cc.audioEngine.play(_this.taskAudio, false, 1);
+          }, 1);
+          this.scheduleOnce(function() {
+            _this.TaskNode.active = false;
+            _this.showLasers(_this.onStart.bind(_this));
+          }, this.taskAudio.duration + 1);
+        }
+      };
+      MakeASentenceScript.prototype.onStart = function() {
+        this.delegate.start();
+      };
+      MakeASentenceScript.prototype.onRestart = function() {
+        var _this = this;
+        this.TaskNode.active = true;
+        this.delegate.clearGameTable();
+        this.initLasers();
+        this.scheduleOnce(function() {
+          cc.audioEngine.play(_this.taskAudio, false, 1);
+        }, 1);
+        this.scheduleOnce(function() {
+          _this.TaskNode.active = false;
+          _this.showLasers(function() {
+            _this.delegate.reStart();
+          });
+        }, this.taskAudio.duration + 1);
+        this.isTeacher && this.exportOperationData({}, "gameRestart");
+      };
+      MakeASentenceScript.prototype.onClickLastRound = function() {
+        if (this.isTeacher) {
+          this.delegate.clearGameTable();
+          this.delegate.lastRound();
+        }
+      };
+      MakeASentenceScript.prototype.onClickNextRound = function() {
+        if (this.isTeacher) {
+          this.delegate.clearGameTable();
+          this.delegate.nextRound();
+        }
+      };
+      MakeASentenceScript.prototype.cloneActDt = function(source) {
+        return JSON.parse(JSON.stringify(source));
+      };
+      MakeASentenceScript.prototype.setParams = function(data) {
+        cc.log("set params: " + JSON.stringify(data));
+        this.isTeacher = data.isTeacher || false;
+        data.userInfo && (this.roleName = data.userInfo.name);
+      };
+      MakeASentenceScript.prototype.setContent = function(content) {
+        this.content = content;
+        var snapShot = this.content.getSnapshot();
+        this.snapData = snapShot;
+      };
+      MakeASentenceScript.prototype.receiveMessage = function(data) {
+        cc.log("receiveMessage: " + data.action);
+        if (data.nickName != this.roleName) {
+          var action = data.action;
+          switch (action) {
+           case "operation":
+            this.delegate.synchronous(data.actionData);
+            0 == data.correct && this.playersHurt();
+            break;
+
+           case "roundComplete":
+            var round = data.actionData.round;
+            this.hideLaser(round);
+            this.sentenceComplete();
+            break;
+
+           case "gameComplete":
+            this.sentenceComplete(true);
+            break;
+
+           case "chooseTarget":
+            this.delegate.onChooseTarget(data);
+            break;
+
+           case "moveTarget":
+            this.delegate.onMoveTarget(data);
+            break;
+
+           case "gameRestart":
+            this.onRestart();
+          }
+        }
+      };
+      MakeASentenceScript.prototype.timeout = function() {};
+      MakeASentenceScript.prototype.showLasers = function(callBack) {
+        var _this = this;
+        var that = this;
+        var count = 0;
+        this.lasers.forEach(function(laser, index) {
+          laser.node.active = true;
+          cc.tween(laser).delay(.2 * index).call(function() {
+            cc.audioEngine.play(_this.laserAudio, false, 1);
+            laser.node.opacity = _this.laserBaseOpacity[index];
+            that.playSpine(laser, "appear", false, function() {
+              that.playSpine(laser, "idle", true);
+              count++;
+              count == that.lasers.length && callBack && callBack.apply(null);
+            });
+          }).start();
+        });
+      };
+      MakeASentenceScript.prototype.hideLaser = function(round) {
+        var that = this;
+        this.lasers.forEach(function(laser, index) {
+          round == index && that.playSpine(laser, "disappear", false, function() {
+            laser.node.active = false;
+          });
+        });
+      };
+      MakeASentenceScript.prototype.guildHand = function(startPos, endPos) {
+        if (this.hand) {
+          this.hand.active = true;
+          cc.tween(this.hand).repeatForever(cc.tween().set({
+            x: startPos.x,
+            y: startPos.y
+          }).to(1.5, {
+            x: endPos.x,
+            y: endPos.y
+          }, cc.easeCubicActionOut()).delay(.5)).start();
+        }
+      };
+      MakeASentenceScript.prototype.stopHand = function() {
+        cc.Tween.stopAllByTarget(this.hand);
+        this.hand.active = false;
+      };
+      MakeASentenceScript.prototype.tipShow = function(words) {
+        this.questionNode.children.forEach(function(node) {
+          words.includes(node.getComponent(QuestionItem_1.default).getString()) && node.getComponent(QuestionItem_1.default).showTip();
+        });
+      };
+      MakeASentenceScript.prototype.stopTip = function() {
+        this.questionNode.children.forEach(function(node) {
+          node.getComponent(QuestionItem_1.default).hideTip();
+        });
+      };
+      MakeASentenceScript.prototype.playIdle = function() {
+        this.playSpine(this.max, "idle", true);
+        this.playSpine(this.melinda, "daiji", true);
+        this.playSpine(this.mili, "daiji", true);
+      };
+      MakeASentenceScript.prototype.playersHurt = function() {
+        var _this = this;
+        cc.log("playersHurt");
+        cc.audioEngine.play(this.suspireAudio, false, 1);
+        this.playSpine(this.max, "shiluo", false, function() {
+          _this.playSpine(_this.max, "idle", true);
+        });
+        this.playSpine(this.melinda, "fu_fk", false, function() {
+          _this.playSpine(_this.melinda, "daiji", true);
+        });
+        this.playSpine(this.mili, "fu_fankui", false, function() {
+          _this.playSpine(_this.mili, "daiji", true);
+        });
+      };
+      MakeASentenceScript.prototype.sentenceComplete = function(roundComplete) {
+        var _this = this;
+        void 0 === roundComplete && (roundComplete = false);
+        cc.log("sentenceComplete");
+        if (roundComplete) {
+          this.playSpine(this.max, "qinzhu", false, function() {
+            _this.playSpine(_this.max, "idle", true);
+          });
+          this.playSpine(this.melinda, "qingzhu", false, function() {
+            _this.playSpine(_this.melinda, "daiji", true);
+          });
+          this.playSpine(this.mili, "qingzhu", false, function() {
+            _this.playSpine(_this.mili, "daiji", true);
+          });
+          this.openTheDoor();
+        } else {
+          this.playSpine(this.max, "kaixin", false, function() {
+            _this.playSpine(_this.max, "idle", true);
+          });
+          this.playSpine(this.melinda, "zheng_fk", false, function() {
+            _this.playSpine(_this.melinda, "daiji", true);
+          });
+          this.playSpine(this.mili, "zheng_fk", false, function() {
+            _this.playSpine(_this.mili, "daiji", true);
+          });
+          cc.audioEngine.play(this.cheerAudio, false, 1);
+        }
+      };
+      MakeASentenceScript.prototype.openTheDoor = function() {
+        var _this = this;
+        cc.tween(this.leftDoor).to(1, {
+          x: -164
+        }, cc.easeCubicActionOut()).start();
+        cc.tween(this.rightDoor).to(1, {
+          x: 164
+        }, cc.easeCircleActionOut()).delay(2).call(function() {
+          _this.content && _this.content.onGameComplete();
+        }).start();
+      };
+      MakeASentenceScript.prototype.exportOperationData = function(data, action, correct) {
+        void 0 === correct && (correct = -1);
+        var tempData = {
+          isTeacher: this.isTeacher,
+          nickName: this.roleName,
+          action: action,
+          actionData: data,
+          correct: correct
+        };
+        this.content && this.content.postMessage(JSON.stringify(tempData));
+      };
+      MakeASentenceScript.prototype.onNextRound = function(dispatch) {
+        void 0 === dispatch && (dispatch = false);
+        var data = {
+          isTeacher: this.isTeacher,
+          actionData: "nextRound"
+        };
+        if (this.isTeacher && dispatch && this.content) {
+          cc.log("dispatch NextRound");
+          this.content.postMessage(JSON.stringify(data));
+        }
+        if (this.delegate) {
+          this.delegate.clearGameTable();
+          this.delegate.nextRound();
+        }
+      };
+      MakeASentenceScript.prototype.onToggleSwitch = function() {
+        var data = {
+          isTeacher: this.isTeacher,
+          actionData: ""
+        };
+        this.content && this.content.postMessage(JSON.stringify(data));
+      };
+      MakeASentenceScript.prototype.playSpine = function(ske, animation, loop, callBack) {
+        void 0 === loop && (loop = false);
+        if (ske && ske.animation != animation) {
+          ske.clearTracks();
+          ske.setToSetupPose();
+          ske.setAnimation(0, animation, loop);
+          callBack && ske.setCompleteListener(callBack);
+        }
+      };
+      __decorate([ property(cc.Node) ], MakeASentenceScript.prototype, "TaskNode", void 0);
+      __decorate([ property(cc.Prefab) ], MakeASentenceScript.prototype, "answerPrefab", void 0);
+      __decorate([ property(cc.Prefab) ], MakeASentenceScript.prototype, "questionPrefab", void 0);
+      __decorate([ property(cc.Node) ], MakeASentenceScript.prototype, "rootNode", void 0);
+      __decorate([ property(cc.Label) ], MakeASentenceScript.prototype, "stopCode", void 0);
+      __decorate([ property(cc.Node) ], MakeASentenceScript.prototype, "questionNode", void 0);
+      __decorate([ property(cc.AudioClip) ], MakeASentenceScript.prototype, "taskAudio", void 0);
+      __decorate([ property(cc.AudioClip) ], MakeASentenceScript.prototype, "cheerAudio", void 0);
+      __decorate([ property(cc.AudioClip) ], MakeASentenceScript.prototype, "suspireAudio", void 0);
+      __decorate([ property(cc.AudioClip) ], MakeASentenceScript.prototype, "laserAudio", void 0);
+      __decorate([ property(cc.Node) ], MakeASentenceScript.prototype, "hand", void 0);
+      __decorate([ property(cc.Label) ], MakeASentenceScript.prototype, "operator", void 0);
+      __decorate([ property(cc.Node) ], MakeASentenceScript.prototype, "leftDoor", void 0);
+      __decorate([ property(cc.Node) ], MakeASentenceScript.prototype, "rightDoor", void 0);
+      __decorate([ property([ sp.Skeleton ]) ], MakeASentenceScript.prototype, "lasers", void 0);
+      __decorate([ property(sp.Skeleton) ], MakeASentenceScript.prototype, "max", void 0);
+      __decorate([ property(sp.Skeleton) ], MakeASentenceScript.prototype, "melinda", void 0);
+      __decorate([ property(sp.Skeleton) ], MakeASentenceScript.prototype, "mili", void 0);
+      __decorate([ property(cc.Node) ], MakeASentenceScript.prototype, "teacherNode", void 0);
+      MakeASentenceScript = __decorate([ ccclass ], MakeASentenceScript);
+      return MakeASentenceScript;
+    }(cc.Component);
+    exports.default = MakeASentenceScript;
+    cc._RF.pop();
+  }, {
+    "./Delegate": "Delegate",
+    "./QuestionItem": "QuestionItem"
+  } ],
+  QuestionItem: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "a4ec2E+YkNGQ504oIEscwLh", "QuestionItem");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = function(d, b) {
+        extendStatics = Object.setPrototypeOf || {
+          __proto__: []
+        } instanceof Array && function(d, b) {
+          d.__proto__ = b;
+        } || function(d, b) {
+          for (var p in b) Object.prototype.hasOwnProperty.call(b, p) && (d[p] = b[p]);
+        };
+        return extendStatics(d, b);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var AnswerItem_1 = require("./AnswerItem");
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var QuestionItem = function(_super) {
+      __extends(QuestionItem, _super);
+      function QuestionItem() {
+        return null !== _super && _super.apply(this, arguments) || this;
+      }
+      QuestionItem_1 = QuestionItem;
+      QuestionItem.prototype.showTip = function() {
+        cc.Tween.stopAllByTarget(this.node);
+        cc.tween(this.node).repeatForever(cc.tween(this.node).to(.5, {
+          scale: 1.2
+        }, cc.easeCubicActionOut()).delay(.2).to(.5, {
+          scale: 1
+        }, cc.easeCubicActionOut())).start();
+      };
+      QuestionItem.prototype.hideTip = function() {
+        cc.Tween.stopAllByTarget(this.node);
+        this.node.scale = 1;
+      };
+      QuestionItem.prototype.onDestroy = function() {
+        this.unuse();
+        kit.pool.PrefabPool.put(this.node, "questionItem", QuestionItem_1);
+      };
+      QuestionItem.prototype.reuse = function() {
+        cc.log("QuestionItem reuse item");
+      };
+      QuestionItem.prototype.unuse = function() {
+        cc.log("QuestionItem un use");
+      };
+      var QuestionItem_1;
+      QuestionItem = QuestionItem_1 = __decorate([ ccclass ], QuestionItem);
+      return QuestionItem;
+    }(AnswerItem_1.default);
+    exports.default = QuestionItem;
+    cc._RF.pop();
+  }, {
+    "./AnswerItem": "AnswerItem"
+  } ]
+}, {}, [ "AnswerItem", "Config", "Delegate", "IItem", "MakeASentenceScript", "QuestionItem" ]);
+//# sourceMappingURL=index.js.map
